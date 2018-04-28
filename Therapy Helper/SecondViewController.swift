@@ -17,6 +17,7 @@ class SecondViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        print("test")
         // Dispose of any resources that can be recreated.
     }
 
