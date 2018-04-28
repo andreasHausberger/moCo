@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */; };
-		E1A7DD79208D176C00E1BFEB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD78208D176C00E1BFEB /* FirstViewController.swift */; };
-		E1A7DD7B208D176D00E1BFEB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD7A208D176D00E1BFEB /* SecondViewController.swift */; };
+		E1A7DD79208D176C00E1BFEB /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD78208D176C00E1BFEB /* SkillsViewController.swift */; };
+		E1A7DD7B208D176D00E1BFEB /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD7A208D176D00E1BFEB /* DiaryViewController.swift */; };
 		E1A7DD7E208D176D00E1BFEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD7C208D176D00E1BFEB /* Main.storyboard */; };
 		E1A7DD80208D176F00E1BFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD7F208D176F00E1BFEB /* Assets.xcassets */; };
 		E1A7DD83208D176F00E1BFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD81208D176F00E1BFEB /* LaunchScreen.storyboard */; };
 		E1F862E0209471F900B39668 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862DF209471F900B39668 /* CollectionViewCell.swift */; };
 		E1F862E22094760B00B39668 /* TestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862E12094760A00B39668 /* TestCard.swift */; };
 		E1F862E42094A38B00B39668 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862E32094A38B00B39668 /* CardModel.swift */; };
+		E1F862E62094F76500B39668 /* MoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862E52094F76500B39668 /* MoodsViewController.swift */; };
+		E1F862E82094F77400B39668 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862E72094F77400B39668 /* ChallengesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E1A7DD73208D176C00E1BFEB /* Therapy Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Therapy Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1A7DD78208D176C00E1BFEB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E1A7DD7A208D176D00E1BFEB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E1A7DD78208D176C00E1BFEB /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		E1A7DD7A208D176D00E1BFEB /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		E1A7DD7D208D176D00E1BFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1A7DD7F208D176F00E1BFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1A7DD82208D176F00E1BFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		E1F862DF209471F900B39668 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		E1F862E12094760A00B39668 /* TestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCard.swift; sourceTree = "<group>"; };
 		E1F862E32094A38B00B39668 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		E1F862E52094F76500B39668 /* MoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsViewController.swift; sourceTree = "<group>"; };
+		E1F862E72094F77400B39668 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +69,15 @@
 			children = (
 				E1F862DF209471F900B39668 /* CollectionViewCell.swift */,
 				E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */,
-				E1A7DD78208D176C00E1BFEB /* FirstViewController.swift */,
-				E1A7DD7A208D176D00E1BFEB /* SecondViewController.swift */,
+				E1A7DD78208D176C00E1BFEB /* SkillsViewController.swift */,
+				E1A7DD7A208D176D00E1BFEB /* DiaryViewController.swift */,
 				E1A7DD7C208D176D00E1BFEB /* Main.storyboard */,
 				E1A7DD81208D176F00E1BFEB /* LaunchScreen.storyboard */,
 				E1A7DD84208D176F00E1BFEB /* Info.plist */,
 				E1F862E12094760A00B39668 /* TestCard.swift */,
 				E1F862E32094A38B00B39668 /* CardModel.swift */,
+				E1F862E52094F76500B39668 /* MoodsViewController.swift */,
+				E1F862E72094F77400B39668 /* ChallengesViewController.swift */,
 			);
 			path = "Therapy Helper";
 			sourceTree = "<group>";
@@ -147,11 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1A7DD7B208D176D00E1BFEB /* SecondViewController.swift in Sources */,
+				E1A7DD7B208D176D00E1BFEB /* DiaryViewController.swift in Sources */,
 				E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */,
 				E1F862E22094760B00B39668 /* TestCard.swift in Sources */,
 				E1F862E0209471F900B39668 /* CollectionViewCell.swift in Sources */,
-				E1A7DD79208D176C00E1BFEB /* FirstViewController.swift in Sources */,
+				E1F862E62094F76500B39668 /* MoodsViewController.swift in Sources */,
+				E1A7DD79208D176C00E1BFEB /* SkillsViewController.swift in Sources */,
+				E1F862E82094F77400B39668 /* ChallengesViewController.swift in Sources */,
 				E1F862E42094A38B00B39668 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

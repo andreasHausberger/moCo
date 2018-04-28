@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -32,24 +32,25 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
         var title: String?
         var description: String?
         
-        let send = UIAlertAction(title: "Send", style: .default, handler: <#T##((UIAlertAction) -> Void)?##((UIAlertAction) -> Void)?##(UIAlertAction) -> Void#>)
+        let send = UIAlertAction(title: "Send", style: .default) { _ in
+            if let textField1 = alert.textFields?[0] {
+                if let inputTitle = textField1.text {
+                    title = inputTitle
+                }
+            }
+            
+            if let textField2 = alert.textFields?[1] {
+                if let inputDescription = textField2.text {
+                    description = inputDescription
+                }
+            }
+            
+            if (title != nil && description != nil) {
+                self.sendCard(title: title!, description: description!)
+            }
+        }
+        
         alert.addAction(send)
-        
-        if let textField1 = alert.textFields?[0] {
-            if let inputTitle = textField1.text {
-                title = inputTitle
-            }
-        }
-        
-        if let textField2 = alert.textFields?[1] {
-            if let inputDescription = textField2.text {
-                description = inputDescription
-            }
-        }
-    
-        if (title != nil && description != nil) {
-            //sendCard(title: title!, description: description!)
-        }
         
         self.present(alert, animated: true, completion: nil)
     }
