@@ -13,6 +13,9 @@
 		E1A7DD7E208D176D00E1BFEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD7C208D176D00E1BFEB /* Main.storyboard */; };
 		E1A7DD80208D176F00E1BFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD7F208D176F00E1BFEB /* Assets.xcassets */; };
 		E1A7DD83208D176F00E1BFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD81208D176F00E1BFEB /* LaunchScreen.storyboard */; };
+		E1F862E0209471F900B39668 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862DF209471F900B39668 /* CollectionViewCell.swift */; };
+		E1F862E22094760B00B39668 /* TestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862E12094760A00B39668 /* TestCard.swift */; };
+		E1F862E42094A38B00B39668 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862E32094A38B00B39668 /* CardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E1A7DD7F208D176F00E1BFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1A7DD82208D176F00E1BFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1A7DD84208D176F00E1BFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F862DF209471F900B39668 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E1F862E12094760A00B39668 /* TestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCard.swift; sourceTree = "<group>"; };
+		E1F862E32094A38B00B39668 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 			children = (
 				E1A7DD75208D176C00E1BFEB /* Therapy Helper */,
 				E1A7DD74208D176C00E1BFEB /* Products */,
+				E1A7DD7F208D176F00E1BFEB /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +63,15 @@
 		E1A7DD75208D176C00E1BFEB /* Therapy Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E1F862DF209471F900B39668 /* CollectionViewCell.swift */,
 				E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */,
 				E1A7DD78208D176C00E1BFEB /* FirstViewController.swift */,
 				E1A7DD7A208D176D00E1BFEB /* SecondViewController.swift */,
 				E1A7DD7C208D176D00E1BFEB /* Main.storyboard */,
-				E1A7DD7F208D176F00E1BFEB /* Assets.xcassets */,
 				E1A7DD81208D176F00E1BFEB /* LaunchScreen.storyboard */,
 				E1A7DD84208D176F00E1BFEB /* Info.plist */,
+				E1F862E12094760A00B39668 /* TestCard.swift */,
+				E1F862E32094A38B00B39668 /* CardModel.swift */,
 			);
 			path = "Therapy Helper";
 			sourceTree = "<group>";
@@ -140,7 +149,10 @@
 			files = (
 				E1A7DD7B208D176D00E1BFEB /* SecondViewController.swift in Sources */,
 				E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */,
+				E1F862E22094760B00B39668 /* TestCard.swift in Sources */,
+				E1F862E0209471F900B39668 /* CollectionViewCell.swift in Sources */,
 				E1A7DD79208D176C00E1BFEB /* FirstViewController.swift in Sources */,
+				E1F862E42094A38B00B39668 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
