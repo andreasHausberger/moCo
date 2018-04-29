@@ -14,13 +14,10 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var collectionView: UICollectionView!
     
     let model: CardModel = CardModel()
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
     }
     
     @IBAction func addNewCard(_ sender: UIBarButtonItem) {
@@ -29,9 +26,11 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
         alert.addTextField(configurationHandler: nil)
         alert.addTextField(configurationHandler: nil)
         
+        //optional declaration of
         var title: String?
         var description: String?
         
+        //trailing closure --> last parameter "handler" is replaced by a closure
         let send = UIAlertAction(title: "Send", style: .default) { _ in
             if let textField1 = alert.textFields?[0] {
                 if let inputTitle = textField1.text {
@@ -45,8 +44,9 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
                 }
             }
             
-            if (title != nil && description != nil) {
+            if (title != "" && description != "") {
                 self.sendCard(title: title!, description: description!)
+                self.collectionView.reloadData();
             }
         }
         
@@ -54,13 +54,17 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         self.present(alert, animated: true, completion: nil)
     }
+    
+    
         
     
     
-    func sendCard(title: String, description: String) {
+    private func sendCard(title: String, description: String) {
         let card = TestCard(title: title, description: description)
         model.addCard(card: card)
     }
+    
+    
         
 
     override func didReceiveMemoryWarning() {
@@ -69,11 +73,17 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return model.cards.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+        if (!model.cards.isEmpty) {
+            let card = model.cards[indexPath.item]
+            
+            cell.displayContent(card: card)
+        }
+        return cell
     }
 
 

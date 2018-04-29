@@ -14,9 +14,12 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet var header: UILabel!
     @IBOutlet var text: UILabel!
     
-    func displayContent(headerContent: String, textContent: String) {
-        header.text = headerContent
-        text.text = textContent
+    func displayContent(card: TestCard) {
+        guard card.title != nil && card.description != nil else { return }
+        header.text = card.title!
+        text.text = card.description!
+        
+        self.layer.cornerRadius = 7
     }
     
     
