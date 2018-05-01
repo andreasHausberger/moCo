@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E13D61F920985C72007E3713 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61F820985C72007E3713 /* Skill.swift */; };
 		E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */; };
 		E1A7DD79208D176C00E1BFEB /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD78208D176C00E1BFEB /* SkillsViewController.swift */; };
 		E1A7DD7B208D176D00E1BFEB /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD7A208D176D00E1BFEB /* DiaryViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E13D61F820985C72007E3713 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		E1A7DD73208D176C00E1BFEB /* Therapy Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Therapy Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A7DD78208D176C00E1BFEB /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E13D61F5209859D1007E3713 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1A7DD78208D176C00E1BFEB /* SkillsViewController.swift */,
+				E1A7DD7A208D176D00E1BFEB /* DiaryViewController.swift */,
+				E1F862E52094F76500B39668 /* MoodsViewController.swift */,
+				E1F862E72094F77400B39668 /* ChallengesViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E13D61F620985C1B007E3713 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E13D61F720985C52007E3713 /* DataObject */ = {
+			isa = PBXGroup;
+			children = (
+				E13D61F820985C72007E3713 /* Skill.swift */,
+			);
+			path = DataObject;
+			sourceTree = "<group>";
+		};
 		E1A7DD6A208D176C00E1BFEB = {
 			isa = PBXGroup;
 			children = (
@@ -67,17 +95,16 @@
 		E1A7DD75208D176C00E1BFEB /* Therapy Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E13D61F720985C52007E3713 /* DataObject */,
+				E13D61F620985C1B007E3713 /* Model */,
+				E13D61F5209859D1007E3713 /* ViewController */,
 				E1F862DF209471F900B39668 /* CollectionViewCell.swift */,
 				E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */,
-				E1A7DD78208D176C00E1BFEB /* SkillsViewController.swift */,
-				E1A7DD7A208D176D00E1BFEB /* DiaryViewController.swift */,
 				E1A7DD7C208D176D00E1BFEB /* Main.storyboard */,
 				E1A7DD81208D176F00E1BFEB /* LaunchScreen.storyboard */,
 				E1A7DD84208D176F00E1BFEB /* Info.plist */,
 				E1F862E12094760A00B39668 /* TestCard.swift */,
 				E1F862E32094A38B00B39668 /* CardModel.swift */,
-				E1F862E52094F76500B39668 /* MoodsViewController.swift */,
-				E1F862E72094F77400B39668 /* ChallengesViewController.swift */,
 			);
 			path = "Therapy Helper";
 			sourceTree = "<group>";
@@ -156,6 +183,7 @@
 				E1A7DD7B208D176D00E1BFEB /* DiaryViewController.swift in Sources */,
 				E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */,
 				E1F862E22094760B00B39668 /* TestCard.swift in Sources */,
+				E13D61F920985C72007E3713 /* Skill.swift in Sources */,
 				E1F862E0209471F900B39668 /* CollectionViewCell.swift in Sources */,
 				E1F862E62094F76500B39668 /* MoodsViewController.swift in Sources */,
 				E1A7DD79208D176C00E1BFEB /* SkillsViewController.swift in Sources */,
