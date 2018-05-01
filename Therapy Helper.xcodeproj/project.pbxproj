@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E13D61F920985C72007E3713 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61F820985C72007E3713 /* Skill.swift */; };
+		E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FA20985FF4007E3713 /* SkillModel.swift */; };
+		E13D61FE209862B4007E3713 /* SkillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FD209862B4007E3713 /* SkillCell.swift */; };
 		E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */; };
 		E1A7DD79208D176C00E1BFEB /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD78208D176C00E1BFEB /* SkillsViewController.swift */; };
 		E1A7DD7B208D176D00E1BFEB /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD7A208D176D00E1BFEB /* DiaryViewController.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		E13D61F820985C72007E3713 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		E13D61FA20985FF4007E3713 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
+		E13D61FD209862B4007E3713 /* SkillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCell.swift; sourceTree = "<group>"; };
 		E1A7DD73208D176C00E1BFEB /* Therapy Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Therapy Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A7DD78208D176C00E1BFEB /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		E13D61F620985C1B007E3713 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E13D61FA20985FF4007E3713 /* SkillModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -73,6 +78,14 @@
 				E13D61F820985C72007E3713 /* Skill.swift */,
 			);
 			path = DataObject;
+			sourceTree = "<group>";
+		};
+		E13D61FC20986295007E3713 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E13D61FD209862B4007E3713 /* SkillCell.swift */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		E1A7DD6A208D176C00E1BFEB = {
@@ -95,6 +108,7 @@
 		E1A7DD75208D176C00E1BFEB /* Therapy Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E13D61FC20986295007E3713 /* CollectionViewCell */,
 				E13D61F720985C52007E3713 /* DataObject */,
 				E13D61F620985C1B007E3713 /* Model */,
 				E13D61F5209859D1007E3713 /* ViewController */,
@@ -181,8 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1A7DD7B208D176D00E1BFEB /* DiaryViewController.swift in Sources */,
+				E13D61FE209862B4007E3713 /* SkillCell.swift in Sources */,
 				E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */,
 				E1F862E22094760B00B39668 /* TestCard.swift in Sources */,
+				E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */,
 				E13D61F920985C72007E3713 /* Skill.swift in Sources */,
 				E1F862E0209471F900B39668 /* CollectionViewCell.swift in Sources */,
 				E1F862E62094F76500B39668 /* MoodsViewController.swift in Sources */,

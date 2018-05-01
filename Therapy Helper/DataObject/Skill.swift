@@ -40,7 +40,7 @@ class Skill {
     }
     
     func displayText(short: Bool) -> String {
-        //TODO: Shorten description text accordingly and append "..."
+        //TODO: Shorten description text accordingly and append "..." after the last word
         return self.text
     }
 }
