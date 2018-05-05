@@ -13,7 +13,7 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let model: CardModel = CardModel()
+    let skillModel = SkillModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,36 +21,20 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     @IBAction func addNewCard(_ sender: UIBarButtonItem) {
-        let alert = UIAlertController(title: "Add New Card", message: "Please enter information to add a new Card", preferredStyle: .alert)
-        
-        alert.addTextField(configurationHandler: nil)
-        alert.addTextField(configurationHandler: nil)
-        
-        //optional declaration of
-        var title: String?
-        var description: String?
+        let alert = UIAlertController(title: "Add New Skill", message: "Please choose a Skill Category", preferredStyle: .alert)
         
         //trailing closure --> last parameter "handler" is replaced by a closure
-        let send = UIAlertAction(title: "Send", style: .default) { _ in
-            if let textField1 = alert.textFields?[0] {
-                if let inputTitle = textField1.text {
-                    title = inputTitle
-                }
-            }
-            
-            if let textField2 = alert.textFields?[1] {
-                if let inputDescription = textField2.text {
-                    description = inputDescription
-                }
-            }
-            
-            if (title != "" && description != "") {
-                self.sendCard(title: title!, description: description!)
-                self.collectionView.reloadData();
-            }
+        let catMental = UIAlertAction(title: "Mental", style: .default) { _ in
+            self.addSkill(categoryNumber: 1)
         }
         
-        alert.addAction(send)
+        let catPhysical = UIAlertAction(title: "Physical", style: .default) { _ in
+            self.addSkill(categoryNumber: 2)
+        }
+        
+        alert.addAction(catMental)
+        alert.addAction(catPhysical)
+        
         
         self.present(alert, animated: true, completion: nil)
     }
@@ -59,9 +43,10 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
         
     
     
-    private func sendCard(title: String, description: String) {
-        let card = TestCard(title: title, description: description)
-        model.addCard(card: card)
+    private func addSkill(categoryNumber: Int) {
+        let skill = Skill(name: "Test", text: "Lorem Ipsum Dolor Sit Amet", timer: 5, creationDate: Date(), categoryNumber: categoryNumber)
+        skillModel.addSkill(skill: skill)
+        self.collectionView.reloadData()
     }
     
     
@@ -73,15 +58,17 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return model.cards.count
+        return skillModel.getSkills().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-        if (!model.cards.isEmpty) {
-            let card = model.cards[indexPath.item]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SkillCell", for: indexPath) as! SkillCell
+        if (!skillModel.getSkills().isEmpty) {
+            // let card = model.cards[indexPath.item]
+            let skill = skillModel.getSkills()[indexPath.item]
+            cell.configureContent(from: skill)
             
-            cell.displayContent(card: card)
+            cell.layer.cornerRadius = 10
         }
         return cell
     }

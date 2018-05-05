@@ -19,12 +19,12 @@ class SkillCell: UICollectionViewCell {
     
     @IBOutlet weak var timerText: UILabel!
     
-    func configureContent(_from skill: Skill) {
+    func configureContent(from skill: Skill) {
         name.text = skill.name
         text.text = skill.text
         
         if (skill.timer != 0) {
-            timer.text = skill.timer
+            timer.text = skill.timer.description
             timerText.text = "Timer"
         }
         else {

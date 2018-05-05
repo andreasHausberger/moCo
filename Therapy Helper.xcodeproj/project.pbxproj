@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E13D61F920985C72007E3713 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61F820985C72007E3713 /* Skill.swift */; };
 		E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FA20985FF4007E3713 /* SkillModel.swift */; };
 		E13D61FE209862B4007E3713 /* SkillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FD209862B4007E3713 /* SkillCell.swift */; };
 		E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */; };
@@ -16,6 +15,7 @@
 		E1A7DD7E208D176D00E1BFEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD7C208D176D00E1BFEB /* Main.storyboard */; };
 		E1A7DD80208D176F00E1BFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD7F208D176F00E1BFEB /* Assets.xcassets */; };
 		E1A7DD83208D176F00E1BFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD81208D176F00E1BFEB /* LaunchScreen.storyboard */; };
+		E1E425C1209DD8E900A82398 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E425C0209DD8E900A82398 /* Skill.swift */; };
 		E1F862E0209471F900B39668 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862DF209471F900B39668 /* CollectionViewCell.swift */; };
 		E1F862E22094760B00B39668 /* TestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862E12094760A00B39668 /* TestCard.swift */; };
 		E1F862E42094A38B00B39668 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862E32094A38B00B39668 /* CardModel.swift */; };
@@ -24,7 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E13D61F820985C72007E3713 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		E13D61FA20985FF4007E3713 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
 		E13D61FD209862B4007E3713 /* SkillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCell.swift; sourceTree = "<group>"; };
 		E1A7DD73208D176C00E1BFEB /* Therapy Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Therapy Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +34,7 @@
 		E1A7DD7F208D176F00E1BFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1A7DD82208D176F00E1BFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1A7DD84208D176F00E1BFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E425C0209DD8E900A82398 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		E1F862DF209471F900B39668 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		E1F862E12094760A00B39668 /* TestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCard.swift; sourceTree = "<group>"; };
 		E1F862E32094A38B00B39668 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		E13D61F720985C52007E3713 /* DataObject */ = {
 			isa = PBXGroup;
 			children = (
-				E13D61F820985C72007E3713 /* Skill.swift */,
+				E1E425C0209DD8E900A82398 /* Skill.swift */,
 			);
 			path = DataObject;
 			sourceTree = "<group>";
@@ -199,11 +199,11 @@
 				E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */,
 				E1F862E22094760B00B39668 /* TestCard.swift in Sources */,
 				E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */,
-				E13D61F920985C72007E3713 /* Skill.swift in Sources */,
 				E1F862E0209471F900B39668 /* CollectionViewCell.swift in Sources */,
 				E1F862E62094F76500B39668 /* MoodsViewController.swift in Sources */,
 				E1A7DD79208D176C00E1BFEB /* SkillsViewController.swift in Sources */,
 				E1F862E82094F77400B39668 /* ChallengesViewController.swift in Sources */,
+				E1E425C1209DD8E900A82398 /* Skill.swift in Sources */,
 				E1F862E42094A38B00B39668 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
