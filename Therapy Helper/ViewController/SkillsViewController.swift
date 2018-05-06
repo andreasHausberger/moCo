@@ -84,19 +84,6 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     
-        
-    
-    
-    
-    
-    
-        
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return skillModel.getSkills().count
     }
@@ -109,8 +96,20 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
             cell.configureContent(from: skill)
             
             cell.layer.cornerRadius = 10
+            
+            
         }
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? SkillCell {
+            if let skill = cell.skill {
+                if let destinationVC = segue.destination as? SkillDetailViewController {
+                    destinationVC.setUp(skill: skill)
+                }
+            }
+        }
     }
 
 

@@ -11,6 +11,7 @@ import CoreData
 
 class SkillCell: UICollectionViewCell {
     
+    var skill: Skill?
     
     @IBOutlet weak var name: UILabel!
     
@@ -21,6 +22,7 @@ class SkillCell: UICollectionViewCell {
     @IBOutlet weak var timerText: UILabel!
     
     func configureContent(from skill: Skill) {
+        self.skill = skill
         name.text = skill.name
         text.text = skill.text
         
