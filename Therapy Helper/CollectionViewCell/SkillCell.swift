@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SkillCell: UICollectionViewCell {
     
@@ -33,14 +34,17 @@ class SkillCell: UICollectionViewCell {
         }
         
         switch skill.category {
-        case .mental:
+        case 1:
             self.backgroundColor = UIColor(displayP3Red: 0.98, green: 0.78, blue: 0, alpha: 1)
             return
-        case .physical:
+        case 2:
             self.backgroundColor = UIColor(displayP3Red: 0.35, green: 0.78, blue: 0.98, alpha: 1)
             return
-        case .none:
+        case 0:
             self.backgroundColor = UIColor(displayP3Red: 0.60, green: 0.60, blue: 0.60, alpha: 1)
+        default:
+            self.backgroundColor = UIColor(displayP3Red: 0.60, green: 0.60, blue: 0.60, alpha: 1)
+
         }
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Skill: Codable {
+class SkillTemp: Codable {
     
     let name: String
     let text: String

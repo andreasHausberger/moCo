@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -18,23 +19,66 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        skillModel.loadSkills();
+        
     }
     
     @IBAction func addNewCard(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Add New Skill", message: "Please choose a Skill Category", preferredStyle: .alert)
         
+        alert.addTextField(configurationHandler: nil)
+        alert.addTextField(configurationHandler: nil)
+        
+        var skillCategoryNumber = 0
+        var skillName = ""
+        var skillText = ""
+        
         //trailing closure --> last parameter "handler" is replaced by a closure
         let catMental = UIAlertAction(title: "Mental", style: .default) { _ in
-            self.addSkill(categoryNumber: 1)
+            skillCategoryNumber = 1;
+            
+            if let name = alert.textFields?[0].text {
+                if name != "" {
+                    skillName = name
+                }
+            }
+            
+            if let text = alert.textFields?[1].text {
+                if text != "" {
+                    skillText = text
+                }
+            }
+            
+            if (skillText != "" && skillName != "") {
+                self.skillModel.addSkill(name: skillName, text: skillText, categoryNumber: skillCategoryNumber)
+                self.collectionView.reloadData()
+            }
+            
         }
         
         let catPhysical = UIAlertAction(title: "Physical", style: .default) { _ in
-            self.addSkill(categoryNumber: 2)
+            skillCategoryNumber = 2;
+            
+            if let name = alert.textFields?[0].text {
+                if name != "" {
+                    skillName = name
+                }
+            }
+            
+            if let text = alert.textFields?[1].text {
+                if text != "" {
+                    skillText = text
+                }
+            }
+            
+            if (skillText != "" && skillName != "") {
+                self.skillModel.addSkill(name: skillName, text: skillText, categoryNumber: skillCategoryNumber)
+                self.collectionView.reloadData()
+            }
         }
         
         alert.addAction(catMental)
         alert.addAction(catPhysical)
-        
         
         self.present(alert, animated: true, completion: nil)
     }
@@ -43,11 +87,7 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
         
     
     
-    private func addSkill(categoryNumber: Int) {
-        let skill = Skill(name: "Test", text: "Lorem Ipsum Dolor Sit Amet", timer: 5, creationDate: Date(), categoryNumber: categoryNumber)
-        skillModel.addSkill(skill: skill)
-        self.collectionView.reloadData()
-    }
+    
     
     
         

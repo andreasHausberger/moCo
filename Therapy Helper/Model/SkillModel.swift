@@ -13,40 +13,46 @@ import CoreData
 class SkillModel {
     private var skills: [Skill] = [Skill]()
     
-    
-    private let documentsDirectory: URL
-    private let archiveURL: URL
-    
-    init() {
-        documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        archiveURL = documentsDirectory.appendingPathComponent("saved_skills").appendingPathComponent("plist")
-    }
-    
-    func addSkill(skill: Skill) {
-            skills.append(skill)
+    func addSkill(name: String, text: String, categoryNumber: Int) {
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let context = delegate.persistentContainer.viewContext
+        
+        let entity = NSEntityDescription.entity(forEntityName: "Skill", in: context)
+        
+        let newSkill = Skill(entity: entity!, insertInto: context)
+        
+        newSkill.name = name
+        newSkill.text = text
+        newSkill.category = Int64(categoryNumber)
+        newSkill.creationDate = Date()
+        newSkill.timer = Int64(0)
+        
+        delegate.saveContext()
+        print(newSkill.description)
+        skills.append(newSkill)
     }
     
     func getSkills() -> [Skill] {
         return skills
     }
     
-    func saveSkills() {
-        let propertyListEncoder = PropertyListEncoder()
-        let encodedSkills = try? propertyListEncoder.encode(skills)
-        
-        try? encodedSkills?.write(to: archiveURL, options: .noFileProtection)
-        print("save successful!")
-    }
-    
-    func loadSkills() throws {
-        let propertyListDecoder = PropertyListDecoder()
-        if let retrievedSkillsData = try? Data(contentsOf: archiveURL) {
-            if let retrievedSkills = try? propertyListDecoder.decode(Array<Skill>.self, from: retrievedSkillsData) {
-                skills = retrievedSkills
-                print("load successful!")
+    func loadSkills() {
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let context = delegate.persistentContainer.viewContext
+        do {
+            if let fetchedSkills = try context.fetch(Skill.fetchRequest()) as? [Skill] {
+                if !fetchedSkills.isEmpty {
+                    skills = fetchedSkills;
+                }
             }
+            
+        }
+        catch {
+            print("Fetch failed")
         }
     }
+    
+    
     
     
 }
