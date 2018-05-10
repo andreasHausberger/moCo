@@ -1,0 +1,21 @@
+PODS:
+  - FHIR (3.0.0)
+
+DEPENDENCIES:
+  - FHIR (from `https://github.com/smart-on-fhir/Swift-FHIR.git`)
+
+EXTERNAL SOURCES:
+  FHIR:
+    :git: https://github.com/smart-on-fhir/Swift-FHIR.git
+
+CHECKOUT OPTIONS:
+  FHIR:
+    :commit: f3837165cae41e7c07362fd4fa77d22b8778155d
+    :git: https://github.com/smart-on-fhir/Swift-FHIR.git
+
+SPEC CHECKSUMS:
+  FHIR: 62ef849618a11e4b8d219fbbcde33b9d39b7a257
+
+PODFILE CHECKSUM: e273ea33c2d6caff831b889edfb1322b1ecd0d1e
+
+COCOAPODS: 1.5.2

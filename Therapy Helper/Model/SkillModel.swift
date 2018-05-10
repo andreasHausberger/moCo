@@ -26,10 +26,10 @@ class SkillModel {
         newSkill.category = Int64(categoryNumber)
         newSkill.creationDate = Date()
         newSkill.timer = Int64(0)
-        
-        delegate.saveContext()
-        print(newSkill.description)
         skills.append(newSkill)
+
+        delegate.saveContext()
+        
     }
     
     func getSkills() -> [Skill] {

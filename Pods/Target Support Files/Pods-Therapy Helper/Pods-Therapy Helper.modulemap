@@ -1,0 +1,6 @@
+framework module Pods_Therapy_Helper {
+  umbrella header "Pods-Therapy Helper-umbrella.h"
+
+  export *
+  module * { export * }
+}

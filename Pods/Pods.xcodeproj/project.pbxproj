@@ -1,0 +1,1352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000B08CEF95B9C7B26B69CEFE46D525F /* DeviceMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2936EBC219E61B06F0EC7F233B6D15 /* DeviceMetric.swift */; };
+		01645D8636531505B0A8ED7D17DE8FAA /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EB3F402D04D3D9CEF80014323B8288 /* Appointment.swift */; };
+		038A76DF55EF363162688F619341E8EA /* ActivityDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F9E25B3F5A154A4F43F5169D772A9F /* ActivityDefinition.swift */; };
+		048BEF7C7C23ABD3A45B838CAF7A7C5B /* FHIRServerDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C239054DD79D0C5B8A962DEBAAD14F6 /* FHIRServerDataResponse.swift */; };
+		083E84796057CD003016AA6643481B18 /* ClaimResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B78AA95B118F8D538AD2C05A45B86 /* ClaimResponse.swift */; };
+		0A53BFB15736D438D7525985747204CE /* AuditEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA7C7AD49923713ED1FF442811BC8FB /* AuditEvent.swift */; };
+		0AB531658DBA36B13B221824D804C7F8 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B7DA7A8D9D1FD9461B5D16AD8B65A3 /* Parameters.swift */; };
+		0BAE455A5045D08C8FADBDE6732E0F0C /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D7DCEC08B237EAACD263C27D52AF6 /* Resource.swift */; };
+		0BEA2724EBBB1DA2649731CA81F7DBA5 /* DataRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2759CD70EAE788CFBD4DC2B780A6B47 /* DataRequirement.swift */; };
+		0C8B2D04F7BE36BFE108A51552F1C39C /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468870749227940D59CAED243CBBE3A /* Media.swift */; };
+		0DA5C54628DC7F9E78BFBDA232B6BBB3 /* StructureMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D902532D91873028CED472E27D83B88 /* StructureMap.swift */; };
+		0E01E14A0295C1C1CE82439FD729F1F4 /* TriggerDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A435FC6D88BDD6B3585CCA82CC7A77B2 /* TriggerDefinition.swift */; };
+		0E0877753D976A764A3384AF15FF52BB /* FamilyMemberHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE298A40318EC31C015B42A8C4078AB /* FamilyMemberHistory.swift */; };
+		0E4AEC3882EE0B38CA4672A22774F5AC /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2640784082D70ED87879F9F5D672F /* Duration.swift */; };
+		0F86543C0984745A85717B4EC666E910 /* Practitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E8227577745350AA5364C263E87F0E /* Practitioner.swift */; };
+		118B119A768C0512552C64F7BB398F2C /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2791A2B34E533CB4A7BD549A117C9 /* Observation.swift */; };
+		11A3D9B684B2023EC352C7A9EAB7AD3B /* RelatedArtifact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DEF600F1B8B8EA70E8E68D4B09913E /* RelatedArtifact.swift */; };
+		12102541FA589AA546D1EC9736344CEC /* Coverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9C6A205DB0676F123C473A301FB9A2 /* Coverage.swift */; };
+		13032489473BE59C7269FACCECC8302A /* Questionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBCCFFB05754CFA4AC83DED32677300 /* Questionnaire.swift */; };
+		1453DFD8F81B1B1CF438626C0F95442D /* SupplyDelivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D2750802394401027015C833CB6D3E /* SupplyDelivery.swift */; };
+		15816B58294CD0B6450B14534D5A3452 /* FHIRRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB934D6D3E7961565108734FAA19920A /* FHIRRequest.swift */; };
+		161EDE373B8CE2A1FEA16730A040E064 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF1801E6ABFC83C609416393454933E /* Schedule.swift */; };
+		164DBF0AB4BADBF90D9A07D02407DA2E /* Reference+Resolving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F2B1AEA383D4F34758842937657D0 /* Reference+Resolving.swift */; };
+		179A1345569F125E0C40932E469D6256 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3002CB7840AFFB480B11D5106EB78D /* Range.swift */; };
+		19336A8AB508EAD60775B4E1343A5B12 /* RequestGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E48ECD6FC81FD10053C31625835847 /* RequestGroup.swift */; };
+		1B62C4BAEEC7B8593572B2904E732552 /* Substance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7CC9B1328499FCB48B75D855BA1BE /* Substance.swift */; };
+		1C4FF9DF85FC02C1FBF2EC42EAF5A9D9 /* Encounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669EED3048CAD1CAEDF6D6514855B620 /* Encounter.swift */; };
+		1D7821301B1454F2793F31D9871397CA /* AdverseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF3E0676F460A13AF087FC9502B1A89 /* AdverseEvent.swift */; };
+		2082B2BE48D6483255BEF8D30C46C7B1 /* FHIREnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E620369A9CC3B3B08DF0C87F5766D4D /* FHIREnum.swift */; };
+		21316E1BE1EEDAE7A23E9B27DE859A3D /* StructureDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E22497C782578BE1603D01E3279D6 /* StructureDefinition.swift */; };
+		215061E2153DC63A4753524C3D2E754B /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729AC5CA39A36342D574EE9435185944 /* Goal.swift */; };
+		22DA8EE3865040E0F2D18A45DDBEDC51 /* ValueSet+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFEF58017629E0927242ECC2652D1E5 /* ValueSet+Localization.swift */; };
+		231C44B2823FEC391524EFBCF5EC133D /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D51004EE364CCC652BBF7B19D1166 /* Organization.swift */; };
+		2406D4965F37B0B623CC0D7978D18341 /* Resource+Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D0576E22E12FB1D1BEA4EB0581259 /* Resource+Meta.swift */; };
+		2583026FF5EF4E5F25B608D1CB95C3FC /* CodeableConcept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920A05D09AB2136D25FB122D7FD4EDAB /* CodeableConcept.swift */; };
+		2677B6267C9D03B43DB52CF735076665 /* MedicationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA607A855955186EB3462FC4F56B97 /* MedicationRequest.swift */; };
+		27510FC3D51CB1ED86DDAE86C973D8F4 /* MedicationAdministration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC8A93876CEA49044918D9416F8771D /* MedicationAdministration.swift */; };
+		2872CA04F26F8CD7325BE477B327B3CC /* Resource+REST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E14627785DD9FBE4922416FFA21FE4E /* Resource+REST.swift */; };
+		2C23A800FF4C90A948306EEBBAF66B9C /* DeviceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D632D8F4079742C905160294BB469183 /* DeviceComponent.swift */; };
+		2DBF5557168048439DC7C2C1EF686E76 /* ImagingStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B86837D7B81185B178A2FDDA3205619 /* ImagingStudy.swift */; };
+		2DE0E376D3358CECE438BC9A71DA3D36 /* CapabilityStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C0CD64AC77741487BEE48B397DA60 /* CapabilityStatement.swift */; };
+		2EF7BE4F54E6BC3FCAD082E18D8B1BD9 /* Specimen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808CC6432939CD0D8DFE2FE88708477C /* Specimen.swift */; };
+		2F663DC0B6CC1A900BFF1227565383C2 /* GuidanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F08EBA585BF4B7CEFD5F77D484D6AF /* GuidanceResponse.swift */; };
+		2FBCE00F2A88AE77D259A5447E8F2C05 /* OperationDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889FD85F506BD9463075095CF0B02218 /* OperationDefinition.swift */; };
+		2FC80F25DDE307C8BBDB5F59E114857F /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373C2603A13F6E1AD68259119A87CD53 /* Meta.swift */; };
+		30B8C64DF710584F00F276B1C7930ADB /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA05160C0651ACD46BBAAC8D6F38C70 /* Sequence.swift */; };
+		32E24EA6DD832F352ED0F4875AA7AFD4 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936033651AA971D1351B7ECB4FF08660 /* Address.swift */; };
+		3816BF8498647B9608F9B34002D084A7 /* FHIRMinimalServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C07CE4D40C36651D801D6B109939123 /* FHIRMinimalServer.swift */; };
+		38FE27A9DF1C921E015933FFD5D1E460 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB4236C2153630B07D8CAA58EF96082 /* Device.swift */; };
+		39BEA51D310FCAC5CE4DFB3299C231F7 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC1C8ADDCEE61A60AE79AD7C7A9270 /* Distance.swift */; };
+		3A2D5149C2B8C6A2EAEC35CBF5C50E83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		3B90ADD1C1514C1F14C2185D09067214 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40286A241D2697607147B037A5910A32 /* Signature.swift */; };
+		3BE3EE6C953EE44ABBC4FD9C291989F2 /* EnrollmentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00A1C12305F76C8EF88C810CF38B43 /* EnrollmentRequest.swift */; };
+		3C78BAFE54224F68DC517F7DF97BC7C5 /* PlanDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC4BC61EA6AEACACCD47A87E5E9EC6 /* PlanDefinition.swift */; };
+		3D7F54A385338C55EA4EADBAE4AE7287 /* DeviceUseStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D6A65B883B3902C84FE5E2BEABA038 /* DeviceUseStatement.swift */; };
+		3F1E7B7D51F0A87926CD3E1E2A540E97 /* Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE73251BD04F58E5187213EC5FA3F8C /* Basic.swift */; };
+		3F1E97BB20D4952963DFC8E9D8BCCA83 /* EpisodeOfCare.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5F2830F0F6BCAAB076ACD584C139DA /* EpisodeOfCare.swift */; };
+		3FBDFC242649EB03FF72F34A620080B7 /* PractitionerRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B56665A7A4F00EDCF2124C60D4A769 /* PractitionerRole.swift */; };
+		401F1A462DE6EB9470B82BBEEDF60D32 /* ServiceDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6AB6B7EA138B2CFAEE680746A431AD /* ServiceDefinition.swift */; };
+		407442785056C964FC76236EAA035AB3 /* HealthcareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A952F7A553A3D8CEA5D9680558CF4E00 /* HealthcareService.swift */; };
+		4178FC9A5CE46AECC177B9DFE991943E /* Pods-Therapy Helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31978FEB6B2B64A4F330C516F9FCBC42 /* Pods-Therapy Helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41C8A43D0C5F250FD4D61C07CBA1A7AC /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC390D00EC154BB639483F69E949D52 /* Money.swift */; };
+		435EBC1B5C7B1103AFB6E0D46D69C259 /* Base64Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D4459A6A19D4E9E5ADE0DB50E70AD /* Base64Binary.swift */; };
+		4399CD66B5EAA050932242B5423E5DBE /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72BAD018F1CC9D25653A2112849B2F /* Condition.swift */; };
+		49922840E46B0F5334E485A1034CA168 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362E79D183D47316F2AE9E5421997E0 /* Identifier.swift */; };
+		4B4735B09B83D806F898F58E7F754ABD /* EligibilityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F332E77754330C50B13827895AF35BF /* EligibilityResponse.swift */; };
+		4BFF943077577C53D3CEC3298CD0F9F5 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F42F902572F830146AAB6CFADC9630 /* Contract.swift */; };
+		4C70D5A5AA546D5E6E8CA65C2E1BB0F4 /* ExpansionProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E012C276852145F528651EFD5359F2E /* ExpansionProfile.swift */; };
+		4D46F3D9A58D9CF03D5D8B0C1DA6EE45 /* DocumentManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A4EA5FF57C3AD723DE8FFE82F5F0DE /* DocumentManifest.swift */; };
+		4E09488E2A2A229E9BA3DC0F3172246A /* Narrative.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B076AC61E5F59249C5A61AE09CF120 /* Narrative.swift */; };
+		4F4F8F3971ECBA307BDC2D7FC9133437 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD50D45AEF6273F6A95104AA942A54E8 /* Reference.swift */; };
+		506028BD533A9EAA5F1ABC01222053EC /* FHIR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EF0D9C1DA507FA8CB24E6686216742 /* FHIR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		507BD392A9495640AF6324659A7F5F16 /* CareTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3810FA74FA2A0E40D30A297F95EE1825 /* CareTeam.swift */; };
+		507DCFBFD85762C01E448B98ADEC1CF7 /* DateAndTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ACD9D88C59366E3DDADB42E8F7E35E /* DateAndTime.swift */; };
+		50A75C47498D1B350DF5300E224678C6 /* Procedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0C5FF36978E459C64D164C892001 /* Procedure.swift */; };
+		50B6E2077AEA4C22ADAB9511B0B9206D /* ImplementationGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA88B64D3C19A2E1F7D243FF06940343 /* ImplementationGuide.swift */; };
+		5199B40AF03C9D41FB4C4749AB86C5F5 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC0A9230ECD8CBD092D8C786FB8B4D /* Patient.swift */; };
+		51A6D1C9C32D9020EC1BB9A0878C8DCD /* FHIRString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA166038AED5D97AB009D480B55A7A59 /* FHIRString.swift */; };
+		52558F7244ADBE082AD22E272BA7701C /* PaymentReconciliation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30AAC622EE3D5E23B55F3AEF59D33FA /* PaymentReconciliation.swift */; };
+		53286174C4BDA11E2657447F842DF854 /* ChargeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335FEB8887CA6AB944FEA99427C00E5C /* ChargeItem.swift */; };
+		536E548FB41F25AFE3D52D2CE6A77FF0 /* ExplanationOfBenefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8E5DFFA35BDBF1431709DFBFE9BF7 /* ExplanationOfBenefit.swift */; };
+		54CF50C80550F024361671A8F2508086 /* DomainResource+Containment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FABED70C01DB15967FEF99D0DCC666C /* DomainResource+Containment.swift */; };
+		55CEA91747CFC7792E6CFAE32D25CC9B /* QuestionnaireResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC93D921AA05C4872558DEFA1869537C /* QuestionnaireResponse.swift */; };
+		55F1DA30B9B3FB9BF2DA450C7FD9284A /* FHIRDecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783435C80868DBAA8C0F9EA90A3DC1D4 /* FHIRDecimal.swift */; };
+		56280D0DF1DFCF99B9E1904CA6D10841 /* FHIROperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87A836C328753DF56741F8877145912 /* FHIROperation.swift */; };
+		5712A9D2AC779B1255213AF401EDD536 /* RiskAssessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AECC49AB56C35139C886A3C3CD4F2E6 /* RiskAssessment.swift */; };
+		57636F9C55B97B0EB5FDCFEABD4A47B9 /* Dosage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3FDF564112D13526ABD9560C7573A /* Dosage.swift */; };
+		576F348BFEE7F0213AC42C5C24F5EB06 /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA332626CE01804863CDC5DFB6972AF4 /* ContactDetail.swift */; };
+		57C99136D3D9FA7D72E64D322D9699C5 /* FHIRInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE1838F3CA9B3C4692951207A0B14FA /* FHIRInteger.swift */; };
+		5914FBF622E9E871499BDCA25D57A70D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6E06E618C0D70C5F253C119CB2311 /* Endpoint.swift */; };
+		5A6A18F6E83DB75F964C5719920D7F67 /* TestScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95F7D32FBDE07A16BF035E59C1F8ACB /* TestScript.swift */; };
+		5B9EE964591C8D3F482B60CBBD1125D0 /* FHIRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE59F5A284AA86B21D41F642EB126C6 /* FHIRError.swift */; };
+		5BB9E713C45519B147D233F5CA9DF8E1 /* CodeSystems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2AF4453129474C643E8EAB48C43EE /* CodeSystems.swift */; };
+		5CB6BF494B767AC7DAB40EBEE080B616 /* MetadataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4BD31DD40EED483BDE62DCF15A083 /* MetadataResource.swift */; };
+		5F0345A50CDA16890C2CCC08194B7B75 /* Element+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC833CD23A77DFCDDAACCB4F8DEEC177 /* Element+Extensions.swift */; };
+		606D5396F51C52406007C9D3E068FEE6 /* AppointmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDC47131118052541A18954F41DCC17 /* AppointmentResponse.swift */; };
+		6293058D11B470D79313CD38C8CD219D /* FHIR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000146B92841BAB6C24F529518E85D8 /* FHIR-dummy.m */; };
+		633AC8F5D39D47CB509C9C93D15B11FA /* FHIRSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F56C23F2E422ABA6758CBFE483ABC /* FHIRSearch.swift */; };
+		635220B5F7245CB9D4AD9A9110A99D7C /* DomainResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37F5D890982D95D391910D7C841A6C /* DomainResource.swift */; };
+		6378B8E09F082339936B2BAD3FDC606C /* Patient+SMART.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159DE2D034AE87EA42997CFC8BA204F6 /* Patient+SMART.swift */; };
+		64395229C50FF96F9C3AC3731E106098 /* ProcedureRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B434BD4D6447808411150665B14AA2 /* ProcedureRequest.swift */; };
+		681EDD2E3297F6F61FC38100BB7FB344 /* DataElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A595887994DF984818615A747FE678D /* DataElement.swift */; };
+		688548CB10444483001484E81CF30F18 /* MedicationStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30DA76EDA6D9ACB7361DACA3D049403 /* MedicationStatement.swift */; };
+		6A3C8CB3167152A41EFD5BB59FDC9635 /* FHIRServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892172DB874497711F51F9BCD17F842D /* FHIRServerResponse.swift */; };
+		6EFA1E0316725BF42D3E724DD1F2F54F /* FHIRBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009FE7F04C5FD2727374E74126C7E1F3 /* FHIRBool.swift */; };
+		6FC6B2B4E563EF3029803565D8190CF2 /* UsageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E007EEC267CDB67726106C2658EDF017 /* UsageContext.swift */; };
+		7253711267D5DCE67301AD12CCBB0BB3 /* ParameterDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F0BA7E88F75FC0347A4CD90B77FD10 /* ParameterDefinition.swift */; };
+		73394127CEAE05C39A2A5F8B4564B3BC /* EnrollmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACBC6174789C7979A537FBDB20CF60B /* EnrollmentResponse.swift */; };
+		775E035522CB0798C4887B762C0F348E /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15092FDDFB877137FC81799E1A581A4E /* Annotation.swift */; };
+		7977FB04A2AC1CB688F4640614158CCF /* Resource+Instantiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E1018F9EE73413CE8BFB9F39D909E /* Resource+Instantiation.swift */; };
+		7AD04D8F91679053823428844606B3E6 /* CarePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BD7A239B582D8760CBF8381D73548 /* CarePlan.swift */; };
+		8012B20812C5D8EF88F223C763AF9445 /* MessageDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B482F916888C70B421D18838821A371 /* MessageDefinition.swift */; };
+		825A0407AAE292ECFF51C98AAC96E342 /* FHIRString+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578D9F720A7D7EC01BFE822BC59C01B /* FHIRString+Localization.swift */; };
+		8463E1F62485F7661F850B0443EF8A22 /* ElementDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA74A224E72E6218A90567A334AC21 /* ElementDefinition.swift */; };
+		855D7746CB9A713DC275B4CBAD8A762F /* GraphDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF6F3F3F9EC2EDA8A02C2E0B73321BD /* GraphDefinition.swift */; };
+		86B0CF6F41CC3CB89E62B33A84FB8BA2 /* Resource+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00C5076789A45762F077B6CCA7D36F /* Resource+Operation.swift */; };
+		8AE50DAD7C3E1F18CC17259809204CB1 /* FHIRServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B45F7CB8AC09E926BD14127C1F9B387 /* FHIRServer.swift */; };
+		8C171C04D09E4A12737D076302774DDB /* DeviceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519D18C81DDEF2F3714B097DCA1045F /* DeviceRequest.swift */; };
+		8D5EEFD3A47C12DDDC138FD92330E7A7 /* FHIRAbstractBase+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DB879CE0231BEE82BC22F04DED4129 /* FHIRAbstractBase+Factory.swift */; };
+		8D892D3ADE9FA452EC42836152B7DE63 /* ReferralRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5322F3F15346E352CA5D9E8A7413D9 /* ReferralRequest.swift */; };
+		8E83E8E3FCD54282E7BA500502998751 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0393AC2013EA0354DA3E1B1C89D783C /* Bundle.swift */; };
+		8F52B49E38D36C3DFE61B7DC6F7D661F /* TestReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEB07ABCCDC253968F1FCE017A85938 /* TestReport.swift */; };
+		918B3BCABA7FDC21B77580939CD1F7A6 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B476B87CE37C5B197BEFC9D4E3425 /* Coding.swift */; };
+		981A289788537BE1F27F81A1C79D1987 /* FHIRPrimitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A773E0CC000140F3D2E2E91488D947E6 /* FHIRPrimitive.swift */; };
+		98CEFC80429B0F1FBDD9BEBB01D36F6A /* ValueSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04A10CFE9AB035FAEBC6904C026F812 /* ValueSet.swift */; };
+		98F5E26291F52B950FD673D39095B15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		9A5905B98BD28029955FD24B9B0F5147 /* MeasureReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504CF434554CA7B2B37BC4CCD5DC9229 /* MeasureReport.swift */; };
+		9B145D1489848DF05332C51B26E99040 /* Pods-Therapy Helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C788780CE0B4981D7D76FB3F1B98F6 /* Pods-Therapy Helper-dummy.m */; };
+		9BF02E3AB45F8A6DB61CB72D95A8B557 /* FHIRValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6867EBC3DE571F13E63E1595CB8A52 /* FHIRValidationError.swift */; };
+		9DE4EF640250FF1E346020A2750FD692 /* BackboneElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A098EF21B557566A3CDD5E3487E502 /* BackboneElement.swift */; };
+		9E1DB18E9FF9DE0C66BBF841915EF26F /* NamingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298DF488428406C92C13F308A89EFCB5 /* NamingSystem.swift */; };
+		9E2800452434225C42C3BDBBC474A5D2 /* FHIRAbstractResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B148DBED133A7CD6BA72D68F01BDB /* FHIRAbstractResource.swift */; };
+		A0568FE9A8285236E80AC9217E928210 /* Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C397C3DFDA90F151CA518B6C032759 /* Ratio.swift */; };
+		A127C5731AE82782FA5F42A44389B105 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E094278F36AA62A3668AC5A36551C95 /* Flag.swift */; };
+		A3C87606FD477DD9D82ED2A70FD537AB /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2D845D26F1C02816B3B8761729F54B /* Measure.swift */; };
+		A4ECD6CE83E7BF873B6E4545B49458CB /* Consent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D323AD5816DCD22E1AE76A130F10F435 /* Consent.swift */; };
+		A85E5FCB9635F0E2A809E38ADFA4E30D /* Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D853028818B17B5AC10273C9366459E /* Binary.swift */; };
+		AB6793817853B2095A9BBB7941C23988 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD90B1F9C34B589336DE7E17632BEA /* List.swift */; };
+		AB75BEF209EAC50D45D0680DFEDB4CCC /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B02714C63A069909971CF482BFFEA4 /* Attachment.swift */; };
+		ABB3E52B8114E13EC2EBDDE0ECF95692 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5913AD92AC3D5728AB383BCDD2191D2 /* Medication.swift */; };
+		AC1252A7DCA21F58E9AD6D5BF81D1374 /* ImagingManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9741B959C893A03A41BD5B7ACF710A /* ImagingManifest.swift */; };
+		B2202B5793D37FC43EA5CC9A0CF68A68 /* MedicationDispense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D7CF350C321329DE6476ABC22921B4 /* MedicationDispense.swift */; };
+		B3A60C705B1D2C1B4B3D5B337E89D8E7 /* DocumentReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4469B89730D936EDAEEABB4EA475F /* DocumentReference.swift */; };
+		B546AADAF7C2145CB090A96D9D708B03 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AA9FFBD65182C553F53DCAC6A2CF7D /* Location.swift */; };
+		B77D8784FD8D8BB2313E978DC33B1B7D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEABE0F9EC359F74F3DD88F811F34F0 /* Extension.swift */; };
+		BFFD5583BA589A87C5E91868747BBD1E /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B028D122E40A82B72F559076EC94A /* Communication.swift */; };
+		C0971B0CDBA3B63C72C14AC8197AC639 /* DiagnosticReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50939F1FDB80C2B52CCE6C36D4D25F0D /* DiagnosticReport.swift */; };
+		C1B14F44BF7250427FCBBE4021292C09 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9159EB7570D35E514DD3F3FC364CB259 /* Group.swift */; };
+		C1EFE0448F2782A04A00B6005C86CF49 /* CompartmentDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C060C4E77CD13046DF6DA8078EA716C4 /* CompartmentDefinition.swift */; };
+		C1FDA61812D89F373B8953DEABEEFE43 /* PaymentNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1299F265EE134161A47E7CA97F644 /* PaymentNotice.swift */; };
+		C31B90B0F44E873D4C4350CCD4EF001A /* FHIRType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22873E9848DA71517E5D03826B1A8A67 /* FHIRType.swift */; };
+		C3295C6C5B9CDBC3ECF55B325D91B03E /* EligibilityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD3EDD1D71784E773F948C2AE7596C /* EligibilityRequest.swift */; };
+		C5255DD4778A09ED31048B36833C93E7 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD0777D8616D87833624B6A1F4D29A /* Period.swift */; };
+		C53143C07B5AA24DDA8FF6FCACFCAB2A /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3905C0692B41210E55525BBDFC75D4 /* Subscription.swift */; };
+		C5E109121C5796D65B1F9091DC2DB86A /* Age.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C428D78F5AEB3F270ECAB14F36545BC /* Age.swift */; };
+		C7EECF338F9F48E676A21CDEC524C363 /* RelatedPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7839A45DBDA7656B7959EB5563193BDB /* RelatedPerson.swift */; };
+		CA3FEFBBBECA8254BF0E4BD3667EFA5A /* VisionPrescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93C6BE7B0EDADC00599264D257A60C2 /* VisionPrescription.swift */; };
+		CC9ACB6DE8FC772943B02A6C50E31DF5 /* Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574EA44E545662266199A711E834593E /* Timing.swift */; };
+		CD6BC94244782C1029047BCCCE88DE88 /* ImmunizationRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A32B7A2D4F6E60DFE5829228C1E86F /* ImmunizationRecommendation.swift */; };
+		CF6E6B612D8C962B62FEB8BD759E5C79 /* ProcessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68FEE4956C6BB577BD836923C696A21 /* ProcessRequest.swift */; };
+		D50DC18F2A38DABA4AAEA4C1469DAEA7 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5E7384CFE4BB0A0AD5438A22802533 /* Element.swift */; };
+		D66FE2CD5AF590DDD4FD1067277D9084 /* SupplyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69034F2873D8EF639C51D79E5B69BC2C /* SupplyRequest.swift */; };
+		D675CA28A917FA3F331B2DEB9BEBC386 /* SearchParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1530F11156CE83974D7607CF790267 /* SearchParameter.swift */; };
+		D6DE30EC0A357A9513A71A84582E0E93 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB7DB3BC12B7A81C95FD10796C452D /* Slot.swift */; };
+		D8B5F66B834F4A6DD718F5B7202E163F /* Provenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC2E92967318F28D8862ECFB2F7052 /* Provenance.swift */; };
+		DA06A6A44A68C3B61353E544386D149E /* ResearchStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D9BD190C8192CB1F1CFEDD6A238A1 /* ResearchStudy.swift */; };
+		DB33F7AE668B772BD10D1171B2A22E86 /* Immunization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E361418FBA19E3134D60A9079FFF7 /* Immunization.swift */; };
+		DC285F0D5F09E21CEB0FED5E4AF3FC5D /* CodeSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4C7BE53960E588BDD16E4CA9185BE0 /* CodeSystem.swift */; };
+		DD50C32543F51169EEC2DC72A3985A60 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6036E364E4A742BCFA6A5A09EAE8AF /* Account.swift */; };
+		DDFDB1B4BA4C91D2ECD02299A9996236 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C1A3CF9A79F2B5BDA6EAB6052338C3 /* Person.swift */; };
+		DEDA01D1E5A7B36A024CE6A0D0D106CD /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7F9F9BA08D2BBCE6B939D4CA7F1413 /* Contributor.swift */; };
+		E008C5DBADB4B86B9436F884DD0E7F54 /* ProcessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A810F8C513684F528D578CC13569A6 /* ProcessResponse.swift */; };
+		E0BDA9CF70807E2C83393FB4615C48A9 /* SampledData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAF6EB37B3224EA21C461A959C81DA9 /* SampledData.swift */; };
+		E42489D10100EC8DDBC2FEB63EA6718D /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EBAF4504E15658EDFD60C070D78C0 /* Count.swift */; };
+		E49422F322BA2DFAC8FF676D3C68E884 /* FHIRAbstractBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8601EE766BD7D522D7987FC68477701A /* FHIRAbstractBase.swift */; };
+		E5317B76B62C5218B2C807378BB6005E /* Claim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B303111B70EBED8A276B08DD2484515 /* Claim.swift */; };
+		E7E57AEA448EF7076C9384EC73DFC129 /* BodySite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74DBC884F04BB0E7176A8238685231 /* BodySite.swift */; };
+		E9D2EE6A4EB18F48BDEE9CB8BDF98197 /* DetectedIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6108C9FCC7116D80238447487CF9C7C3 /* DetectedIssue.swift */; };
+		EC574B720BBB6A7C5693376C7428E0C7 /* FHIRBaseServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F6CDE81A6C73899DF2D85E4E6E4543 /* FHIRBaseServer.swift */; };
+		ED4019B083EE424530763369137E584F /* AllergyIntolerance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC77978846F15809FBA014381F2EC40 /* AllergyIntolerance.swift */; };
+		EF158E1FDCF096F841E9C18050C8C03A /* ConceptMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7213BA28CCB3AE26CFB6020B75F7483C /* ConceptMap.swift */; };
+		EF908F9EE348E2B7FA2CE15468C1B342 /* Quantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0724D8C82C30587094A31458CB2810C /* Quantity.swift */; };
+		EFA486BE7F5A4AF7968DCD2EEC2628C3 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A18D5CF72C1159EE16A0E9FDC02E4F /* Library.swift */; };
+		F0F93988E338EE813E8B359F87C2AEEF /* Composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C417EBF275B641D4EF1003C5D17D4233 /* Composition.swift */; };
+		F16B001948552BA83EFA7BE5E7114691 /* ContactPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A73694BC81FFFC22A44800FDAF9F0DF /* ContactPoint.swift */; };
+		F1C2F6F6223291E331D612FAF983EB43 /* ClinicalImpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29D8BE7AC13638B74BEF8AC81FEC5A /* ClinicalImpression.swift */; };
+		F38FDA3E5D3117591D08F82DD999DD60 /* MessageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBCC08103698B15B1266609DFDCF94 /* MessageHeader.swift */; };
+		F4E686CD7C1D32038173769142911771 /* CommunicationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4816CDED8907BD49071DF934EADED328 /* CommunicationRequest.swift */; };
+		F537BBDD7E704ABE955B75F98E192E4B /* FHIRBaseRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D8F052D389D24CDC8C6B1B636B7B8E /* FHIRBaseRequestHandler.swift */; };
+		F6424DE8511A2B349D4DE99E3264BD9A /* FHIRRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416DA76339CA64C76BAC075A739442B /* FHIRRequestHandler.swift */; };
+		F6ED4F6F3374A1D01CB09C618B38C858 /* FHIRURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC571DAA976BFE36FDDA2695F6EBBB /* FHIRURL.swift */; };
+		F7993515DB430AD0DABD5D8060197CDD /* OperationOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7961A2B6B877B226368064ACEC0CA2 /* OperationOutcome.swift */; };
+		F8A6F71D963309C776C3D59E52BDB3A5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21EE7AB24839DB864478A5A87EED0AF /* Task.swift */; };
+		F930EE20C07D96561F2F2CFD1B9B777E /* ResearchSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E3C644DF7DA37AB5A38841DED22E01 /* ResearchSubject.swift */; };
+		F94BC9A7AC2B1BA14E68560A3F70EA77 /* HumanName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655CEFD3B25300279570774B35C58861 /* HumanName.swift */; };
+		F9884FD890BF7492B09E5B38DD8E0775 /* Linkage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9482D130E296CAEA17301285C943CC31 /* Linkage.swift */; };
+		FAD4C62FDD9CFDE51F986C7B761C1A87 /* NutritionOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5181093FE4D824FA26755B34DE30B9 /* NutritionOrder.swift */; };
+		FC5112FE706C76FF7FDD32C6E6A246C8 /* FHIROpenServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AFA3149DF295258618E2C8DD7D4AC5 /* FHIROpenServer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		487BDA3C8003F657DB716FC1EE6C5BED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87B1175587B9922AE67F698800FFDC4C;
+			remoteInfo = FHIR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0000146B92841BAB6C24F529518E85D8 /* FHIR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FHIR-dummy.m"; sourceTree = "<group>"; };
+		009FE7F04C5FD2727374E74126C7E1F3 /* FHIRBool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRBool.swift; path = Sources/Models/FHIRBool.swift; sourceTree = "<group>"; };
+		01D2750802394401027015C833CB6D3E /* SupplyDelivery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupplyDelivery.swift; path = Sources/Models/SupplyDelivery.swift; sourceTree = "<group>"; };
+		03D7CF350C321329DE6476ABC22921B4 /* MedicationDispense.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicationDispense.swift; path = Sources/Models/MedicationDispense.swift; sourceTree = "<group>"; };
+		04EB3F402D04D3D9CEF80014323B8288 /* Appointment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Appointment.swift; path = Sources/Models/Appointment.swift; sourceTree = "<group>"; };
+		08D8F052D389D24CDC8C6B1B636B7B8E /* FHIRBaseRequestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRBaseRequestHandler.swift; path = Sources/Client/FHIRBaseRequestHandler.swift; sourceTree = "<group>"; };
+		0A645A08EAF02672A91E0666D9649E27 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B3F2B1AEA383D4F34758842937657D0 /* Reference+Resolving.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Reference+Resolving.swift"; path = "Sources/Client/Reference+Resolving.swift"; sourceTree = "<group>"; };
+		0C7F9F9BA08D2BBCE6B939D4CA7F1413 /* Contributor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contributor.swift; path = Sources/Models/Contributor.swift; sourceTree = "<group>"; };
+		0CEABE0F9EC359F74F3DD88F811F34F0 /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = Sources/Models/Extension.swift; sourceTree = "<group>"; };
+		0D902532D91873028CED472E27D83B88 /* StructureMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructureMap.swift; path = Sources/Models/StructureMap.swift; sourceTree = "<group>"; };
+		0E3002CB7840AFFB480B11D5106EB78D /* Range.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Range.swift; path = Sources/Models/Range.swift; sourceTree = "<group>"; };
+		0FA7920D8791E4018F143FCCE9F10F64 /* FHIR.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FHIR.xcconfig; sourceTree = "<group>"; };
+		12A098EF21B557566A3CDD5E3487E502 /* BackboneElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackboneElement.swift; path = Sources/Models/BackboneElement.swift; sourceTree = "<group>"; };
+		15092FDDFB877137FC81799E1A581A4E /* Annotation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Annotation.swift; path = Sources/Models/Annotation.swift; sourceTree = "<group>"; };
+		1519D18C81DDEF2F3714B097DCA1045F /* DeviceRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceRequest.swift; path = Sources/Models/DeviceRequest.swift; sourceTree = "<group>"; };
+		159DE2D034AE87EA42997CFC8BA204F6 /* Patient+SMART.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Patient+SMART.swift"; path = "Sources/Client/Patient+SMART.swift"; sourceTree = "<group>"; };
+		16AFA3149DF295258618E2C8DD7D4AC5 /* FHIROpenServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIROpenServer.swift; path = Sources/Client/FHIROpenServer.swift; sourceTree = "<group>"; };
+		1A6036E364E4A742BCFA6A5A09EAE8AF /* Account.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Account.swift; path = Sources/Models/Account.swift; sourceTree = "<group>"; };
+		1A72BAD018F1CC9D25653A2112849B2F /* Condition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Condition.swift; path = Sources/Models/Condition.swift; sourceTree = "<group>"; };
+		1C9B148DBED133A7CD6BA72D68F01BDB /* FHIRAbstractResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRAbstractResource.swift; path = Sources/Models/FHIRAbstractResource.swift; sourceTree = "<group>"; };
+		1E620369A9CC3B3B08DF0C87F5766D4D /* FHIREnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIREnum.swift; path = Sources/Models/FHIREnum.swift; sourceTree = "<group>"; };
+		1E6BD7A239B582D8760CBF8381D73548 /* CarePlan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CarePlan.swift; path = Sources/Models/CarePlan.swift; sourceTree = "<group>"; };
+		1F6AB6B7EA138B2CFAEE680746A431AD /* ServiceDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceDefinition.swift; path = Sources/Models/ServiceDefinition.swift; sourceTree = "<group>"; };
+		22873E9848DA71517E5D03826B1A8A67 /* FHIRType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRType.swift; path = Sources/Models/FHIRType.swift; sourceTree = "<group>"; };
+		25CC2E92967318F28D8862ECFB2F7052 /* Provenance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Provenance.swift; path = Sources/Models/Provenance.swift; sourceTree = "<group>"; };
+		298DF488428406C92C13F308A89EFCB5 /* NamingSystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamingSystem.swift; path = Sources/Models/NamingSystem.swift; sourceTree = "<group>"; };
+		2A595887994DF984818615A747FE678D /* DataElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataElement.swift; path = Sources/Models/DataElement.swift; sourceTree = "<group>"; };
+		2B303111B70EBED8A276B08DD2484515 /* Claim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Claim.swift; path = Sources/Models/Claim.swift; sourceTree = "<group>"; };
+		2CEB07ABCCDC253968F1FCE017A85938 /* TestReport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestReport.swift; path = Sources/Models/TestReport.swift; sourceTree = "<group>"; };
+		31978FEB6B2B64A4F330C516F9FCBC42 /* Pods-Therapy Helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Therapy Helper-umbrella.h"; sourceTree = "<group>"; };
+		31D6A65B883B3902C84FE5E2BEABA038 /* DeviceUseStatement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceUseStatement.swift; path = Sources/Models/DeviceUseStatement.swift; sourceTree = "<group>"; };
+		322549D20358DB7F1B117E97814652A2 /* Pods-Therapy Helper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Therapy Helper-frameworks.sh"; sourceTree = "<group>"; };
+		335FEB8887CA6AB944FEA99427C00E5C /* ChargeItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChargeItem.swift; path = Sources/Models/ChargeItem.swift; sourceTree = "<group>"; };
+		36E30199773D855193FD6A22AA071CDD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		373C2603A13F6E1AD68259119A87CD53 /* Meta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Meta.swift; path = Sources/Models/Meta.swift; sourceTree = "<group>"; };
+		3810FA74FA2A0E40D30A297F95EE1825 /* CareTeam.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CareTeam.swift; path = Sources/Models/CareTeam.swift; sourceTree = "<group>"; };
+		38FD90B1F9C34B589336DE7E17632BEA /* List.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = List.swift; path = Sources/Models/List.swift; sourceTree = "<group>"; };
+		39CD0777D8616D87833624B6A1F4D29A /* Period.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Period.swift; path = Sources/Models/Period.swift; sourceTree = "<group>"; };
+		3ACBC6174789C7979A537FBDB20CF60B /* EnrollmentResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnrollmentResponse.swift; path = Sources/Models/EnrollmentResponse.swift; sourceTree = "<group>"; };
+		3B9741B959C893A03A41BD5B7ACF710A /* ImagingManifest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagingManifest.swift; path = Sources/Models/ImagingManifest.swift; sourceTree = "<group>"; };
+		3DBC571DAA976BFE36FDDA2695F6EBBB /* FHIRURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRURL.swift; path = Sources/Models/FHIRURL.swift; sourceTree = "<group>"; };
+		3E012C276852145F528651EFD5359F2E /* ExpansionProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpansionProfile.swift; path = Sources/Models/ExpansionProfile.swift; sourceTree = "<group>"; };
+		3F0B476B87CE37C5B197BEFC9D4E3425 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/Models/Coding.swift; sourceTree = "<group>"; };
+		3FABED70C01DB15967FEF99D0DCC666C /* DomainResource+Containment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DomainResource+Containment.swift"; path = "Sources/Client/DomainResource+Containment.swift"; sourceTree = "<group>"; };
+		3FB1299F265EE134161A47E7CA97F644 /* PaymentNotice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentNotice.swift; path = Sources/Models/PaymentNotice.swift; sourceTree = "<group>"; };
+		3FB8E5DFFA35BDBF1431709DFBFE9BF7 /* ExplanationOfBenefit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExplanationOfBenefit.swift; path = Sources/Models/ExplanationOfBenefit.swift; sourceTree = "<group>"; };
+		3FCA607A855955186EB3462FC4F56B97 /* MedicationRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicationRequest.swift; path = Sources/Models/MedicationRequest.swift; sourceTree = "<group>"; };
+		40286A241D2697607147B037A5910A32 /* Signature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signature.swift; path = Sources/Models/Signature.swift; sourceTree = "<group>"; };
+		41DEF600F1B8B8EA70E8E68D4B09913E /* RelatedArtifact.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RelatedArtifact.swift; path = Sources/Models/RelatedArtifact.swift; sourceTree = "<group>"; };
+		43B02714C63A069909971CF482BFFEA4 /* Attachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attachment.swift; path = Sources/Models/Attachment.swift; sourceTree = "<group>"; };
+		43D22AF56AF21FC56F9ECACE6BC947C3 /* FHIR-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FHIR-prefix.pch"; sourceTree = "<group>"; };
+		44C1A3CF9A79F2B5BDA6EAB6052338C3 /* Person.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Sources/Models/Person.swift; sourceTree = "<group>"; };
+		4578D9F720A7D7EC01BFE822BC59C01B /* FHIRString+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FHIRString+Localization.swift"; path = "Sources/Client/FHIRString+Localization.swift"; sourceTree = "<group>"; };
+		466D7DCEC08B237EAACD263C27D52AF6 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Models/Resource.swift; sourceTree = "<group>"; };
+		46C788780CE0B4981D7D76FB3F1B98F6 /* Pods-Therapy Helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Therapy Helper-dummy.m"; sourceTree = "<group>"; };
+		47AA9FFBD65182C553F53DCAC6A2CF7D /* Location.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Sources/Models/Location.swift; sourceTree = "<group>"; };
+		4816CDED8907BD49071DF934EADED328 /* CommunicationRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommunicationRequest.swift; path = Sources/Models/CommunicationRequest.swift; sourceTree = "<group>"; };
+		48ACD9D88C59366E3DDADB42E8F7E35E /* DateAndTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTime.swift; path = Sources/Models/DateAndTime.swift; sourceTree = "<group>"; };
+		4AA05160C0651ACD46BBAAC8D6F38C70 /* Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sequence.swift; path = Sources/Models/Sequence.swift; sourceTree = "<group>"; };
+		4AECC49AB56C35139C886A3C3CD4F2E6 /* RiskAssessment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RiskAssessment.swift; path = Sources/Models/RiskAssessment.swift; sourceTree = "<group>"; };
+		4B482F916888C70B421D18838821A371 /* MessageDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageDefinition.swift; path = Sources/Models/MessageDefinition.swift; sourceTree = "<group>"; };
+		4B86837D7B81185B178A2FDDA3205619 /* ImagingStudy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagingStudy.swift; path = Sources/Models/ImagingStudy.swift; sourceTree = "<group>"; };
+		4C74DBC884F04BB0E7176A8238685231 /* BodySite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BodySite.swift; path = Sources/Models/BodySite.swift; sourceTree = "<group>"; };
+		4C7B78AA95B118F8D538AD2C05A45B86 /* ClaimResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClaimResponse.swift; path = Sources/Models/ClaimResponse.swift; sourceTree = "<group>"; };
+		4E4C7BE53960E588BDD16E4CA9185BE0 /* CodeSystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeSystem.swift; path = Sources/Models/CodeSystem.swift; sourceTree = "<group>"; };
+		4FBA74A224E72E6218A90567A334AC21 /* ElementDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementDefinition.swift; path = Sources/Models/ElementDefinition.swift; sourceTree = "<group>"; };
+		504CF434554CA7B2B37BC4CCD5DC9229 /* MeasureReport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeasureReport.swift; path = Sources/Models/MeasureReport.swift; sourceTree = "<group>"; };
+		50939F1FDB80C2B52CCE6C36D4D25F0D /* DiagnosticReport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiagnosticReport.swift; path = Sources/Models/DiagnosticReport.swift; sourceTree = "<group>"; };
+		574EA44E545662266199A711E834593E /* Timing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timing.swift; path = Sources/Models/Timing.swift; sourceTree = "<group>"; };
+		57F0BA7E88F75FC0347A4CD90B77FD10 /* ParameterDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterDefinition.swift; path = Sources/Models/ParameterDefinition.swift; sourceTree = "<group>"; };
+		58E3C644DF7DA37AB5A38841DED22E01 /* ResearchSubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResearchSubject.swift; path = Sources/Models/ResearchSubject.swift; sourceTree = "<group>"; };
+		59A4EA5FF57C3AD723DE8FFE82F5F0DE /* DocumentManifest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentManifest.swift; path = Sources/Models/DocumentManifest.swift; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A73694BC81FFFC22A44800FDAF9F0DF /* ContactPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContactPoint.swift; path = Sources/Models/ContactPoint.swift; sourceTree = "<group>"; };
+		5E5D4459A6A19D4E9E5ADE0DB50E70AD /* Base64Binary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64Binary.swift; path = Sources/Models/Base64Binary.swift; sourceTree = "<group>"; };
+		5EF1801E6ABFC83C609416393454933E /* Schedule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Sources/Models/Schedule.swift; sourceTree = "<group>"; };
+		5FE298A40318EC31C015B42A8C4078AB /* FamilyMemberHistory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FamilyMemberHistory.swift; path = Sources/Models/FamilyMemberHistory.swift; sourceTree = "<group>"; };
+		6108C9FCC7116D80238447487CF9C7C3 /* DetectedIssue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetectedIssue.swift; path = Sources/Models/DetectedIssue.swift; sourceTree = "<group>"; };
+		62CA732B76B5210CED91B6AB85E272A5 /* Pods-Therapy Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Therapy Helper.debug.xcconfig"; sourceTree = "<group>"; };
+		655CEFD3B25300279570774B35C58861 /* HumanName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HumanName.swift; path = Sources/Models/HumanName.swift; sourceTree = "<group>"; };
+		65DB879CE0231BEE82BC22F04DED4129 /* FHIRAbstractBase+Factory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FHIRAbstractBase+Factory.swift"; path = "Sources/Models/FHIRAbstractBase+Factory.swift"; sourceTree = "<group>"; };
+		669EED3048CAD1CAEDF6D6514855B620 /* Encounter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encounter.swift; path = Sources/Models/Encounter.swift; sourceTree = "<group>"; };
+		68B434BD4D6447808411150665B14AA2 /* ProcedureRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureRequest.swift; path = Sources/Models/ProcedureRequest.swift; sourceTree = "<group>"; };
+		69034F2873D8EF639C51D79E5B69BC2C /* SupplyRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupplyRequest.swift; path = Sources/Models/SupplyRequest.swift; sourceTree = "<group>"; };
+		69BD2B51C0B7E0370AC1D1DD90B82C28 /* Pods-Therapy Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Therapy Helper.release.xcconfig"; sourceTree = "<group>"; };
+		69CBCC08103698B15B1266609DFDCF94 /* MessageHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageHeader.swift; path = Sources/Models/MessageHeader.swift; sourceTree = "<group>"; };
+		6AA4469B89730D936EDAEEABB4EA475F /* DocumentReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentReference.swift; path = Sources/Models/DocumentReference.swift; sourceTree = "<group>"; };
+		6D3905C0692B41210E55525BBDFC75D4 /* Subscription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Subscription.swift; path = Sources/Models/Subscription.swift; sourceTree = "<group>"; };
+		6EA2791A2B34E533CB4A7BD549A117C9 /* Observation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observation.swift; path = Sources/Models/Observation.swift; sourceTree = "<group>"; };
+		700E361418FBA19E3134D60A9079FFF7 /* Immunization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Immunization.swift; path = Sources/Models/Immunization.swift; sourceTree = "<group>"; };
+		7213BA28CCB3AE26CFB6020B75F7483C /* ConceptMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConceptMap.swift; path = Sources/Models/ConceptMap.swift; sourceTree = "<group>"; };
+		729AC5CA39A36342D574EE9435185944 /* Goal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Goal.swift; path = Sources/Models/Goal.swift; sourceTree = "<group>"; };
+		76A810F8C513684F528D578CC13569A6 /* ProcessResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcessResponse.swift; path = Sources/Models/ProcessResponse.swift; sourceTree = "<group>"; };
+		783435C80868DBAA8C0F9EA90A3DC1D4 /* FHIRDecimal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRDecimal.swift; path = Sources/Models/FHIRDecimal.swift; sourceTree = "<group>"; };
+		7839A45DBDA7656B7959EB5563193BDB /* RelatedPerson.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RelatedPerson.swift; path = Sources/Models/RelatedPerson.swift; sourceTree = "<group>"; };
+		79E48ECD6FC81FD10053C31625835847 /* RequestGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestGroup.swift; path = Sources/Models/RequestGroup.swift; sourceTree = "<group>"; };
+		7C07CE4D40C36651D801D6B109939123 /* FHIRMinimalServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRMinimalServer.swift; path = Sources/Client/FHIRMinimalServer.swift; sourceTree = "<group>"; };
+		7C428D78F5AEB3F270ECAB14F36545BC /* Age.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Age.swift; path = Sources/Models/Age.swift; sourceTree = "<group>"; };
+		7CAB7DB3BC12B7A81C95FD10796C452D /* Slot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Slot.swift; path = Sources/Models/Slot.swift; sourceTree = "<group>"; };
+		7E14627785DD9FBE4922416FFA21FE4E /* Resource+REST.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Resource+REST.swift"; path = "Sources/Client/Resource+REST.swift"; sourceTree = "<group>"; };
+		7E1530F11156CE83974D7607CF790267 /* SearchParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchParameter.swift; path = Sources/Models/SearchParameter.swift; sourceTree = "<group>"; };
+		808CC6432939CD0D8DFE2FE88708477C /* Specimen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Specimen.swift; path = Sources/Models/Specimen.swift; sourceTree = "<group>"; };
+		84EF0D9C1DA507FA8CB24E6686216742 /* FHIR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FHIR-umbrella.h"; sourceTree = "<group>"; };
+		85DC4341361F7F800E55CDCCB9D70E90 /* Pods_Therapy_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Therapy_Helper.framework; path = "Pods-Therapy Helper.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F9E25B3F5A154A4F43F5169D772A9F /* ActivityDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityDefinition.swift; path = Sources/Models/ActivityDefinition.swift; sourceTree = "<group>"; };
+		8601EE766BD7D522D7987FC68477701A /* FHIRAbstractBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRAbstractBase.swift; path = Sources/Models/FHIRAbstractBase.swift; sourceTree = "<group>"; };
+		86E546EABC2C8EB9C10229B5FAB89C8F /* Pods-Therapy Helper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Therapy Helper-acknowledgements.markdown"; sourceTree = "<group>"; };
+		889FD85F506BD9463075095CF0B02218 /* OperationDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationDefinition.swift; path = Sources/Models/OperationDefinition.swift; sourceTree = "<group>"; };
+		892172DB874497711F51F9BCD17F842D /* FHIRServerResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRServerResponse.swift; path = Sources/Models/FHIRServerResponse.swift; sourceTree = "<group>"; };
+		8A00A1C12305F76C8EF88C810CF38B43 /* EnrollmentRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnrollmentRequest.swift; path = Sources/Models/EnrollmentRequest.swift; sourceTree = "<group>"; };
+		8B29D8BE7AC13638B74BEF8AC81FEC5A /* ClinicalImpression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClinicalImpression.swift; path = Sources/Models/ClinicalImpression.swift; sourceTree = "<group>"; };
+		8B45F7CB8AC09E926BD14127C1F9B387 /* FHIRServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRServer.swift; path = Sources/Models/FHIRServer.swift; sourceTree = "<group>"; };
+		8B8EBAF4504E15658EDFD60C070D78C0 /* Count.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Count.swift; path = Sources/Models/Count.swift; sourceTree = "<group>"; };
+		8BAC1C8ADDCEE61A60AE79AD7C7A9270 /* Distance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distance.swift; path = Sources/Models/Distance.swift; sourceTree = "<group>"; };
+		8DC8A93876CEA49044918D9416F8771D /* MedicationAdministration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicationAdministration.swift; path = Sources/Models/MedicationAdministration.swift; sourceTree = "<group>"; };
+		8F332E77754330C50B13827895AF35BF /* EligibilityResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EligibilityResponse.swift; path = Sources/Models/EligibilityResponse.swift; sourceTree = "<group>"; };
+		9159EB7570D35E514DD3F3FC364CB259 /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Sources/Models/Group.swift; sourceTree = "<group>"; };
+		920A05D09AB2136D25FB122D7FD4EDAB /* CodeableConcept.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeableConcept.swift; path = Sources/Models/CodeableConcept.swift; sourceTree = "<group>"; };
+		936033651AA971D1351B7ECB4FF08660 /* Address.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Address.swift; path = Sources/Models/Address.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9482D130E296CAEA17301285C943CC31 /* Linkage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Linkage.swift; path = Sources/Models/Linkage.swift; sourceTree = "<group>"; };
+		972459821EC9A2801798A5B1E0945925 /* Pods-Therapy Helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Therapy Helper.modulemap"; sourceTree = "<group>"; };
+		98439EB8FF41EEC089635DF77FF56004 /* FHIR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FHIR.framework; path = FHIR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		995E22497C782578BE1603D01E3279D6 /* StructureDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructureDefinition.swift; path = Sources/Models/StructureDefinition.swift; sourceTree = "<group>"; };
+		99A3FDF564112D13526ABD9560C7573A /* Dosage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dosage.swift; path = Sources/Models/Dosage.swift; sourceTree = "<group>"; };
+		9C239054DD79D0C5B8A962DEBAAD14F6 /* FHIRServerDataResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRServerDataResponse.swift; path = Sources/Client/FHIRServerDataResponse.swift; sourceTree = "<group>"; };
+		9D853028818B17B5AC10273C9366459E /* Binary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Binary.swift; path = Sources/Models/Binary.swift; sourceTree = "<group>"; };
+		9DC77978846F15809FBA014381F2EC40 /* AllergyIntolerance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllergyIntolerance.swift; path = Sources/Models/AllergyIntolerance.swift; sourceTree = "<group>"; };
+		9E094278F36AA62A3668AC5A36551C95 /* Flag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = Sources/Models/Flag.swift; sourceTree = "<group>"; };
+		9E6867EBC3DE571F13E63E1595CB8A52 /* FHIRValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRValidationError.swift; path = Sources/Models/FHIRValidationError.swift; sourceTree = "<group>"; };
+		9FF82B4DF197F0B34A7D74DE8D47090A /* Pods-Therapy Helper-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Therapy Helper-resources.sh"; sourceTree = "<group>"; };
+		A04D9BD190C8192CB1F1CFEDD6A238A1 /* ResearchStudy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResearchStudy.swift; path = Sources/Models/ResearchStudy.swift; sourceTree = "<group>"; };
+		A0C8AF177EB89093438D4054289F161D /* FHIR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FHIR.modulemap; sourceTree = "<group>"; };
+		A2759CD70EAE788CFBD4DC2B780A6B47 /* DataRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRequirement.swift; path = Sources/Models/DataRequirement.swift; sourceTree = "<group>"; };
+		A435FC6D88BDD6B3585CCA82CC7A77B2 /* TriggerDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriggerDefinition.swift; path = Sources/Models/TriggerDefinition.swift; sourceTree = "<group>"; };
+		A468870749227940D59CAED243CBBE3A /* Media.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Media.swift; path = Sources/Models/Media.swift; sourceTree = "<group>"; };
+		A5A32B7A2D4F6E60DFE5829228C1E86F /* ImmunizationRecommendation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmunizationRecommendation.swift; path = Sources/Models/ImmunizationRecommendation.swift; sourceTree = "<group>"; };
+		A6F2AF4453129474C643E8EAB48C43EE /* CodeSystems.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeSystems.swift; path = Sources/Models/CodeSystems.swift; sourceTree = "<group>"; };
+		A773E0CC000140F3D2E2E91488D947E6 /* FHIRPrimitive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRPrimitive.swift; path = Sources/Models/FHIRPrimitive.swift; sourceTree = "<group>"; };
+		A7A18D5CF72C1159EE16A0E9FDC02E4F /* Library.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Library.swift; path = Sources/Models/Library.swift; sourceTree = "<group>"; };
+		A952F7A553A3D8CEA5D9680558CF4E00 /* HealthcareService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HealthcareService.swift; path = Sources/Models/HealthcareService.swift; sourceTree = "<group>"; };
+		A9C4BC4710108C2752F3A578EF73505A /* Pods-Therapy Helper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Therapy Helper-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC2D845D26F1C02816B3B8761729F54B /* Measure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Measure.swift; path = Sources/Models/Measure.swift; sourceTree = "<group>"; };
+		AC833CD23A77DFCDDAACCB4F8DEEC177 /* Element+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Element+Extensions.swift"; path = "Sources/Client/Element+Extensions.swift"; sourceTree = "<group>"; };
+		B13F56C23F2E422ABA6758CBFE483ABC /* FHIRSearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRSearch.swift; path = Sources/Client/FHIRSearch.swift; sourceTree = "<group>"; };
+		B1F08EBA585BF4B7CEFD5F77D484D6AF /* GuidanceResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuidanceResponse.swift; path = Sources/Models/GuidanceResponse.swift; sourceTree = "<group>"; };
+		B5B7CC9B1328499FCB48B75D855BA1BE /* Substance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Substance.swift; path = Sources/Models/Substance.swift; sourceTree = "<group>"; };
+		B7BC0A9230ECD8CBD092D8C786FB8B4D /* Patient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Patient.swift; path = Sources/Models/Patient.swift; sourceTree = "<group>"; };
+		B8CC4BC61EA6AEACACCD47A87E5E9EC6 /* PlanDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlanDefinition.swift; path = Sources/Models/PlanDefinition.swift; sourceTree = "<group>"; };
+		BAF3E0676F460A13AF087FC9502B1A89 /* AdverseEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdverseEvent.swift; path = Sources/Models/AdverseEvent.swift; sourceTree = "<group>"; };
+		BAF6F3F3F9EC2EDA8A02C2E0B73321BD /* GraphDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphDefinition.swift; path = Sources/Models/GraphDefinition.swift; sourceTree = "<group>"; };
+		BB9B028D122E40A82B72F559076EC94A /* Communication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Communication.swift; path = Sources/Models/Communication.swift; sourceTree = "<group>"; };
+		BC93D921AA05C4872558DEFA1869537C /* QuestionnaireResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuestionnaireResponse.swift; path = Sources/Models/QuestionnaireResponse.swift; sourceTree = "<group>"; };
+		BF00C5076789A45762F077B6CCA7D36F /* Resource+Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Resource+Operation.swift"; path = "Sources/Client/Resource+Operation.swift"; sourceTree = "<group>"; };
+		BF5F2830F0F6BCAAB076ACD584C139DA /* EpisodeOfCare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EpisodeOfCare.swift; path = Sources/Models/EpisodeOfCare.swift; sourceTree = "<group>"; };
+		C060C4E77CD13046DF6DA8078EA716C4 /* CompartmentDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompartmentDefinition.swift; path = Sources/Models/CompartmentDefinition.swift; sourceTree = "<group>"; };
+		C0F42F902572F830146AAB6CFADC9630 /* Contract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contract.swift; path = Sources/Models/Contract.swift; sourceTree = "<group>"; };
+		C21EE7AB24839DB864478A5A87EED0AF /* Task.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Sources/Models/Task.swift; sourceTree = "<group>"; };
+		C30DA76EDA6D9ACB7361DACA3D049403 /* MedicationStatement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MedicationStatement.swift; path = Sources/Models/MedicationStatement.swift; sourceTree = "<group>"; };
+		C362E79D183D47316F2AE9E5421997E0 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Sources/Models/Identifier.swift; sourceTree = "<group>"; };
+		C416DA76339CA64C76BAC075A739442B /* FHIRRequestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRRequestHandler.swift; path = Sources/Models/FHIRRequestHandler.swift; sourceTree = "<group>"; };
+		C417EBF275B641D4EF1003C5D17D4233 /* Composition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Composition.swift; path = Sources/Models/Composition.swift; sourceTree = "<group>"; };
+		C68FEE4956C6BB577BD836923C696A21 /* ProcessRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcessRequest.swift; path = Sources/Models/ProcessRequest.swift; sourceTree = "<group>"; };
+		C6C6E06E618C0D70C5F253C119CB2311 /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = Sources/Models/Endpoint.swift; sourceTree = "<group>"; };
+		CBFEF58017629E0927242ECC2652D1E5 /* ValueSet+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ValueSet+Localization.swift"; path = "Sources/Client/ValueSet+Localization.swift"; sourceTree = "<group>"; };
+		CD0C0CD64AC77741487BEE48B397DA60 /* CapabilityStatement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CapabilityStatement.swift; path = Sources/Models/CapabilityStatement.swift; sourceTree = "<group>"; };
+		CE2936EBC219E61B06F0EC7F233B6D15 /* DeviceMetric.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceMetric.swift; path = Sources/Models/DeviceMetric.swift; sourceTree = "<group>"; };
+		CE5181093FE4D824FA26755B34DE30B9 /* NutritionOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NutritionOrder.swift; path = Sources/Models/NutritionOrder.swift; sourceTree = "<group>"; };
+		CE7A0C5FF36978E459C64D164C892001 /* Procedure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Procedure.swift; path = Sources/Models/Procedure.swift; sourceTree = "<group>"; };
+		CF5E7384CFE4BB0A0AD5438A22802533 /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Models/Element.swift; sourceTree = "<group>"; };
+		D04A10CFE9AB035FAEBC6904C026F812 /* ValueSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueSet.swift; path = Sources/Models/ValueSet.swift; sourceTree = "<group>"; };
+		D1F6CDE81A6C73899DF2D85E4E6E4543 /* FHIRBaseServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRBaseServer.swift; path = Sources/Client/FHIRBaseServer.swift; sourceTree = "<group>"; };
+		D30AAC622EE3D5E23B55F3AEF59D33FA /* PaymentReconciliation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentReconciliation.swift; path = Sources/Models/PaymentReconciliation.swift; sourceTree = "<group>"; };
+		D323AD5816DCD22E1AE76A130F10F435 /* Consent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Consent.swift; path = Sources/Models/Consent.swift; sourceTree = "<group>"; };
+		D5913AD92AC3D5728AB383BCDD2191D2 /* Medication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Medication.swift; path = Sources/Models/Medication.swift; sourceTree = "<group>"; };
+		D5B56665A7A4F00EDCF2124C60D4A769 /* PractitionerRole.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PractitionerRole.swift; path = Sources/Models/PractitionerRole.swift; sourceTree = "<group>"; };
+		D632D8F4079742C905160294BB469183 /* DeviceComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceComponent.swift; path = Sources/Models/DeviceComponent.swift; sourceTree = "<group>"; };
+		D87A836C328753DF56741F8877145912 /* FHIROperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIROperation.swift; path = Sources/Client/FHIROperation.swift; sourceTree = "<group>"; };
+		D8B076AC61E5F59249C5A61AE09CF120 /* Narrative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Narrative.swift; path = Sources/Models/Narrative.swift; sourceTree = "<group>"; };
+		D93C6BE7B0EDADC00599264D257A60C2 /* VisionPrescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisionPrescription.swift; path = Sources/Models/VisionPrescription.swift; sourceTree = "<group>"; };
+		DAB4236C2153630B07D8CAA58EF96082 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Sources/Models/Device.swift; sourceTree = "<group>"; };
+		DBE59F5A284AA86B21D41F642EB126C6 /* FHIRError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRError.swift; path = Sources/Models/FHIRError.swift; sourceTree = "<group>"; };
+		DC37F5D890982D95D391910D7C841A6C /* DomainResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DomainResource.swift; path = Sources/Models/DomainResource.swift; sourceTree = "<group>"; };
+		DD5322F3F15346E352CA5D9E8A7413D9 /* ReferralRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferralRequest.swift; path = Sources/Models/ReferralRequest.swift; sourceTree = "<group>"; };
+		DDC390D00EC154BB639483F69E949D52 /* Money.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Money.swift; path = Sources/Models/Money.swift; sourceTree = "<group>"; };
+		DE9C6A205DB0676F123C473A301FB9A2 /* Coverage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coverage.swift; path = Sources/Models/Coverage.swift; sourceTree = "<group>"; };
+		DF7961A2B6B877B226368064ACEC0CA2 /* OperationOutcome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationOutcome.swift; path = Sources/Models/OperationOutcome.swift; sourceTree = "<group>"; };
+		E007EEC267CDB67726106C2658EDF017 /* UsageContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UsageContext.swift; path = Sources/Models/UsageContext.swift; sourceTree = "<group>"; };
+		E0393AC2013EA0354DA3E1B1C89D783C /* Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bundle.swift; path = Sources/Models/Bundle.swift; sourceTree = "<group>"; };
+		E2AD3EDD1D71784E773F948C2AE7596C /* EligibilityRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EligibilityRequest.swift; path = Sources/Models/EligibilityRequest.swift; sourceTree = "<group>"; };
+		E41D51004EE364CCC652BBF7B19D1166 /* Organization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Organization.swift; path = Sources/Models/Organization.swift; sourceTree = "<group>"; };
+		E95D0576E22E12FB1D1BEA4EB0581259 /* Resource+Meta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Resource+Meta.swift"; path = "Sources/Models/Resource+Meta.swift"; sourceTree = "<group>"; };
+		E9B7DA7A8D9D1FD9461B5D16AD8B65A3 /* Parameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = Sources/Models/Parameters.swift; sourceTree = "<group>"; };
+		EA166038AED5D97AB009D480B55A7A59 /* FHIRString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRString.swift; path = Sources/Models/FHIRString.swift; sourceTree = "<group>"; };
+		EAA7C7AD49923713ED1FF442811BC8FB /* AuditEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuditEvent.swift; path = Sources/Models/AuditEvent.swift; sourceTree = "<group>"; };
+		EBA2640784082D70ED87879F9F5D672F /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = Sources/Models/Duration.swift; sourceTree = "<group>"; };
+		EBAF6EB37B3224EA21C461A959C81DA9 /* SampledData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SampledData.swift; path = Sources/Models/SampledData.swift; sourceTree = "<group>"; };
+		EBDC47131118052541A18954F41DCC17 /* AppointmentResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppointmentResponse.swift; path = Sources/Models/AppointmentResponse.swift; sourceTree = "<group>"; };
+		EBE1838F3CA9B3C4692951207A0B14FA /* FHIRInteger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRInteger.swift; path = Sources/Models/FHIRInteger.swift; sourceTree = "<group>"; };
+		EC0E1018F9EE73413CE8BFB9F39D909E /* Resource+Instantiation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Resource+Instantiation.swift"; path = "Sources/Client/Resource+Instantiation.swift"; sourceTree = "<group>"; };
+		EDBCCFFB05754CFA4AC83DED32677300 /* Questionnaire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Questionnaire.swift; path = Sources/Models/Questionnaire.swift; sourceTree = "<group>"; };
+		EDE73251BD04F58E5187213EC5FA3F8C /* Basic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Basic.swift; path = Sources/Models/Basic.swift; sourceTree = "<group>"; };
+		F0724D8C82C30587094A31458CB2810C /* Quantity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Quantity.swift; path = Sources/Models/Quantity.swift; sourceTree = "<group>"; };
+		F1E8227577745350AA5364C263E87F0E /* Practitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Practitioner.swift; path = Sources/Models/Practitioner.swift; sourceTree = "<group>"; };
+		F2C397C3DFDA90F151CA518B6C032759 /* Ratio.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ratio.swift; path = Sources/Models/Ratio.swift; sourceTree = "<group>"; };
+		F95F7D32FBDE07A16BF035E59C1F8ACB /* TestScript.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestScript.swift; path = Sources/Models/TestScript.swift; sourceTree = "<group>"; };
+		F9C4BD31DD40EED483BDE62DCF15A083 /* MetadataResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataResource.swift; path = Sources/Models/MetadataResource.swift; sourceTree = "<group>"; };
+		FA332626CE01804863CDC5DFB6972AF4 /* ContactDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContactDetail.swift; path = Sources/Models/ContactDetail.swift; sourceTree = "<group>"; };
+		FA88B64D3C19A2E1F7D243FF06940343 /* ImplementationGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImplementationGuide.swift; path = Sources/Models/ImplementationGuide.swift; sourceTree = "<group>"; };
+		FB934D6D3E7961565108734FAA19920A /* FHIRRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FHIRRequest.swift; path = Sources/Models/FHIRRequest.swift; sourceTree = "<group>"; };
+		FD50D45AEF6273F6A95104AA942A54E8 /* Reference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reference.swift; path = Sources/Models/Reference.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7479E0A87FDAC5164CE499835C477977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2D5149C2B8C6A2EAEC35CBF5C50E83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3640EBE26B8360279681DDF44E9DF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F5E26291F52B950FD673D39095B15F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1055923D5ADDA14BE8DE98819ED74C22 /* Pods-Therapy Helper */ = {
+			isa = PBXGroup;
+			children = (
+				36E30199773D855193FD6A22AA071CDD /* Info.plist */,
+				972459821EC9A2801798A5B1E0945925 /* Pods-Therapy Helper.modulemap */,
+				86E546EABC2C8EB9C10229B5FAB89C8F /* Pods-Therapy Helper-acknowledgements.markdown */,
+				A9C4BC4710108C2752F3A578EF73505A /* Pods-Therapy Helper-acknowledgements.plist */,
+				46C788780CE0B4981D7D76FB3F1B98F6 /* Pods-Therapy Helper-dummy.m */,
+				322549D20358DB7F1B117E97814652A2 /* Pods-Therapy Helper-frameworks.sh */,
+				9FF82B4DF197F0B34A7D74DE8D47090A /* Pods-Therapy Helper-resources.sh */,
+				31978FEB6B2B64A4F330C516F9FCBC42 /* Pods-Therapy Helper-umbrella.h */,
+				62CA732B76B5210CED91B6AB85E272A5 /* Pods-Therapy Helper.debug.xcconfig */,
+				69BD2B51C0B7E0370AC1D1DD90B82C28 /* Pods-Therapy Helper.release.xcconfig */,
+			);
+			name = "Pods-Therapy Helper";
+			path = "Target Support Files/Pods-Therapy Helper";
+			sourceTree = "<group>";
+		};
+		355F9C847DF673350076F5242ADD25D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				472E161763B4E850FC2DF34A40E387C0 /* FHIR */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DEDAC0887083D41A07CB370BC7E4132 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1055923D5ADDA14BE8DE98819ED74C22 /* Pods-Therapy Helper */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		472E161763B4E850FC2DF34A40E387C0 /* FHIR */ = {
+			isa = PBXGroup;
+			children = (
+				1A6036E364E4A742BCFA6A5A09EAE8AF /* Account.swift */,
+				85F9E25B3F5A154A4F43F5169D772A9F /* ActivityDefinition.swift */,
+				936033651AA971D1351B7ECB4FF08660 /* Address.swift */,
+				BAF3E0676F460A13AF087FC9502B1A89 /* AdverseEvent.swift */,
+				7C428D78F5AEB3F270ECAB14F36545BC /* Age.swift */,
+				9DC77978846F15809FBA014381F2EC40 /* AllergyIntolerance.swift */,
+				15092FDDFB877137FC81799E1A581A4E /* Annotation.swift */,
+				04EB3F402D04D3D9CEF80014323B8288 /* Appointment.swift */,
+				EBDC47131118052541A18954F41DCC17 /* AppointmentResponse.swift */,
+				43B02714C63A069909971CF482BFFEA4 /* Attachment.swift */,
+				EAA7C7AD49923713ED1FF442811BC8FB /* AuditEvent.swift */,
+				12A098EF21B557566A3CDD5E3487E502 /* BackboneElement.swift */,
+				5E5D4459A6A19D4E9E5ADE0DB50E70AD /* Base64Binary.swift */,
+				EDE73251BD04F58E5187213EC5FA3F8C /* Basic.swift */,
+				9D853028818B17B5AC10273C9366459E /* Binary.swift */,
+				4C74DBC884F04BB0E7176A8238685231 /* BodySite.swift */,
+				E0393AC2013EA0354DA3E1B1C89D783C /* Bundle.swift */,
+				CD0C0CD64AC77741487BEE48B397DA60 /* CapabilityStatement.swift */,
+				1E6BD7A239B582D8760CBF8381D73548 /* CarePlan.swift */,
+				3810FA74FA2A0E40D30A297F95EE1825 /* CareTeam.swift */,
+				335FEB8887CA6AB944FEA99427C00E5C /* ChargeItem.swift */,
+				2B303111B70EBED8A276B08DD2484515 /* Claim.swift */,
+				4C7B78AA95B118F8D538AD2C05A45B86 /* ClaimResponse.swift */,
+				8B29D8BE7AC13638B74BEF8AC81FEC5A /* ClinicalImpression.swift */,
+				920A05D09AB2136D25FB122D7FD4EDAB /* CodeableConcept.swift */,
+				4E4C7BE53960E588BDD16E4CA9185BE0 /* CodeSystem.swift */,
+				A6F2AF4453129474C643E8EAB48C43EE /* CodeSystems.swift */,
+				3F0B476B87CE37C5B197BEFC9D4E3425 /* Coding.swift */,
+				BB9B028D122E40A82B72F559076EC94A /* Communication.swift */,
+				4816CDED8907BD49071DF934EADED328 /* CommunicationRequest.swift */,
+				C060C4E77CD13046DF6DA8078EA716C4 /* CompartmentDefinition.swift */,
+				C417EBF275B641D4EF1003C5D17D4233 /* Composition.swift */,
+				7213BA28CCB3AE26CFB6020B75F7483C /* ConceptMap.swift */,
+				1A72BAD018F1CC9D25653A2112849B2F /* Condition.swift */,
+				D323AD5816DCD22E1AE76A130F10F435 /* Consent.swift */,
+				FA332626CE01804863CDC5DFB6972AF4 /* ContactDetail.swift */,
+				5A73694BC81FFFC22A44800FDAF9F0DF /* ContactPoint.swift */,
+				C0F42F902572F830146AAB6CFADC9630 /* Contract.swift */,
+				0C7F9F9BA08D2BBCE6B939D4CA7F1413 /* Contributor.swift */,
+				8B8EBAF4504E15658EDFD60C070D78C0 /* Count.swift */,
+				DE9C6A205DB0676F123C473A301FB9A2 /* Coverage.swift */,
+				2A595887994DF984818615A747FE678D /* DataElement.swift */,
+				A2759CD70EAE788CFBD4DC2B780A6B47 /* DataRequirement.swift */,
+				48ACD9D88C59366E3DDADB42E8F7E35E /* DateAndTime.swift */,
+				6108C9FCC7116D80238447487CF9C7C3 /* DetectedIssue.swift */,
+				DAB4236C2153630B07D8CAA58EF96082 /* Device.swift */,
+				D632D8F4079742C905160294BB469183 /* DeviceComponent.swift */,
+				CE2936EBC219E61B06F0EC7F233B6D15 /* DeviceMetric.swift */,
+				1519D18C81DDEF2F3714B097DCA1045F /* DeviceRequest.swift */,
+				31D6A65B883B3902C84FE5E2BEABA038 /* DeviceUseStatement.swift */,
+				50939F1FDB80C2B52CCE6C36D4D25F0D /* DiagnosticReport.swift */,
+				8BAC1C8ADDCEE61A60AE79AD7C7A9270 /* Distance.swift */,
+				59A4EA5FF57C3AD723DE8FFE82F5F0DE /* DocumentManifest.swift */,
+				6AA4469B89730D936EDAEEABB4EA475F /* DocumentReference.swift */,
+				DC37F5D890982D95D391910D7C841A6C /* DomainResource.swift */,
+				3FABED70C01DB15967FEF99D0DCC666C /* DomainResource+Containment.swift */,
+				99A3FDF564112D13526ABD9560C7573A /* Dosage.swift */,
+				EBA2640784082D70ED87879F9F5D672F /* Duration.swift */,
+				CF5E7384CFE4BB0A0AD5438A22802533 /* Element.swift */,
+				AC833CD23A77DFCDDAACCB4F8DEEC177 /* Element+Extensions.swift */,
+				4FBA74A224E72E6218A90567A334AC21 /* ElementDefinition.swift */,
+				E2AD3EDD1D71784E773F948C2AE7596C /* EligibilityRequest.swift */,
+				8F332E77754330C50B13827895AF35BF /* EligibilityResponse.swift */,
+				669EED3048CAD1CAEDF6D6514855B620 /* Encounter.swift */,
+				C6C6E06E618C0D70C5F253C119CB2311 /* Endpoint.swift */,
+				8A00A1C12305F76C8EF88C810CF38B43 /* EnrollmentRequest.swift */,
+				3ACBC6174789C7979A537FBDB20CF60B /* EnrollmentResponse.swift */,
+				BF5F2830F0F6BCAAB076ACD584C139DA /* EpisodeOfCare.swift */,
+				3E012C276852145F528651EFD5359F2E /* ExpansionProfile.swift */,
+				3FB8E5DFFA35BDBF1431709DFBFE9BF7 /* ExplanationOfBenefit.swift */,
+				0CEABE0F9EC359F74F3DD88F811F34F0 /* Extension.swift */,
+				5FE298A40318EC31C015B42A8C4078AB /* FamilyMemberHistory.swift */,
+				8601EE766BD7D522D7987FC68477701A /* FHIRAbstractBase.swift */,
+				65DB879CE0231BEE82BC22F04DED4129 /* FHIRAbstractBase+Factory.swift */,
+				1C9B148DBED133A7CD6BA72D68F01BDB /* FHIRAbstractResource.swift */,
+				08D8F052D389D24CDC8C6B1B636B7B8E /* FHIRBaseRequestHandler.swift */,
+				D1F6CDE81A6C73899DF2D85E4E6E4543 /* FHIRBaseServer.swift */,
+				009FE7F04C5FD2727374E74126C7E1F3 /* FHIRBool.swift */,
+				783435C80868DBAA8C0F9EA90A3DC1D4 /* FHIRDecimal.swift */,
+				1E620369A9CC3B3B08DF0C87F5766D4D /* FHIREnum.swift */,
+				DBE59F5A284AA86B21D41F642EB126C6 /* FHIRError.swift */,
+				EBE1838F3CA9B3C4692951207A0B14FA /* FHIRInteger.swift */,
+				7C07CE4D40C36651D801D6B109939123 /* FHIRMinimalServer.swift */,
+				16AFA3149DF295258618E2C8DD7D4AC5 /* FHIROpenServer.swift */,
+				D87A836C328753DF56741F8877145912 /* FHIROperation.swift */,
+				A773E0CC000140F3D2E2E91488D947E6 /* FHIRPrimitive.swift */,
+				FB934D6D3E7961565108734FAA19920A /* FHIRRequest.swift */,
+				C416DA76339CA64C76BAC075A739442B /* FHIRRequestHandler.swift */,
+				B13F56C23F2E422ABA6758CBFE483ABC /* FHIRSearch.swift */,
+				8B45F7CB8AC09E926BD14127C1F9B387 /* FHIRServer.swift */,
+				9C239054DD79D0C5B8A962DEBAAD14F6 /* FHIRServerDataResponse.swift */,
+				892172DB874497711F51F9BCD17F842D /* FHIRServerResponse.swift */,
+				EA166038AED5D97AB009D480B55A7A59 /* FHIRString.swift */,
+				4578D9F720A7D7EC01BFE822BC59C01B /* FHIRString+Localization.swift */,
+				22873E9848DA71517E5D03826B1A8A67 /* FHIRType.swift */,
+				3DBC571DAA976BFE36FDDA2695F6EBBB /* FHIRURL.swift */,
+				9E6867EBC3DE571F13E63E1595CB8A52 /* FHIRValidationError.swift */,
+				9E094278F36AA62A3668AC5A36551C95 /* Flag.swift */,
+				729AC5CA39A36342D574EE9435185944 /* Goal.swift */,
+				BAF6F3F3F9EC2EDA8A02C2E0B73321BD /* GraphDefinition.swift */,
+				9159EB7570D35E514DD3F3FC364CB259 /* Group.swift */,
+				B1F08EBA585BF4B7CEFD5F77D484D6AF /* GuidanceResponse.swift */,
+				A952F7A553A3D8CEA5D9680558CF4E00 /* HealthcareService.swift */,
+				655CEFD3B25300279570774B35C58861 /* HumanName.swift */,
+				C362E79D183D47316F2AE9E5421997E0 /* Identifier.swift */,
+				3B9741B959C893A03A41BD5B7ACF710A /* ImagingManifest.swift */,
+				4B86837D7B81185B178A2FDDA3205619 /* ImagingStudy.swift */,
+				700E361418FBA19E3134D60A9079FFF7 /* Immunization.swift */,
+				A5A32B7A2D4F6E60DFE5829228C1E86F /* ImmunizationRecommendation.swift */,
+				FA88B64D3C19A2E1F7D243FF06940343 /* ImplementationGuide.swift */,
+				A7A18D5CF72C1159EE16A0E9FDC02E4F /* Library.swift */,
+				9482D130E296CAEA17301285C943CC31 /* Linkage.swift */,
+				38FD90B1F9C34B589336DE7E17632BEA /* List.swift */,
+				47AA9FFBD65182C553F53DCAC6A2CF7D /* Location.swift */,
+				AC2D845D26F1C02816B3B8761729F54B /* Measure.swift */,
+				504CF434554CA7B2B37BC4CCD5DC9229 /* MeasureReport.swift */,
+				A468870749227940D59CAED243CBBE3A /* Media.swift */,
+				D5913AD92AC3D5728AB383BCDD2191D2 /* Medication.swift */,
+				8DC8A93876CEA49044918D9416F8771D /* MedicationAdministration.swift */,
+				03D7CF350C321329DE6476ABC22921B4 /* MedicationDispense.swift */,
+				3FCA607A855955186EB3462FC4F56B97 /* MedicationRequest.swift */,
+				C30DA76EDA6D9ACB7361DACA3D049403 /* MedicationStatement.swift */,
+				4B482F916888C70B421D18838821A371 /* MessageDefinition.swift */,
+				69CBCC08103698B15B1266609DFDCF94 /* MessageHeader.swift */,
+				373C2603A13F6E1AD68259119A87CD53 /* Meta.swift */,
+				F9C4BD31DD40EED483BDE62DCF15A083 /* MetadataResource.swift */,
+				DDC390D00EC154BB639483F69E949D52 /* Money.swift */,
+				298DF488428406C92C13F308A89EFCB5 /* NamingSystem.swift */,
+				D8B076AC61E5F59249C5A61AE09CF120 /* Narrative.swift */,
+				CE5181093FE4D824FA26755B34DE30B9 /* NutritionOrder.swift */,
+				6EA2791A2B34E533CB4A7BD549A117C9 /* Observation.swift */,
+				889FD85F506BD9463075095CF0B02218 /* OperationDefinition.swift */,
+				DF7961A2B6B877B226368064ACEC0CA2 /* OperationOutcome.swift */,
+				E41D51004EE364CCC652BBF7B19D1166 /* Organization.swift */,
+				57F0BA7E88F75FC0347A4CD90B77FD10 /* ParameterDefinition.swift */,
+				E9B7DA7A8D9D1FD9461B5D16AD8B65A3 /* Parameters.swift */,
+				B7BC0A9230ECD8CBD092D8C786FB8B4D /* Patient.swift */,
+				159DE2D034AE87EA42997CFC8BA204F6 /* Patient+SMART.swift */,
+				3FB1299F265EE134161A47E7CA97F644 /* PaymentNotice.swift */,
+				D30AAC622EE3D5E23B55F3AEF59D33FA /* PaymentReconciliation.swift */,
+				39CD0777D8616D87833624B6A1F4D29A /* Period.swift */,
+				44C1A3CF9A79F2B5BDA6EAB6052338C3 /* Person.swift */,
+				B8CC4BC61EA6AEACACCD47A87E5E9EC6 /* PlanDefinition.swift */,
+				F1E8227577745350AA5364C263E87F0E /* Practitioner.swift */,
+				D5B56665A7A4F00EDCF2124C60D4A769 /* PractitionerRole.swift */,
+				CE7A0C5FF36978E459C64D164C892001 /* Procedure.swift */,
+				68B434BD4D6447808411150665B14AA2 /* ProcedureRequest.swift */,
+				C68FEE4956C6BB577BD836923C696A21 /* ProcessRequest.swift */,
+				76A810F8C513684F528D578CC13569A6 /* ProcessResponse.swift */,
+				25CC2E92967318F28D8862ECFB2F7052 /* Provenance.swift */,
+				F0724D8C82C30587094A31458CB2810C /* Quantity.swift */,
+				EDBCCFFB05754CFA4AC83DED32677300 /* Questionnaire.swift */,
+				BC93D921AA05C4872558DEFA1869537C /* QuestionnaireResponse.swift */,
+				0E3002CB7840AFFB480B11D5106EB78D /* Range.swift */,
+				F2C397C3DFDA90F151CA518B6C032759 /* Ratio.swift */,
+				FD50D45AEF6273F6A95104AA942A54E8 /* Reference.swift */,
+				0B3F2B1AEA383D4F34758842937657D0 /* Reference+Resolving.swift */,
+				DD5322F3F15346E352CA5D9E8A7413D9 /* ReferralRequest.swift */,
+				41DEF600F1B8B8EA70E8E68D4B09913E /* RelatedArtifact.swift */,
+				7839A45DBDA7656B7959EB5563193BDB /* RelatedPerson.swift */,
+				79E48ECD6FC81FD10053C31625835847 /* RequestGroup.swift */,
+				A04D9BD190C8192CB1F1CFEDD6A238A1 /* ResearchStudy.swift */,
+				58E3C644DF7DA37AB5A38841DED22E01 /* ResearchSubject.swift */,
+				466D7DCEC08B237EAACD263C27D52AF6 /* Resource.swift */,
+				EC0E1018F9EE73413CE8BFB9F39D909E /* Resource+Instantiation.swift */,
+				E95D0576E22E12FB1D1BEA4EB0581259 /* Resource+Meta.swift */,
+				BF00C5076789A45762F077B6CCA7D36F /* Resource+Operation.swift */,
+				7E14627785DD9FBE4922416FFA21FE4E /* Resource+REST.swift */,
+				4AECC49AB56C35139C886A3C3CD4F2E6 /* RiskAssessment.swift */,
+				EBAF6EB37B3224EA21C461A959C81DA9 /* SampledData.swift */,
+				5EF1801E6ABFC83C609416393454933E /* Schedule.swift */,
+				7E1530F11156CE83974D7607CF790267 /* SearchParameter.swift */,
+				4AA05160C0651ACD46BBAAC8D6F38C70 /* Sequence.swift */,
+				1F6AB6B7EA138B2CFAEE680746A431AD /* ServiceDefinition.swift */,
+				40286A241D2697607147B037A5910A32 /* Signature.swift */,
+				7CAB7DB3BC12B7A81C95FD10796C452D /* Slot.swift */,
+				808CC6432939CD0D8DFE2FE88708477C /* Specimen.swift */,
+				995E22497C782578BE1603D01E3279D6 /* StructureDefinition.swift */,
+				0D902532D91873028CED472E27D83B88 /* StructureMap.swift */,
+				6D3905C0692B41210E55525BBDFC75D4 /* Subscription.swift */,
+				B5B7CC9B1328499FCB48B75D855BA1BE /* Substance.swift */,
+				01D2750802394401027015C833CB6D3E /* SupplyDelivery.swift */,
+				69034F2873D8EF639C51D79E5B69BC2C /* SupplyRequest.swift */,
+				C21EE7AB24839DB864478A5A87EED0AF /* Task.swift */,
+				2CEB07ABCCDC253968F1FCE017A85938 /* TestReport.swift */,
+				F95F7D32FBDE07A16BF035E59C1F8ACB /* TestScript.swift */,
+				574EA44E545662266199A711E834593E /* Timing.swift */,
+				A435FC6D88BDD6B3585CCA82CC7A77B2 /* TriggerDefinition.swift */,
+				E007EEC267CDB67726106C2658EDF017 /* UsageContext.swift */,
+				D04A10CFE9AB035FAEBC6904C026F812 /* ValueSet.swift */,
+				CBFEF58017629E0927242ECC2652D1E5 /* ValueSet+Localization.swift */,
+				D93C6BE7B0EDADC00599264D257A60C2 /* VisionPrescription.swift */,
+				F6B37660EBE7C613BAA3B2E3D8D8ECDB /* Support Files */,
+			);
+			name = FHIR;
+			path = FHIR;
+			sourceTree = "<group>";
+		};
+		5217DF589A9D05AF8F84754C5015F713 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98439EB8FF41EEC089635DF77FF56004 /* FHIR.framework */,
+				85DC4341361F7F800E55CDCCB9D70E90 /* Pods_Therapy_Helper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				355F9C847DF673350076F5242ADD25D5 /* Pods */,
+				5217DF589A9D05AF8F84754C5015F713 /* Products */,
+				3DEDAC0887083D41A07CB370BC7E4132 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6B37660EBE7C613BAA3B2E3D8D8ECDB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8AF177EB89093438D4054289F161D /* FHIR.modulemap */,
+				0FA7920D8791E4018F143FCCE9F10F64 /* FHIR.xcconfig */,
+				0000146B92841BAB6C24F529518E85D8 /* FHIR-dummy.m */,
+				43D22AF56AF21FC56F9ECACE6BC947C3 /* FHIR-prefix.pch */,
+				84EF0D9C1DA507FA8CB24E6686216742 /* FHIR-umbrella.h */,
+				0A645A08EAF02672A91E0666D9649E27 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FHIR";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40C107CB4CBD975D29A41D76FA0E6DE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506028BD533A9EAA5F1ABC01222053EC /* FHIR-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26E27BE47AC0F0C2F14B190839FB4F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4178FC9A5CE46AECC177B9DFE991943E /* Pods-Therapy Helper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4AA34A52A0EE4041B6CAA459160B23C7 /* Pods-Therapy Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E4C8240EDA2D110F21FCA507000E18 /* Build configuration list for PBXNativeTarget "Pods-Therapy Helper" */;
+			buildPhases = (
+				2ADC39D81EDD7C3F69D9FE58E30CAD82 /* Sources */,
+				7479E0A87FDAC5164CE499835C477977 /* Frameworks */,
+				A26E27BE47AC0F0C2F14B190839FB4F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3CC17926A8C6EBB29D8FF214436EF04 /* PBXTargetDependency */,
+			);
+			name = "Pods-Therapy Helper";
+			productName = "Pods-Therapy Helper";
+			productReference = 85DC4341361F7F800E55CDCCB9D70E90 /* Pods_Therapy_Helper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87B1175587B9922AE67F698800FFDC4C /* FHIR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E918F60DD9751607E6A323B9A9AA63C5 /* Build configuration list for PBXNativeTarget "FHIR" */;
+			buildPhases = (
+				482F7DEDB4FA1605BC134C9218400F30 /* Sources */,
+				F3640EBE26B8360279681DDF44E9DF9D /* Frameworks */,
+				40C107CB4CBD975D29A41D76FA0E6DE6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FHIR;
+			productName = FHIR;
+			productReference = 98439EB8FF41EEC089635DF77FF56004 /* FHIR.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5217DF589A9D05AF8F84754C5015F713 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87B1175587B9922AE67F698800FFDC4C /* FHIR */,
+				4AA34A52A0EE4041B6CAA459160B23C7 /* Pods-Therapy Helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ADC39D81EDD7C3F69D9FE58E30CAD82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B145D1489848DF05332C51B26E99040 /* Pods-Therapy Helper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		482F7DEDB4FA1605BC134C9218400F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD50C32543F51169EEC2DC72A3985A60 /* Account.swift in Sources */,
+				038A76DF55EF363162688F619341E8EA /* ActivityDefinition.swift in Sources */,
+				32E24EA6DD832F352ED0F4875AA7AFD4 /* Address.swift in Sources */,
+				1D7821301B1454F2793F31D9871397CA /* AdverseEvent.swift in Sources */,
+				C5E109121C5796D65B1F9091DC2DB86A /* Age.swift in Sources */,
+				ED4019B083EE424530763369137E584F /* AllergyIntolerance.swift in Sources */,
+				775E035522CB0798C4887B762C0F348E /* Annotation.swift in Sources */,
+				01645D8636531505B0A8ED7D17DE8FAA /* Appointment.swift in Sources */,
+				606D5396F51C52406007C9D3E068FEE6 /* AppointmentResponse.swift in Sources */,
+				AB75BEF209EAC50D45D0680DFEDB4CCC /* Attachment.swift in Sources */,
+				0A53BFB15736D438D7525985747204CE /* AuditEvent.swift in Sources */,
+				9DE4EF640250FF1E346020A2750FD692 /* BackboneElement.swift in Sources */,
+				435EBC1B5C7B1103AFB6E0D46D69C259 /* Base64Binary.swift in Sources */,
+				3F1E7B7D51F0A87926CD3E1E2A540E97 /* Basic.swift in Sources */,
+				A85E5FCB9635F0E2A809E38ADFA4E30D /* Binary.swift in Sources */,
+				E7E57AEA448EF7076C9384EC73DFC129 /* BodySite.swift in Sources */,
+				8E83E8E3FCD54282E7BA500502998751 /* Bundle.swift in Sources */,
+				2DE0E376D3358CECE438BC9A71DA3D36 /* CapabilityStatement.swift in Sources */,
+				7AD04D8F91679053823428844606B3E6 /* CarePlan.swift in Sources */,
+				507BD392A9495640AF6324659A7F5F16 /* CareTeam.swift in Sources */,
+				53286174C4BDA11E2657447F842DF854 /* ChargeItem.swift in Sources */,
+				E5317B76B62C5218B2C807378BB6005E /* Claim.swift in Sources */,
+				083E84796057CD003016AA6643481B18 /* ClaimResponse.swift in Sources */,
+				F1C2F6F6223291E331D612FAF983EB43 /* ClinicalImpression.swift in Sources */,
+				2583026FF5EF4E5F25B608D1CB95C3FC /* CodeableConcept.swift in Sources */,
+				DC285F0D5F09E21CEB0FED5E4AF3FC5D /* CodeSystem.swift in Sources */,
+				5BB9E713C45519B147D233F5CA9DF8E1 /* CodeSystems.swift in Sources */,
+				918B3BCABA7FDC21B77580939CD1F7A6 /* Coding.swift in Sources */,
+				BFFD5583BA589A87C5E91868747BBD1E /* Communication.swift in Sources */,
+				F4E686CD7C1D32038173769142911771 /* CommunicationRequest.swift in Sources */,
+				C1EFE0448F2782A04A00B6005C86CF49 /* CompartmentDefinition.swift in Sources */,
+				F0F93988E338EE813E8B359F87C2AEEF /* Composition.swift in Sources */,
+				EF158E1FDCF096F841E9C18050C8C03A /* ConceptMap.swift in Sources */,
+				4399CD66B5EAA050932242B5423E5DBE /* Condition.swift in Sources */,
+				A4ECD6CE83E7BF873B6E4545B49458CB /* Consent.swift in Sources */,
+				576F348BFEE7F0213AC42C5C24F5EB06 /* ContactDetail.swift in Sources */,
+				F16B001948552BA83EFA7BE5E7114691 /* ContactPoint.swift in Sources */,
+				4BFF943077577C53D3CEC3298CD0F9F5 /* Contract.swift in Sources */,
+				DEDA01D1E5A7B36A024CE6A0D0D106CD /* Contributor.swift in Sources */,
+				E42489D10100EC8DDBC2FEB63EA6718D /* Count.swift in Sources */,
+				12102541FA589AA546D1EC9736344CEC /* Coverage.swift in Sources */,
+				681EDD2E3297F6F61FC38100BB7FB344 /* DataElement.swift in Sources */,
+				0BEA2724EBBB1DA2649731CA81F7DBA5 /* DataRequirement.swift in Sources */,
+				507DCFBFD85762C01E448B98ADEC1CF7 /* DateAndTime.swift in Sources */,
+				E9D2EE6A4EB18F48BDEE9CB8BDF98197 /* DetectedIssue.swift in Sources */,
+				38FE27A9DF1C921E015933FFD5D1E460 /* Device.swift in Sources */,
+				2C23A800FF4C90A948306EEBBAF66B9C /* DeviceComponent.swift in Sources */,
+				000B08CEF95B9C7B26B69CEFE46D525F /* DeviceMetric.swift in Sources */,
+				8C171C04D09E4A12737D076302774DDB /* DeviceRequest.swift in Sources */,
+				3D7F54A385338C55EA4EADBAE4AE7287 /* DeviceUseStatement.swift in Sources */,
+				C0971B0CDBA3B63C72C14AC8197AC639 /* DiagnosticReport.swift in Sources */,
+				39BEA51D310FCAC5CE4DFB3299C231F7 /* Distance.swift in Sources */,
+				4D46F3D9A58D9CF03D5D8B0C1DA6EE45 /* DocumentManifest.swift in Sources */,
+				B3A60C705B1D2C1B4B3D5B337E89D8E7 /* DocumentReference.swift in Sources */,
+				54CF50C80550F024361671A8F2508086 /* DomainResource+Containment.swift in Sources */,
+				635220B5F7245CB9D4AD9A9110A99D7C /* DomainResource.swift in Sources */,
+				57636F9C55B97B0EB5FDCFEABD4A47B9 /* Dosage.swift in Sources */,
+				0E4AEC3882EE0B38CA4672A22774F5AC /* Duration.swift in Sources */,
+				5F0345A50CDA16890C2CCC08194B7B75 /* Element+Extensions.swift in Sources */,
+				D50DC18F2A38DABA4AAEA4C1469DAEA7 /* Element.swift in Sources */,
+				8463E1F62485F7661F850B0443EF8A22 /* ElementDefinition.swift in Sources */,
+				C3295C6C5B9CDBC3ECF55B325D91B03E /* EligibilityRequest.swift in Sources */,
+				4B4735B09B83D806F898F58E7F754ABD /* EligibilityResponse.swift in Sources */,
+				1C4FF9DF85FC02C1FBF2EC42EAF5A9D9 /* Encounter.swift in Sources */,
+				5914FBF622E9E871499BDCA25D57A70D /* Endpoint.swift in Sources */,
+				3BE3EE6C953EE44ABBC4FD9C291989F2 /* EnrollmentRequest.swift in Sources */,
+				73394127CEAE05C39A2A5F8B4564B3BC /* EnrollmentResponse.swift in Sources */,
+				3F1E97BB20D4952963DFC8E9D8BCCA83 /* EpisodeOfCare.swift in Sources */,
+				4C70D5A5AA546D5E6E8CA65C2E1BB0F4 /* ExpansionProfile.swift in Sources */,
+				536E548FB41F25AFE3D52D2CE6A77FF0 /* ExplanationOfBenefit.swift in Sources */,
+				B77D8784FD8D8BB2313E978DC33B1B7D /* Extension.swift in Sources */,
+				0E0877753D976A764A3384AF15FF52BB /* FamilyMemberHistory.swift in Sources */,
+				6293058D11B470D79313CD38C8CD219D /* FHIR-dummy.m in Sources */,
+				8D5EEFD3A47C12DDDC138FD92330E7A7 /* FHIRAbstractBase+Factory.swift in Sources */,
+				E49422F322BA2DFAC8FF676D3C68E884 /* FHIRAbstractBase.swift in Sources */,
+				9E2800452434225C42C3BDBBC474A5D2 /* FHIRAbstractResource.swift in Sources */,
+				F537BBDD7E704ABE955B75F98E192E4B /* FHIRBaseRequestHandler.swift in Sources */,
+				EC574B720BBB6A7C5693376C7428E0C7 /* FHIRBaseServer.swift in Sources */,
+				6EFA1E0316725BF42D3E724DD1F2F54F /* FHIRBool.swift in Sources */,
+				55F1DA30B9B3FB9BF2DA450C7FD9284A /* FHIRDecimal.swift in Sources */,
+				2082B2BE48D6483255BEF8D30C46C7B1 /* FHIREnum.swift in Sources */,
+				5B9EE964591C8D3F482B60CBBD1125D0 /* FHIRError.swift in Sources */,
+				57C99136D3D9FA7D72E64D322D9699C5 /* FHIRInteger.swift in Sources */,
+				3816BF8498647B9608F9B34002D084A7 /* FHIRMinimalServer.swift in Sources */,
+				FC5112FE706C76FF7FDD32C6E6A246C8 /* FHIROpenServer.swift in Sources */,
+				56280D0DF1DFCF99B9E1904CA6D10841 /* FHIROperation.swift in Sources */,
+				981A289788537BE1F27F81A1C79D1987 /* FHIRPrimitive.swift in Sources */,
+				15816B58294CD0B6450B14534D5A3452 /* FHIRRequest.swift in Sources */,
+				F6424DE8511A2B349D4DE99E3264BD9A /* FHIRRequestHandler.swift in Sources */,
+				633AC8F5D39D47CB509C9C93D15B11FA /* FHIRSearch.swift in Sources */,
+				8AE50DAD7C3E1F18CC17259809204CB1 /* FHIRServer.swift in Sources */,
+				048BEF7C7C23ABD3A45B838CAF7A7C5B /* FHIRServerDataResponse.swift in Sources */,
+				6A3C8CB3167152A41EFD5BB59FDC9635 /* FHIRServerResponse.swift in Sources */,
+				825A0407AAE292ECFF51C98AAC96E342 /* FHIRString+Localization.swift in Sources */,
+				51A6D1C9C32D9020EC1BB9A0878C8DCD /* FHIRString.swift in Sources */,
+				C31B90B0F44E873D4C4350CCD4EF001A /* FHIRType.swift in Sources */,
+				F6ED4F6F3374A1D01CB09C618B38C858 /* FHIRURL.swift in Sources */,
+				9BF02E3AB45F8A6DB61CB72D95A8B557 /* FHIRValidationError.swift in Sources */,
+				A127C5731AE82782FA5F42A44389B105 /* Flag.swift in Sources */,
+				215061E2153DC63A4753524C3D2E754B /* Goal.swift in Sources */,
+				855D7746CB9A713DC275B4CBAD8A762F /* GraphDefinition.swift in Sources */,
+				C1B14F44BF7250427FCBBE4021292C09 /* Group.swift in Sources */,
+				2F663DC0B6CC1A900BFF1227565383C2 /* GuidanceResponse.swift in Sources */,
+				407442785056C964FC76236EAA035AB3 /* HealthcareService.swift in Sources */,
+				F94BC9A7AC2B1BA14E68560A3F70EA77 /* HumanName.swift in Sources */,
+				49922840E46B0F5334E485A1034CA168 /* Identifier.swift in Sources */,
+				AC1252A7DCA21F58E9AD6D5BF81D1374 /* ImagingManifest.swift in Sources */,
+				2DBF5557168048439DC7C2C1EF686E76 /* ImagingStudy.swift in Sources */,
+				DB33F7AE668B772BD10D1171B2A22E86 /* Immunization.swift in Sources */,
+				CD6BC94244782C1029047BCCCE88DE88 /* ImmunizationRecommendation.swift in Sources */,
+				50B6E2077AEA4C22ADAB9511B0B9206D /* ImplementationGuide.swift in Sources */,
+				EFA486BE7F5A4AF7968DCD2EEC2628C3 /* Library.swift in Sources */,
+				F9884FD890BF7492B09E5B38DD8E0775 /* Linkage.swift in Sources */,
+				AB6793817853B2095A9BBB7941C23988 /* List.swift in Sources */,
+				B546AADAF7C2145CB090A96D9D708B03 /* Location.swift in Sources */,
+				A3C87606FD477DD9D82ED2A70FD537AB /* Measure.swift in Sources */,
+				9A5905B98BD28029955FD24B9B0F5147 /* MeasureReport.swift in Sources */,
+				0C8B2D04F7BE36BFE108A51552F1C39C /* Media.swift in Sources */,
+				ABB3E52B8114E13EC2EBDDE0ECF95692 /* Medication.swift in Sources */,
+				27510FC3D51CB1ED86DDAE86C973D8F4 /* MedicationAdministration.swift in Sources */,
+				B2202B5793D37FC43EA5CC9A0CF68A68 /* MedicationDispense.swift in Sources */,
+				2677B6267C9D03B43DB52CF735076665 /* MedicationRequest.swift in Sources */,
+				688548CB10444483001484E81CF30F18 /* MedicationStatement.swift in Sources */,
+				8012B20812C5D8EF88F223C763AF9445 /* MessageDefinition.swift in Sources */,
+				F38FDA3E5D3117591D08F82DD999DD60 /* MessageHeader.swift in Sources */,
+				2FC80F25DDE307C8BBDB5F59E114857F /* Meta.swift in Sources */,
+				5CB6BF494B767AC7DAB40EBEE080B616 /* MetadataResource.swift in Sources */,
+				41C8A43D0C5F250FD4D61C07CBA1A7AC /* Money.swift in Sources */,
+				9E1DB18E9FF9DE0C66BBF841915EF26F /* NamingSystem.swift in Sources */,
+				4E09488E2A2A229E9BA3DC0F3172246A /* Narrative.swift in Sources */,
+				FAD4C62FDD9CFDE51F986C7B761C1A87 /* NutritionOrder.swift in Sources */,
+				118B119A768C0512552C64F7BB398F2C /* Observation.swift in Sources */,
+				2FBCE00F2A88AE77D259A5447E8F2C05 /* OperationDefinition.swift in Sources */,
+				F7993515DB430AD0DABD5D8060197CDD /* OperationOutcome.swift in Sources */,
+				231C44B2823FEC391524EFBCF5EC133D /* Organization.swift in Sources */,
+				7253711267D5DCE67301AD12CCBB0BB3 /* ParameterDefinition.swift in Sources */,
+				0AB531658DBA36B13B221824D804C7F8 /* Parameters.swift in Sources */,
+				6378B8E09F082339936B2BAD3FDC606C /* Patient+SMART.swift in Sources */,
+				5199B40AF03C9D41FB4C4749AB86C5F5 /* Patient.swift in Sources */,
+				C1FDA61812D89F373B8953DEABEEFE43 /* PaymentNotice.swift in Sources */,
+				52558F7244ADBE082AD22E272BA7701C /* PaymentReconciliation.swift in Sources */,
+				C5255DD4778A09ED31048B36833C93E7 /* Period.swift in Sources */,
+				DDFDB1B4BA4C91D2ECD02299A9996236 /* Person.swift in Sources */,
+				3C78BAFE54224F68DC517F7DF97BC7C5 /* PlanDefinition.swift in Sources */,
+				0F86543C0984745A85717B4EC666E910 /* Practitioner.swift in Sources */,
+				3FBDFC242649EB03FF72F34A620080B7 /* PractitionerRole.swift in Sources */,
+				50A75C47498D1B350DF5300E224678C6 /* Procedure.swift in Sources */,
+				64395229C50FF96F9C3AC3731E106098 /* ProcedureRequest.swift in Sources */,
+				CF6E6B612D8C962B62FEB8BD759E5C79 /* ProcessRequest.swift in Sources */,
+				E008C5DBADB4B86B9436F884DD0E7F54 /* ProcessResponse.swift in Sources */,
+				D8B5F66B834F4A6DD718F5B7202E163F /* Provenance.swift in Sources */,
+				EF908F9EE348E2B7FA2CE15468C1B342 /* Quantity.swift in Sources */,
+				13032489473BE59C7269FACCECC8302A /* Questionnaire.swift in Sources */,
+				55CEA91747CFC7792E6CFAE32D25CC9B /* QuestionnaireResponse.swift in Sources */,
+				179A1345569F125E0C40932E469D6256 /* Range.swift in Sources */,
+				A0568FE9A8285236E80AC9217E928210 /* Ratio.swift in Sources */,
+				164DBF0AB4BADBF90D9A07D02407DA2E /* Reference+Resolving.swift in Sources */,
+				4F4F8F3971ECBA307BDC2D7FC9133437 /* Reference.swift in Sources */,
+				8D892D3ADE9FA452EC42836152B7DE63 /* ReferralRequest.swift in Sources */,
+				11A3D9B684B2023EC352C7A9EAB7AD3B /* RelatedArtifact.swift in Sources */,
+				C7EECF338F9F48E676A21CDEC524C363 /* RelatedPerson.swift in Sources */,
+				19336A8AB508EAD60775B4E1343A5B12 /* RequestGroup.swift in Sources */,
+				DA06A6A44A68C3B61353E544386D149E /* ResearchStudy.swift in Sources */,
+				F930EE20C07D96561F2F2CFD1B9B777E /* ResearchSubject.swift in Sources */,
+				7977FB04A2AC1CB688F4640614158CCF /* Resource+Instantiation.swift in Sources */,
+				2406D4965F37B0B623CC0D7978D18341 /* Resource+Meta.swift in Sources */,
+				86B0CF6F41CC3CB89E62B33A84FB8BA2 /* Resource+Operation.swift in Sources */,
+				2872CA04F26F8CD7325BE477B327B3CC /* Resource+REST.swift in Sources */,
+				0BAE455A5045D08C8FADBDE6732E0F0C /* Resource.swift in Sources */,
+				5712A9D2AC779B1255213AF401EDD536 /* RiskAssessment.swift in Sources */,
+				E0BDA9CF70807E2C83393FB4615C48A9 /* SampledData.swift in Sources */,
+				161EDE373B8CE2A1FEA16730A040E064 /* Schedule.swift in Sources */,
+				D675CA28A917FA3F331B2DEB9BEBC386 /* SearchParameter.swift in Sources */,
+				30B8C64DF710584F00F276B1C7930ADB /* Sequence.swift in Sources */,
+				401F1A462DE6EB9470B82BBEEDF60D32 /* ServiceDefinition.swift in Sources */,
+				3B90ADD1C1514C1F14C2185D09067214 /* Signature.swift in Sources */,
+				D6DE30EC0A357A9513A71A84582E0E93 /* Slot.swift in Sources */,
+				2EF7BE4F54E6BC3FCAD082E18D8B1BD9 /* Specimen.swift in Sources */,
+				21316E1BE1EEDAE7A23E9B27DE859A3D /* StructureDefinition.swift in Sources */,
+				0DA5C54628DC7F9E78BFBDA232B6BBB3 /* StructureMap.swift in Sources */,
+				C53143C07B5AA24DDA8FF6FCACFCAB2A /* Subscription.swift in Sources */,
+				1B62C4BAEEC7B8593572B2904E732552 /* Substance.swift in Sources */,
+				1453DFD8F81B1B1CF438626C0F95442D /* SupplyDelivery.swift in Sources */,
+				D66FE2CD5AF590DDD4FD1067277D9084 /* SupplyRequest.swift in Sources */,
+				F8A6F71D963309C776C3D59E52BDB3A5 /* Task.swift in Sources */,
+				8F52B49E38D36C3DFE61B7DC6F7D661F /* TestReport.swift in Sources */,
+				5A6A18F6E83DB75F964C5719920D7F67 /* TestScript.swift in Sources */,
+				CC9ACB6DE8FC772943B02A6C50E31DF5 /* Timing.swift in Sources */,
+				0E01E14A0295C1C1CE82439FD729F1F4 /* TriggerDefinition.swift in Sources */,
+				6FC6B2B4E563EF3029803565D8190CF2 /* UsageContext.swift in Sources */,
+				22DA8EE3865040E0F2D18A45DDBEDC51 /* ValueSet+Localization.swift in Sources */,
+				98CEFC80429B0F1FBDD9BEBB01D36F6A /* ValueSet.swift in Sources */,
+				CA3FEFBBBECA8254BF0E4BD3667EFA5A /* VisionPrescription.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3CC17926A8C6EBB29D8FF214436EF04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FHIR;
+			target = 87B1175587B9922AE67F698800FFDC4C /* FHIR */;
+			targetProxy = 487BDA3C8003F657DB716FC1EE6C5BED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		284EC06B3E7B364BFC10700B0AB4EE25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FA7920D8791E4018F143FCCE9F10F64 /* FHIR.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FHIR/FHIR-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FHIR/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FHIR/FHIR.modulemap";
+				PRODUCT_MODULE_NAME = FHIR;
+				PRODUCT_NAME = FHIR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6010F8652C35F85D86C566969C2AB1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69BD2B51C0B7E0370AC1D1DD90B82C28 /* Pods-Therapy Helper.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Therapy Helper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6B7E599110F814278C6D783E209441E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CA732B76B5210CED91B6AB85E272A5 /* Pods-Therapy Helper.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Therapy Helper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		703082A85162812D3B777E668767AD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E7EAF72CBA7DC8686B90DD69C33B4466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FA7920D8791E4018F143FCCE9F10F64 /* FHIR.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FHIR/FHIR-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FHIR/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FHIR/FHIR.modulemap";
+				PRODUCT_MODULE_NAME = FHIR;
+				PRODUCT_NAME = FHIR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
+				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E4C8240EDA2D110F21FCA507000E18 /* Build configuration list for PBXNativeTarget "Pods-Therapy Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B7E599110F814278C6D783E209441E3 /* Debug */,
+				6010F8652C35F85D86C566969C2AB1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E918F60DD9751607E6A323B9A9AA63C5 /* Build configuration list for PBXNativeTarget "FHIR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				284EC06B3E7B364BFC10700B0AB4EE25 /* Debug */,
+				E7EAF72CBA7DC8686B90DD69C33B4466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
