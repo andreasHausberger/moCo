@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F4D5754FBFBE0F1E1CCAE18 /* Pods_Therapy_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A597A4E5D9BA653C70E03E00 /* Pods_Therapy_Helper.framework */; };
 		E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FA20985FF4007E3713 /* SkillModel.swift */; };
 		E13D61FE209862B4007E3713 /* SkillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FD209862B4007E3713 /* SkillCell.swift */; };
 		E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0853C7A3B1063F3793AD23AD /* Pods-Therapy Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Therapy Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper.release.xcconfig"; sourceTree = "<group>"; };
+		A597A4E5D9BA653C70E03E00 /* Pods_Therapy_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Therapy_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13D61FA20985FF4007E3713 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
 		E13D61FD209862B4007E3713 /* SkillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCell.swift; sourceTree = "<group>"; };
 		E1A7DD73208D176C00E1BFEB /* Therapy Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Therapy Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +39,7 @@
 		E1BC969E209F7F1600087405 /* SkillDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDetailViewController.swift; sourceTree = "<group>"; };
 		E1F862E52094F76500B39668 /* MoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsViewController.swift; sourceTree = "<group>"; };
 		E1F862E72094F77400B39668 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
+		F2E6C776093FBEAD8FBDD9AA /* Pods-Therapy Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Therapy Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4D5754FBFBE0F1E1CCAE18 /* Pods_Therapy_Helper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03B8C139F7857E63E5352213 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2E6C776093FBEAD8FBDD9AA /* Pods-Therapy Helper.debug.xcconfig */,
+				0853C7A3B1063F3793AD23AD /* Pods-Therapy Helper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0ED5EAC66525E5E18EDABDF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A597A4E5D9BA653C70E03E00 /* Pods_Therapy_Helper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E13D61F5209859D1007E3713 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +104,8 @@
 				E1A7DD75208D176C00E1BFEB /* Therapy Helper */,
 				E1A7DD74208D176C00E1BFEB /* Products */,
 				E1A7DD7F208D176F00E1BFEB /* Assets.xcassets */,
+				03B8C139F7857E63E5352213 /* Pods */,
+				0ED5EAC66525E5E18EDABDF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1A7DD87208D176F00E1BFEB /* Build configuration list for PBXNativeTarget "Therapy Helper" */;
 			buildPhases = (
+				2B0D39F3B429EC8B4B0BBF22 /* [CP] Check Pods Manifest.lock */,
 				E1A7DD6F208D176C00E1BFEB /* Sources */,
 				E1A7DD70208D176C00E1BFEB /* Frameworks */,
 				E1A7DD71208D176C00E1BFEB /* Resources */,
+				4207C2D7CF68CCEB7CD18D88 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +208,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B0D39F3B429EC8B4B0BBF22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Therapy Helper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4207C2D7CF68CCEB7CD18D88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FHIR/FHIR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FHIR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1A7DD6F208D176C00E1BFEB /* Sources */ = {
@@ -279,6 +344,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -332,12 +398,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		E1A7DD88208D176F00E1BFEB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2E6C776093FBEAD8FBDD9AA /* Pods-Therapy Helper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -350,12 +418,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "moco.Therapy-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E1A7DD89208D176F00E1BFEB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0853C7A3B1063F3793AD23AD /* Pods-Therapy Helper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,7 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "moco.Therapy-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

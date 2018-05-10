@@ -6,11 +6,12 @@
 //  Copyright © 2018 MoCo_Group2. All rights reserved.
 //
 
+
 import UIKit
 import CoreData
+import FHIR
 
 class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
     
     @IBOutlet weak var collectionView: UICollectionView!
     
