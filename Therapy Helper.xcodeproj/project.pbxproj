@@ -10,6 +10,9 @@
 		1F4D5754FBFBE0F1E1CCAE18 /* Pods_Therapy_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A597A4E5D9BA653C70E03E00 /* Pods_Therapy_Helper.framework */; };
 		E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FA20985FF4007E3713 /* SkillModel.swift */; };
 		E13D61FE209862B4007E3713 /* SkillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FD209862B4007E3713 /* SkillCell.swift */; };
+		E175E3FB20A4D44A00F4FF0B /* MoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175E3FA20A4D44A00F4FF0B /* MoodModel.swift */; };
+		E175E3FD20A591A300F4FF0B /* MoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175E3FC20A591A300F4FF0B /* MoodDetailViewController.swift */; };
+		E18EC6D720A6DF27006095CA /* MoodFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18EC6D620A6DF27006095CA /* MoodFormViewController.swift */; };
 		E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */; };
 		E1A7DD79208D176C00E1BFEB /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD78208D176C00E1BFEB /* SkillsViewController.swift */; };
 		E1A7DD7B208D176D00E1BFEB /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7DD7A208D176D00E1BFEB /* DiaryViewController.swift */; };
@@ -27,6 +30,9 @@
 		A597A4E5D9BA653C70E03E00 /* Pods_Therapy_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Therapy_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13D61FA20985FF4007E3713 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
 		E13D61FD209862B4007E3713 /* SkillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCell.swift; sourceTree = "<group>"; };
+		E175E3FA20A4D44A00F4FF0B /* MoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodModel.swift; sourceTree = "<group>"; };
+		E175E3FC20A591A300F4FF0B /* MoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailViewController.swift; sourceTree = "<group>"; };
+		E18EC6D620A6DF27006095CA /* MoodFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodFormViewController.swift; sourceTree = "<group>"; };
 		E1A7DD73208D176C00E1BFEB /* Therapy Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Therapy Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A7DD76208D176C00E1BFEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A7DD78208D176C00E1BFEB /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				E13D61FA20985FF4007E3713 /* SkillModel.swift */,
+				E175E3FA20A4D44A00F4FF0B /* MoodModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				E1BC969E209F7F1600087405 /* SkillDetailViewController.swift */,
+				E175E3FC20A591A300F4FF0B /* MoodDetailViewController.swift */,
+				E18EC6D620A6DF27006095CA /* MoodFormViewController.swift */,
 			);
 			path = DetailViewController;
 			sourceTree = "<group>";
@@ -253,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E175E3FB20A4D44A00F4FF0B /* MoodModel.swift in Sources */,
 				E1A7DD7B208D176D00E1BFEB /* DiaryViewController.swift in Sources */,
 				E13D61FE209862B4007E3713 /* SkillCell.swift in Sources */,
 				E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */,
@@ -261,6 +271,8 @@
 				E1F862E62094F76500B39668 /* MoodsViewController.swift in Sources */,
 				E1A7DD79208D176C00E1BFEB /* SkillsViewController.swift in Sources */,
 				E1F862E82094F77400B39668 /* ChallengesViewController.swift in Sources */,
+				E18EC6D720A6DF27006095CA /* MoodFormViewController.swift in Sources */,
+				E175E3FD20A591A300F4FF0B /* MoodDetailViewController.swift in Sources */,
 				E1BC9679209DE51300087405 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

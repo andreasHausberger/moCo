@@ -8,13 +8,36 @@
 
 import UIKit
 
-class MoodsViewController: UIViewController {
-
+class MoodsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    var moodModel: MoodModel = MoodModel()
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func addMood(_ sender: UIButton) {
+        print("Button Pushed")
+        collectionView.reloadData()
+    }
+    
+    
+     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return moodModel.getMoods().count
+    }
+    
+     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoodCell", for: indexPath)
+        
+        return cell
+        
+    }
+    
+    
     
     
 
