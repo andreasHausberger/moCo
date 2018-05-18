@@ -12,15 +12,55 @@ import CoreData
 
 class MoodModel {
     private var moods: [Mood] = [Mood]()
+    private var moodDataObjects: [MoodDataObject] = [MoodDataObject]()
     
-    func addMood(mental: Double, physical: Double, optimism: Double, text: String){
+    func addMood(_ moodDataObject: MoodDataObject){
+        moodDataObjects.append(moodDataObject)
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let context = delegate.persistentContainer.viewContext
         
-    
+        let entity = NSEntityDescription.entity(forEntityName: "Mood", in: context)
+        
+        let newMood = Mood(entity: entity!, insertInto: context)
+        newMood.mental_wellbeing = moodDataObject.mental_wellbeing
+        newMood.physical_wellbeing = moodDataObject.physical_wellbeing
+        newMood.optimism = moodDataObject.optimism
+        newMood.overall = moodDataObject.overall
+        newMood.text = moodDataObject.text
+        newMood.patientID = 111 //TODO: Figure this out
+        newMood.time_created = Date()
+        
+        moods.append(newMood)
+        
+        delegate.saveContext();
+        
     }
     
-    func getMoods() -> [Mood] {
-        return moods
+    func getMoods() -> [MoodDataObject] {
+        return moodDataObjects
     }
+    
+    func loadMoods() {
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let context = delegate.persistentContainer.viewContext
+        do {
+            if let fetchedMoods = try context.fetch(Mood.fetchRequest()) as? [Mood] {
+                if !fetchedMoods.isEmpty {
+                    moods = fetchedMoods
+                    
+                    for mood in moods {
+                        let trueText = mood.text == nil ? "" : mood.text!
+                        let moodDataObject = MoodDataObject(mental_wellbeing: mood.mental_wellbeing, physical_wellbeing: mood.physical_wellbeing, optimism: mood.optimism, text: trueText)
+                        moodDataObjects.append(moodDataObject)
+                    }
+                }
+            }
+        }
+        catch {
+            print("Fetch failed")
+        }
+    }
+
     
     
 }

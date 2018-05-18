@@ -9,15 +9,26 @@
 import UIKit
 
 class MoodDetailViewController: UIPageViewController {
+    
+    var rootVC: MoodsViewController?
+    
+    var physicalScore: Double = 5
+    var mentalScore: Double = 5
+    var optimismScore: Double = 5
+    var text: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         dataSource = self
-        
         if let firstVC = orderedViewControllers.first {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
+        }
+    }
     
+    func createMood() {
+        if rootVC != nil {
+            let moodDataObject = MoodDataObject(mental_wellbeing: self.mentalScore, physical_wellbeing: self.physicalScore, optimism: self.optimismScore, text: self.text)
+            rootVC?.saveMood(moodDataObject)
         }
     }
     

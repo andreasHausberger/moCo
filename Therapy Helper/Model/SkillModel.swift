@@ -42,7 +42,7 @@ class SkillModel {
         do {
             if let fetchedSkills = try context.fetch(Skill.fetchRequest()) as? [Skill] {
                 if !fetchedSkills.isEmpty {
-                    skills = fetchedSkills;
+                    skills = fetchedSkills
                 }
             }
             
