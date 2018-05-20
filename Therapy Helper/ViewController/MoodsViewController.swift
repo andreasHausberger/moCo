@@ -14,12 +14,16 @@ class MoodsViewController: UIViewController, UICollectionViewDelegate, UICollect
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
+    @IBOutlet weak var addButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         moodModel.loadMoods()
         collectionView.dataSource = self
         collectionView.delegate = self
+        addButton.layer.cornerRadius = 25
     }
     
     func saveMood(_ moodDataObject: MoodDataObject) {
@@ -46,9 +50,7 @@ class MoodsViewController: UIViewController, UICollectionViewDelegate, UICollect
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoodCell", for: indexPath) as! MoodCell
         
         let moodDataObject = moodModel.getMoods()[indexPath.item]
-        cell.score.text = String(moodDataObject.overall)
-        cell.date.text = Date().description // TODO: Figure this out.
-        cell.backgroundColor = UIColor.gray
+        cell.configure(moodDataObject: moodDataObject)
         cell.layer.cornerRadius = 10
         
         return cell

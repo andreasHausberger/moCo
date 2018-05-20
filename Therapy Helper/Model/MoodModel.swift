@@ -28,7 +28,7 @@ class MoodModel {
         newMood.overall = moodDataObject.overall
         newMood.text = moodDataObject.text
         newMood.patientID = 111 //TODO: Figure this out
-        newMood.time_created = Date()
+        newMood.time_created = moodDataObject.creationDate!
         
         moods.append(newMood)
         
@@ -50,7 +50,7 @@ class MoodModel {
                     
                     for mood in moods {
                         let trueText = mood.text == nil ? "" : mood.text!
-                        let moodDataObject = MoodDataObject(mental_wellbeing: mood.mental_wellbeing, physical_wellbeing: mood.physical_wellbeing, optimism: mood.optimism, text: trueText)
+                        let moodDataObject = MoodDataObject(mental_wellbeing: mood.mental_wellbeing, physical_wellbeing: mood.physical_wellbeing, optimism: mood.optimism, text: trueText, creationDate: mood.time_created!)
                         moodDataObjects.append(moodDataObject)
                     }
                 }

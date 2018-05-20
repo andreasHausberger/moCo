@@ -27,7 +27,7 @@ class MoodDetailViewController: UIPageViewController {
     
     func createMood() {
         if rootVC != nil {
-            let moodDataObject = MoodDataObject(mental_wellbeing: self.mentalScore, physical_wellbeing: self.physicalScore, optimism: self.optimismScore, text: self.text)
+            let moodDataObject = MoodDataObject(mental_wellbeing: self.mentalScore, physical_wellbeing: self.physicalScore, optimism: self.optimismScore, text: self.text, creationDate: Date())
             rootVC?.saveMood(moodDataObject)
         }
     }

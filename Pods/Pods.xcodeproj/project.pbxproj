@@ -57,7 +57,6 @@
 		3816BF8498647B9608F9B34002D084A7 /* FHIRMinimalServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C07CE4D40C36651D801D6B109939123 /* FHIRMinimalServer.swift */; };
 		38FE27A9DF1C921E015933FFD5D1E460 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB4236C2153630B07D8CAA58EF96082 /* Device.swift */; };
 		39BEA51D310FCAC5CE4DFB3299C231F7 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC1C8ADDCEE61A60AE79AD7C7A9270 /* Distance.swift */; };
-		3A2D5149C2B8C6A2EAEC35CBF5C50E83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		3B90ADD1C1514C1F14C2185D09067214 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40286A241D2697607147B037A5910A32 /* Signature.swift */; };
 		3BE3EE6C953EE44ABBC4FD9C291989F2 /* EnrollmentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00A1C12305F76C8EF88C810CF38B43 /* EnrollmentRequest.swift */; };
 		3C78BAFE54224F68DC517F7DF97BC7C5 /* PlanDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CC4BC61EA6AEACACCD47A87E5E9EC6 /* PlanDefinition.swift */; };
@@ -71,6 +70,7 @@
 		41C8A43D0C5F250FD4D61C07CBA1A7AC /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC390D00EC154BB639483F69E949D52 /* Money.swift */; };
 		435EBC1B5C7B1103AFB6E0D46D69C259 /* Base64Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D4459A6A19D4E9E5ADE0DB50E70AD /* Base64Binary.swift */; };
 		4399CD66B5EAA050932242B5423E5DBE /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72BAD018F1CC9D25653A2112849B2F /* Condition.swift */; };
+		487F9A361E8806D7935C1B0CCB9C249F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		49922840E46B0F5334E485A1034CA168 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362E79D183D47316F2AE9E5421997E0 /* Identifier.swift */; };
 		4B4735B09B83D806F898F58E7F754ABD /* EligibilityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F332E77754330C50B13827895AF35BF /* EligibilityResponse.swift */; };
 		4BFF943077577C53D3CEC3298CD0F9F5 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F42F902572F830146AAB6CFADC9630 /* Contract.swift */; };
@@ -132,7 +132,6 @@
 		918B3BCABA7FDC21B77580939CD1F7A6 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B476B87CE37C5B197BEFC9D4E3425 /* Coding.swift */; };
 		981A289788537BE1F27F81A1C79D1987 /* FHIRPrimitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A773E0CC000140F3D2E2E91488D947E6 /* FHIRPrimitive.swift */; };
 		98CEFC80429B0F1FBDD9BEBB01D36F6A /* ValueSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04A10CFE9AB035FAEBC6904C026F812 /* ValueSet.swift */; };
-		98F5E26291F52B950FD673D39095B15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		9A5905B98BD28029955FD24B9B0F5147 /* MeasureReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504CF434554CA7B2B37BC4CCD5DC9229 /* MeasureReport.swift */; };
 		9B145D1489848DF05332C51B26E99040 /* Pods-Therapy Helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C788780CE0B4981D7D76FB3F1B98F6 /* Pods-Therapy Helper-dummy.m */; };
 		9BF02E3AB45F8A6DB61CB72D95A8B557 /* FHIRValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6867EBC3DE571F13E63E1595CB8A52 /* FHIRValidationError.swift */; };
@@ -171,6 +170,7 @@
 		D66FE2CD5AF590DDD4FD1067277D9084 /* SupplyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69034F2873D8EF639C51D79E5B69BC2C /* SupplyRequest.swift */; };
 		D675CA28A917FA3F331B2DEB9BEBC386 /* SearchParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1530F11156CE83974D7607CF790267 /* SearchParameter.swift */; };
 		D6DE30EC0A357A9513A71A84582E0E93 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB7DB3BC12B7A81C95FD10796C452D /* Slot.swift */; };
+		D6E9C14B99FD2D9DDC5C6C424A235080 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D8B5F66B834F4A6DD718F5B7202E163F /* Provenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CC2E92967318F28D8862ECFB2F7052 /* Provenance.swift */; };
 		DA06A6A44A68C3B61353E544386D149E /* ResearchStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D9BD190C8192CB1F1CFEDD6A238A1 /* ResearchStudy.swift */; };
 		DB33F7AE668B772BD10D1171B2A22E86 /* Immunization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E361418FBA19E3134D60A9079FFF7 /* Immunization.swift */; };
@@ -291,7 +291,6 @@
 		57F0BA7E88F75FC0347A4CD90B77FD10 /* ParameterDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterDefinition.swift; path = Sources/Models/ParameterDefinition.swift; sourceTree = "<group>"; };
 		58E3C644DF7DA37AB5A38841DED22E01 /* ResearchSubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResearchSubject.swift; path = Sources/Models/ResearchSubject.swift; sourceTree = "<group>"; };
 		59A4EA5FF57C3AD723DE8FFE82F5F0DE /* DocumentManifest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentManifest.swift; path = Sources/Models/DocumentManifest.swift; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5A73694BC81FFFC22A44800FDAF9F0DF /* ContactPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContactPoint.swift; path = Sources/Models/ContactPoint.swift; sourceTree = "<group>"; };
 		5E5D4459A6A19D4E9E5ADE0DB50E70AD /* Base64Binary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64Binary.swift; path = Sources/Models/Base64Binary.swift; sourceTree = "<group>"; };
 		5EF1801E6ABFC83C609416393454933E /* Schedule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Sources/Models/Schedule.swift; sourceTree = "<group>"; };
@@ -300,6 +299,7 @@
 		62CA732B76B5210CED91B6AB85E272A5 /* Pods-Therapy Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Therapy Helper.debug.xcconfig"; sourceTree = "<group>"; };
 		655CEFD3B25300279570774B35C58861 /* HumanName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HumanName.swift; path = Sources/Models/HumanName.swift; sourceTree = "<group>"; };
 		65DB879CE0231BEE82BC22F04DED4129 /* FHIRAbstractBase+Factory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FHIRAbstractBase+Factory.swift"; path = "Sources/Models/FHIRAbstractBase+Factory.swift"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		669EED3048CAD1CAEDF6D6514855B620 /* Encounter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encounter.swift; path = Sources/Models/Encounter.swift; sourceTree = "<group>"; };
 		68B434BD4D6447808411150665B14AA2 /* ProcedureRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureRequest.swift; path = Sources/Models/ProcedureRequest.swift; sourceTree = "<group>"; };
 		69034F2873D8EF639C51D79E5B69BC2C /* SupplyRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupplyRequest.swift; path = Sources/Models/SupplyRequest.swift; sourceTree = "<group>"; };
@@ -437,7 +437,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2D5149C2B8C6A2EAEC35CBF5C50E83 /* Foundation.framework in Frameworks */,
+				D6E9C14B99FD2D9DDC5C6C424A235080 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +445,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98F5E26291F52B950FD673D39095B15F /* Foundation.framework in Frameworks */,
+				487F9A361E8806D7935C1B0CCB9C249F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,14 +696,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -718,9 +710,17 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		F6B37660EBE7C613BAA3B2E3D8D8ECDB /* Support Files */ = {
@@ -1059,11 +1059,7 @@
 				INFOPLIST_FILE = "Target Support Files/FHIR/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FHIR/FHIR.modulemap";
 				PRODUCT_MODULE_NAME = FHIR;
 				PRODUCT_NAME = FHIR;
@@ -1096,11 +1092,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Therapy Helper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1199,11 +1191,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Therapy Helper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1296,11 +1284,7 @@
 				INFOPLIST_FILE = "Target Support Files/FHIR/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FHIR/FHIR.modulemap";
 				PRODUCT_MODULE_NAME = FHIR;
 				PRODUCT_NAME = FHIR;

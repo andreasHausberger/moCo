@@ -16,12 +16,13 @@ class MoodDataObject {
     var text: String
     var creationDate: Date?
     
-    init(mental_wellbeing: Double, physical_wellbeing: Double, optimism: Double, text: String) {
+    init(mental_wellbeing: Double, physical_wellbeing: Double, optimism: Double, text: String, creationDate: Date) {
         self.mental_wellbeing = mental_wellbeing
         self.physical_wellbeing = physical_wellbeing
         self.optimism = optimism
         self.text = text
-        self.overall = (mental_wellbeing + physical_wellbeing + optimism) / 3
+        let unrounded = (mental_wellbeing + physical_wellbeing + optimism) / 3
+        self.overall = round(10 * unrounded) / 10
+        self.creationDate = creationDate
     }
-    
 }
