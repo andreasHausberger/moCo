@@ -14,7 +14,10 @@ class MoodCell: UICollectionViewCell {
     
     @IBOutlet weak var score: UILabel!
     
+    var moodDataObject: MoodDataObject?
+    
     func configure(moodDataObject: MoodDataObject) {
+        self.moodDataObject = moodDataObject
         if let date = moodDataObject.creationDate {
             self.date.text = date.description
         }

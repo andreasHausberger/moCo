@@ -35,6 +35,13 @@ class MoodsViewController: UIViewController, UICollectionViewDelegate, UICollect
         if let destinationVC = segue.destination as? MoodDetailViewController {
             destinationVC.rootVC = self
         }
+        else if let destinationVC = segue.destination as? MoodReviewViewController {
+            if let senderCell = sender as? MoodCell {
+                guard senderCell.moodDataObject != nil else { return }
+                destinationVC.moodDataObject = senderCell.moodDataObject!
+                destinationVC.color = senderCell.backgroundColor
+            }
+        }
     }
 
     @IBAction func addMood(_ sender: UIButton) {

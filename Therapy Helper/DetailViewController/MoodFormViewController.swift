@@ -20,7 +20,21 @@ class MoodFormViewController: UIViewController {
     
     @IBOutlet weak var moodTextField: UITextField!
     
-
+    
+    @IBOutlet weak var backgroundView1: UIView?
+    
+    @IBOutlet weak var backgroundView2: UIView?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if backgroundView1 != nil {
+            backgroundView1?.layer.cornerRadius = 10
+        }
+        if backgroundView2 != nil {
+            backgroundView2?.layer.cornerRadius = 10
+        }
+    }
+    
     @IBAction func setPhysicalSlider(_ sender: UISlider) {
         if physicalLabel != nil {
             if let parentVC = self.parent as? MoodDetailViewController {
@@ -62,11 +76,7 @@ class MoodFormViewController: UIViewController {
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+   
 
     private func setLabel(slider: UISlider, label: UILabel) -> Double {
         var currentValue = Double(slider.value)

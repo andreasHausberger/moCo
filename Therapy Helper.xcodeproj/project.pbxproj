@@ -12,6 +12,7 @@
 		E124581920A76C17004768B4 /* MoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124581820A76C17004768B4 /* MoodCell.swift */; };
 		E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FA20985FF4007E3713 /* SkillModel.swift */; };
 		E13D61FE209862B4007E3713 /* SkillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FD209862B4007E3713 /* SkillCell.swift */; };
+		E14B4BC320B2B283002322A0 /* MoodReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14B4BC220B2B283002322A0 /* MoodReviewViewController.swift */; };
 		E175E3FB20A4D44A00F4FF0B /* MoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175E3FA20A4D44A00F4FF0B /* MoodModel.swift */; };
 		E175E3FD20A591A300F4FF0B /* MoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175E3FC20A591A300F4FF0B /* MoodDetailViewController.swift */; };
 		E18EC6D720A6DF27006095CA /* MoodFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18EC6D620A6DF27006095CA /* MoodFormViewController.swift */; };
@@ -34,6 +35,7 @@
 		E124581820A76C17004768B4 /* MoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCell.swift; sourceTree = "<group>"; };
 		E13D61FA20985FF4007E3713 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
 		E13D61FD209862B4007E3713 /* SkillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCell.swift; sourceTree = "<group>"; };
+		E14B4BC220B2B283002322A0 /* MoodReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodReviewViewController.swift; sourceTree = "<group>"; };
 		E175E3FA20A4D44A00F4FF0B /* MoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodModel.swift; sourceTree = "<group>"; };
 		E175E3FC20A591A300F4FF0B /* MoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailViewController.swift; sourceTree = "<group>"; };
 		E18EC6D620A6DF27006095CA /* MoodFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodFormViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				E1BC969E209F7F1600087405 /* SkillDetailViewController.swift */,
 				E175E3FC20A591A300F4FF0B /* MoodDetailViewController.swift */,
 				E18EC6D620A6DF27006095CA /* MoodFormViewController.swift */,
+				E14B4BC220B2B283002322A0 /* MoodReviewViewController.swift */,
 			);
 			path = DetailViewController;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				E1BC969F209F7F1600087405 /* SkillDetailViewController.swift in Sources */,
 				E1F862E62094F76500B39668 /* MoodsViewController.swift in Sources */,
 				E124581720A71565004768B4 /* MoodDataObject.swift in Sources */,
+				E14B4BC320B2B283002322A0 /* MoodReviewViewController.swift in Sources */,
 				E1A7DD79208D176C00E1BFEB /* SkillsViewController.swift in Sources */,
 				E1F862E82094F77400B39668 /* ChallengesViewController.swift in Sources */,
 				E18EC6D720A6DF27006095CA /* MoodFormViewController.swift in Sources */,
