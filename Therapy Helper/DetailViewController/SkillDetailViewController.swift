@@ -10,8 +10,9 @@ import UIKit
 
 class SkillDetailViewController: UIViewController {
     
-    var skill: Skill?
-    
+    var skill: SkillDataObject?
+    var minutes: Int?
+    var seconds: Int = 0
     var backgroundColor: UIColor?
     
     @IBOutlet weak var backgroundView: UIView!
@@ -20,21 +21,35 @@ class SkillDetailViewController: UIViewController {
     
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var timer: UILabel!
     
+    @IBOutlet weak var timerButton: UIButton!
+    
+    @IBOutlet weak var timerLabel: UILabel!
+    
+    var countdownTimer: Timer = Timer()
+    
+    var isTimerRunning = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        guard skill != nil else { return }
         self.titleLabel.text = skill!.name
         self.descriptionLabel.text = skill!.text
-        self.dateLabel.text = skill!.creationDate?.description
-        
+        self.timer.text = skill!.timer.description + ":00"
+
         self.backgroundView.layer.cornerRadius = 20
         self.backgroundView.backgroundColor = self.backgroundColor
+        self.minutes = skill!.timer
+        
+        if minutes! <= 0 {
+            self.timer.isHidden = true
+            self.timerLabel.text = "Untimed"
+            self.timerButton.isHidden = true
+        }
     }
     
-    func setUp(skill: Skill) {
+    func setUp(skill: SkillDataObject) {
         self.skill = skill
         
         switch skill.category {
@@ -53,5 +68,41 @@ class SkillDetailViewController: UIViewController {
         
     }
     
+    
+    @IBAction func startTimer(_ sender: UIButton) {
+        print("button clicked")
+        if !isTimerRunning {
+            self.minutes = self.skill?.timer
+            runTimer()
+        }
+    }
+    
+    private func runTimer() {
+        isTimerRunning = true
+        countdownTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+            if self.isTimerRunning {
+                self.seconds -= 1
+                if self.seconds < 0 {
+                    self.minutes! -= 1
+                    self.seconds = 59
+                }
+                
+                self.timer.text = "\(self.minutes!):\(self.seconds)"
+
+                
+                if self.minutes! == 0 && self.seconds == 0 {
+                    self.isTimerRunning = false
+                    self.notifyTimerEnding()
+                    self.countdownTimer.invalidate()
+
+                    self.timer.text = self.skill!.timer.description + ":00"
+                }
+            }
+        }
+    }
+    
+    private func notifyTimerEnding() {
+        print("Timer has ended")
+    }
 
 }

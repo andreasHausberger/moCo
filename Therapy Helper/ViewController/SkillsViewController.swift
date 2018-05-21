@@ -51,7 +51,8 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
             
             if (skillText != "" && skillName != "") {
-                self.skillModel.addSkill(name: skillName, text: skillText, categoryNumber: skillCategoryNumber)
+                let newSkillDataObject = SkillDataObject(name: skillName, text: skillText, category: skillCategoryNumber, creationDate: Date(), timer: 2)
+                self.skillModel.addSkill(newSkillDataObject)
                 self.collectionView.reloadData()
             }
             
@@ -73,7 +74,8 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
             
             if (skillText != "" && skillName != "") {
-                self.skillModel.addSkill(name: skillName, text: skillText, categoryNumber: skillCategoryNumber)
+                let newSkillDataObject = SkillDataObject(name: skillName, text: skillText, category: skillCategoryNumber, creationDate: Date(), timer: 2)
+                self.skillModel.addSkill(newSkillDataObject)
                 self.collectionView.reloadData()
             }
         }
