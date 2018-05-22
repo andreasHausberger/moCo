@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SkillDetailViewController: UIViewController {
     
@@ -94,7 +95,6 @@ class SkillDetailViewController: UIViewController {
                     self.isTimerRunning = false
                     self.notifyTimerEnding()
                     self.countdownTimer.invalidate()
-
                     self.timer.text = self.skill!.timer.description + ":00"
                 }
             }
@@ -103,6 +103,15 @@ class SkillDetailViewController: UIViewController {
     
     private func notifyTimerEnding() {
         print("Timer has ended")
+        let alert = UIAlertController(title: "Timer", message: "The Timer has ended!", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default)
+        { (UIAlertAction) -> Void in
+            alert.dismiss(animated: true, completion: nil)
+        })
+        AudioServicesPlayAlertSound(SystemSoundID(1023))
+        self.present(alert, animated: true, completion: nil)
+        
     }
 
 }
