@@ -1,50 +1,35 @@
 //
-//  MoodDetailViewController.swift
+//  DiaryDetailViewController.swift
 //  Therapy Helper
 //
-//  Created by Andreas on 11.05.18.
+//  Created by Andreas on 30.05.18.
 //  Copyright © 2018 MoCo_Group2. All rights reserved.
 //
 
 import UIKit
 
-class MoodDetailViewController: UIPageViewController {
+class DiaryDetailViewController: UIPageViewController {
     
-    var rootVC: MoodsViewController?
-    
-    var physicalScore: Double = 5
-    var mentalScore: Double = 5
-    var optimismScore: Double = 5
-    var text: String = ""
+    var rootVC: DiaryViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
-        if let firstVC = orderedViewControllers.first {
-            setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
-        }
-    }
-    
-    func createMood() {
-        if rootVC != nil {
-            let moodDataObject = MoodDataObject(mental_wellbeing: self.mentalScore, physical_wellbeing: self.physicalScore, optimism: self.optimismScore, text: self.text, creationDate: Date())
-            rootVC?.saveMood(moodDataObject)
-        }
+        // Do any additional setup after loading the view.
     }
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
-        return [self.newDetailVC(storyboardID: "MoodDetailView1"), self.newDetailVC(storyboardID: "MoodDetailView2")]
+        return [self.newDetailVC(storyboardID: "DiaryFormViewController1"),
+                self.newDetailVC(storyboardID: "DiaryFormViewController2")]
     }()
-
     
     private func newDetailVC(storyboardID: String) -> UIViewController {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: storyboardID)
         return vc
     }
-
 }
 
-extension MoodDetailViewController: UIPageViewControllerDataSource {
+extension DiaryDetailViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else { return nil }
         
@@ -78,3 +63,4 @@ extension MoodDetailViewController: UIPageViewControllerDataSource {
         return firstViewControllerIndex
     }
 }
+

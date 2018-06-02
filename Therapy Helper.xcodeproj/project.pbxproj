@@ -23,6 +23,15 @@
 		E1A7DD7E208D176D00E1BFEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD7C208D176D00E1BFEB /* Main.storyboard */; };
 		E1A7DD80208D176F00E1BFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD7F208D176F00E1BFEB /* Assets.xcassets */; };
 		E1A7DD83208D176F00E1BFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A7DD81208D176F00E1BFEB /* LaunchScreen.storyboard */; };
+		E1AC196F20BC427B009575C4 /* DiaryEntryDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC196E20BC427B009575C4 /* DiaryEntryDataObject.swift */; };
+		E1AC197120BC429A009575C4 /* DiaryDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC197020BC429A009575C4 /* DiaryDataObject.swift */; };
+		E1AC197320BC45BB009575C4 /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC197220BC45BB009575C4 /* DiaryModel.swift */; };
+		E1AC197520BDA6B5009575C4 /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC197420BDA6B5009575C4 /* DiaryCell.swift */; };
+		E1AC197720BEA0F9009575C4 /* DiaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC197620BEA0F9009575C4 /* DiaryDetailViewController.swift */; };
+		E1AC197920BEA302009575C4 /* DiaryFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC197820BEA302009575C4 /* DiaryFormViewController.swift */; };
+		E1AC197B20C2BB5A009575C4 /* DiaryFormCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC197A20C2BB5A009575C4 /* DiaryFormCollectionViewController.swift */; };
+		E1AC197D20C2BDFF009575C4 /* DiaryEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC197C20C2BDFF009575C4 /* DiaryEntryCell.swift */; };
+		E1AC197F20C2DD48009575C4 /* DiaryEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC197E20C2DD48009575C4 /* DiaryEntryViewController.swift */; };
 		E1BC9679209DE51300087405 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1BC9677209DE51300087405 /* Model.xcdatamodeld */; };
 		E1BC969F209F7F1600087405 /* SkillDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BC969E209F7F1600087405 /* SkillDetailViewController.swift */; };
 		E1F862E62094F76500B39668 /* MoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F862E52094F76500B39668 /* MoodsViewController.swift */; };
@@ -49,6 +58,15 @@
 		E1A7DD7F208D176F00E1BFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1A7DD82208D176F00E1BFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1A7DD84208D176F00E1BFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1AC196E20BC427B009575C4 /* DiaryEntryDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryEntryDataObject.swift; sourceTree = "<group>"; };
+		E1AC197020BC429A009575C4 /* DiaryDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDataObject.swift; sourceTree = "<group>"; };
+		E1AC197220BC45BB009575C4 /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		E1AC197420BDA6B5009575C4 /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
+		E1AC197620BEA0F9009575C4 /* DiaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailViewController.swift; sourceTree = "<group>"; };
+		E1AC197820BEA302009575C4 /* DiaryFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryFormViewController.swift; sourceTree = "<group>"; };
+		E1AC197A20C2BB5A009575C4 /* DiaryFormCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryFormCollectionViewController.swift; sourceTree = "<group>"; };
+		E1AC197C20C2BDFF009575C4 /* DiaryEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryEntryCell.swift; sourceTree = "<group>"; };
+		E1AC197E20C2DD48009575C4 /* DiaryEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryEntryViewController.swift; sourceTree = "<group>"; };
 		E1BC9678209DE51300087405 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E1BC969E209F7F1600087405 /* SkillDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDetailViewController.swift; sourceTree = "<group>"; };
 		E1F862E52094F76500B39668 /* MoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +108,8 @@
 			children = (
 				E124581620A71565004768B4 /* MoodDataObject.swift */,
 				E17BBE0120B2DE0200195171 /* SkillDataObject.swift */,
+				E1AC196E20BC427B009575C4 /* DiaryEntryDataObject.swift */,
+				E1AC197020BC429A009575C4 /* DiaryDataObject.swift */,
 			);
 			path = "Data Objects";
 			sourceTree = "<group>";
@@ -110,6 +130,7 @@
 			children = (
 				E13D61FA20985FF4007E3713 /* SkillModel.swift */,
 				E175E3FA20A4D44A00F4FF0B /* MoodModel.swift */,
+				E1AC197220BC45BB009575C4 /* DiaryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +140,8 @@
 			children = (
 				E13D61FD209862B4007E3713 /* SkillCell.swift */,
 				E124581820A76C17004768B4 /* MoodCell.swift */,
+				E1AC197420BDA6B5009575C4 /* DiaryCell.swift */,
+				E1AC197C20C2BDFF009575C4 /* DiaryEntryCell.swift */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -159,6 +182,17 @@
 			path = "Therapy Helper";
 			sourceTree = "<group>";
 		};
+		E1AC198020C2DD57009575C4 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				E1AC197620BEA0F9009575C4 /* DiaryDetailViewController.swift */,
+				E1AC197820BEA302009575C4 /* DiaryFormViewController.swift */,
+				E1AC197A20C2BB5A009575C4 /* DiaryFormCollectionViewController.swift */,
+				E1AC197E20C2DD48009575C4 /* DiaryEntryViewController.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
 		E1BC969D209F7EF400087405 /* DetailViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +200,7 @@
 				E175E3FC20A591A300F4FF0B /* MoodDetailViewController.swift */,
 				E18EC6D620A6DF27006095CA /* MoodFormViewController.swift */,
 				E14B4BC220B2B283002322A0 /* MoodReviewViewController.swift */,
+				E1AC198020C2DD57009575C4 /* Diary */,
 			);
 			path = DetailViewController;
 			sourceTree = "<group>";
@@ -284,14 +319,23 @@
 			files = (
 				E17BBE0220B2DE0200195171 /* SkillDataObject.swift in Sources */,
 				E175E3FB20A4D44A00F4FF0B /* MoodModel.swift in Sources */,
+				E1AC197D20C2BDFF009575C4 /* DiaryEntryCell.swift in Sources */,
 				E1A7DD7B208D176D00E1BFEB /* DiaryViewController.swift in Sources */,
+				E1AC197520BDA6B5009575C4 /* DiaryCell.swift in Sources */,
 				E13D61FE209862B4007E3713 /* SkillCell.swift in Sources */,
 				E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */,
 				E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */,
 				E1BC969F209F7F1600087405 /* SkillDetailViewController.swift in Sources */,
+				E1AC196F20BC427B009575C4 /* DiaryEntryDataObject.swift in Sources */,
+				E1AC197120BC429A009575C4 /* DiaryDataObject.swift in Sources */,
+				E1AC197F20C2DD48009575C4 /* DiaryEntryViewController.swift in Sources */,
+				E1AC197720BEA0F9009575C4 /* DiaryDetailViewController.swift in Sources */,
 				E1F862E62094F76500B39668 /* MoodsViewController.swift in Sources */,
 				E124581720A71565004768B4 /* MoodDataObject.swift in Sources */,
 				E14B4BC320B2B283002322A0 /* MoodReviewViewController.swift in Sources */,
+				E1AC197920BEA302009575C4 /* DiaryFormViewController.swift in Sources */,
+				E1AC197320BC45BB009575C4 /* DiaryModel.swift in Sources */,
+				E1AC197B20C2BB5A009575C4 /* DiaryFormCollectionViewController.swift in Sources */,
 				E1A7DD79208D176C00E1BFEB /* SkillsViewController.swift in Sources */,
 				E1F862E82094F77400B39668 /* ChallengesViewController.swift in Sources */,
 				E18EC6D720A6DF27006095CA /* MoodFormViewController.swift in Sources */,
