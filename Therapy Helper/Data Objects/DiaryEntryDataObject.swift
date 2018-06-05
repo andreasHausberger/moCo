@@ -10,13 +10,13 @@ import Foundation
 
 class DiaryEntryDataObject {
     
-    var text: String
-    var emotion_positive: Double
-    var emotion_fatigue: Double
-    var emotion_anger: Double
-    var emotion_worry: Double
+    var text: String?
+    var emotion_positive: Double?
+    var emotion_fatigue: Double?
+    var emotion_anger: Double?
+    var emotion_worry: Double?
     var timeFrame: Int? //0 for morning, 1 for afternoon, 2 for evening
-    var creationTime: Date
+    var creationTime: Date?
     
     init(text: String, emotion_positive: Double, emotion_fatigue: Double, emotion_anger: Double, emotion_worry: Double, creationTime: Date) {
         self.text = text
@@ -26,6 +26,10 @@ class DiaryEntryDataObject {
         self.emotion_worry = emotion_worry
         self.creationTime = creationTime
 
+    }
+    
+    init() {
+        
     }
     
     func tryAddTimeFrame(timeFrame: Int) -> Bool {

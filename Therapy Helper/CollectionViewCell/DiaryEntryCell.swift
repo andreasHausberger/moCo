@@ -24,10 +24,10 @@ class DiaryEntryCell: UICollectionViewCell {
     
     func setUp(diaryEntry: DiaryEntryDataObject) {
         self.text.text = diaryEntry.text
-        self.angerScore.text = diaryEntry.emotion_anger.description
-        self.fatigueScore.text = diaryEntry.emotion_fatigue.description
-        self.worryScore.text = diaryEntry.emotion_worry.description
-        self.positiveScore.text = diaryEntry.emotion_positive.description
+        self.angerScore.text = diaryEntry.emotion_anger?.description
+        self.fatigueScore.text = diaryEntry.emotion_fatigue?.description
+        self.worryScore.text = diaryEntry.emotion_worry?.description
+        self.positiveScore.text = diaryEntry.emotion_positive?.description
         
         self.diaryEntry = diaryEntry
     }

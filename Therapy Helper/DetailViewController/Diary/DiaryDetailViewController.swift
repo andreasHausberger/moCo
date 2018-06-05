@@ -11,16 +11,28 @@ import UIKit
 class DiaryDetailViewController: UIPageViewController {
     
     var rootVC: DiaryViewController?
+    
+    var startTime: Date?
+    var endTime: Date?
+    var morningActivities: [DiaryEntryDataObject] = [DiaryEntryDataObject]()
+    var afternoonActivities: [DiaryEntryDataObject] = [DiaryEntryDataObject]()
+    var eveningActivities: [DiaryEntryDataObject] = [DiaryEntryDataObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
-        // Do any additional setup after loading the view.
+        
+        if let firstVC = orderedViewControllers.first {
+            setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
+        }
     }
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         return [self.newDetailVC(storyboardID: "DiaryFormViewController1"),
-                self.newDetailVC(storyboardID: "DiaryFormViewController2")]
+                self.newDetailVC(storyboardID: "DiaryFormViewController2"),
+                self.newDetailVC(storyboardID: "DiaryFormViewController3"),
+                self.newDetailVC(storyboardID: "DiaryFormViewController4"),
+                self.newDetailVC(storyboardID: "DiaryFormViewController5"),]
     }()
     
     private func newDetailVC(storyboardID: String) -> UIViewController {

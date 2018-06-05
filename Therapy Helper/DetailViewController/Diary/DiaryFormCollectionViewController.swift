@@ -16,13 +16,24 @@ class DiaryFormCollectionViewController: DiaryFormViewController, UICollectionVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        collectionView.dataSource = self
+        collectionView.delegate = self
     }
 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return entries.count
+    }
+    
+    func addEntry(_ entry: DiaryEntryDataObject) {
+        entries.append(entry)
+        collectionView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? DiaryEntryViewController {
+            destinationVC.previousVC = self
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -32,7 +43,21 @@ class DiaryFormCollectionViewController: DiaryFormViewController, UICollectionVi
         return cell
     }
     
-    @IBAction func addActivity(_ sender: UIButton) {
-        
+    override func viewWillDisappear(_ animated: Bool) {
+        if diary != nil {
+            switch self.title {
+            case "morningViewController":
+                diary?.morningActivities = entries
+                return
+            case "afternoonViewController":
+                diary?.afternoonActivities = entries
+                return
+            case "eveningViewController":
+                diary?.eveningActivities = entries
+                return
+            default:
+                return
+            }
+        }
     }
 }
