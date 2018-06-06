@@ -27,6 +27,19 @@ class DiaryDetailViewController: UIPageViewController {
         }
     }
     
+    func saveDiary() {
+        if rootVC != nil {
+            guard startTime != nil && endTime != nil else { return }
+            let diary = DiaryDataObject(startTime: startTime!, endTime: endTime!, patientID: 111)
+            diary.morningActivities = morningActivities
+            diary.afternoonActivities = afternoonActivities
+            diary.eveningActivities = eveningActivities
+            
+            rootVC?.saveDiary(diary)
+            
+        }
+    }
+    
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         return [self.newDetailVC(storyboardID: "DiaryFormViewController1"),
                 self.newDetailVC(storyboardID: "DiaryFormViewController2"),

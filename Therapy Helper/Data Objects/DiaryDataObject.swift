@@ -10,7 +10,7 @@ import Foundation
 
 class DiaryDataObject {
     
-    var score: Double
+    var score: Double?
     var morningActivities: [DiaryEntryDataObject] = [DiaryEntryDataObject]()
     
     var afternoonActivities: [DiaryEntryDataObject] = [DiaryEntryDataObject]()
@@ -23,8 +23,7 @@ class DiaryDataObject {
     
     let patientID: Int
     
-    init(score: Double, startTime: Date, endTime: Date, patientID: Int) {
-        self.score = score
+    init(startTime: Date, endTime: Date, patientID: Int) {
         self.startTime = startTime
         self.endTime = endTime
         self.patientID = patientID

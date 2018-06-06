@@ -10,7 +10,6 @@ import UIKit
 
 class DiaryFormCollectionViewController: DiaryFormViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var diary: DiaryDataObject?
     var entries: [DiaryEntryDataObject] = [DiaryEntryDataObject]()
      @IBOutlet weak var collectionView: UICollectionView!
     
@@ -44,20 +43,22 @@ class DiaryFormCollectionViewController: DiaryFormViewController, UICollectionVi
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        if diary != nil {
+        if let parentVC = self.parent as? DiaryDetailViewController {
             switch self.title {
             case "morningViewController":
-                diary?.morningActivities = entries
+                parentVC.morningActivities = entries
                 return
             case "afternoonViewController":
-                diary?.afternoonActivities = entries
+                parentVC.afternoonActivities = entries
                 return
             case "eveningViewController":
-                diary?.eveningActivities = entries
+                parentVC.eveningActivities = entries
                 return
             default:
                 return
             }
         }
+        
+        
     }
 }

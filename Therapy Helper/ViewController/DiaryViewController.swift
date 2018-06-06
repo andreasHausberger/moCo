@@ -17,6 +17,10 @@ class DiaryViewController: UIViewController, UICollectionViewDelegate, UICollect
         super.viewDidLoad()
         
     }
+    
+    func saveDiary(_ diary: DiaryDataObject) {
+        
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 0
     }

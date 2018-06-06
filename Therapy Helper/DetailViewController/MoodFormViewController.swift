@@ -10,8 +10,7 @@ import UIKit
 
 class MoodFormViewController: UIViewController {
     
-    let rootVC: MoodDetailViewController? = nil
-    
+
     @IBOutlet weak var physicalLabel: UILabel?
     
     @IBOutlet weak var mentalLabel: UILabel?
