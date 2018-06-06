@@ -15,14 +15,23 @@ class DiaryViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        diaryModel.loadDiaries()
         
     }
     
-    func saveDiary(_ diary: DiaryDataObject) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? DiaryDetailViewController {
+            destinationVC.rootVC = self
+        }
     }
+    
+    func saveDiary(_ diary: DiaryDataObject) {
+        diaryModel.saveDiary(diary)
+        collectionView.reloadData()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return diaryModel.getDiaries().count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
