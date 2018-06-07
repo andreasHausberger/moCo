@@ -19,6 +19,10 @@ class DiaryCell: UICollectionViewCell {
     @IBOutlet weak var scoreLabel: UILabel!
     
     func setUp(_ diaryDataObject: DiaryDataObject) {
+        self.diaryDataObject = diaryDataObject
+        weekdayLabel.text = diaryDataObject.startTime.description
+        textLabel.text = "Lorem Ipsum Dolor sit amet"
+        scoreLabel.text = diaryDataObject.score?.description
         
     }
     

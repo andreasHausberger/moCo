@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Diary" representedClassName="Diary" syncable="YES" codeGenerationType="class">
-        <attribute name="afternoonActivities" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="eveningActivities" optional="YES" attributeType="Transformable" syncable="YES"/>
-        <attribute name="morningActivities" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="patient_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="score" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="afternoonActivityList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DiaryEntry" syncable="YES"/>
+        <relationship name="eveningActivityList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DiaryEntry" syncable="YES"/>
+        <relationship name="morningActivityList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DiaryEntry" syncable="YES"/>
     </entity>
     <entity name="DiaryEntry" representedClassName="DiaryEntry" syncable="YES" codeGenerationType="class">
         <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -35,9 +35,9 @@
         <attribute name="timer" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Diary" positionX="-54" positionY="63" width="128" height="150"/>
+        <element name="Diary" positionX="-99" positionY="113" width="128" height="148"/>
+        <element name="DiaryEntry" positionX="250" positionY="137" width="128" height="133"/>
         <element name="Mood" positionX="-63" positionY="27" width="128" height="30"/>
-        <element name="Skill" positionX="-63" positionY="-18" width="128" height="133"/>
-        <element name="DiaryEntry" positionX="-54" positionY="72" width="128" height="135"/>
+        <element name="Skill" positionX="223" positionY="-63" width="128" height="133"/>
     </elements>
 </model>

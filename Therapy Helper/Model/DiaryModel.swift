@@ -12,8 +12,10 @@ import CoreData
 
 class DiaryModel {
     var diaries: [DiaryDataObject] = [DiaryDataObject]()
+    var managedDiaries: [Diary] = [Diary]()
     
     func saveDiary(_ diaryDataObject: DiaryDataObject)  {
+        diaryDataObject.score = calculateDiaryScore(diaryDataObject)
         let delegate = UIApplication.shared.delegate as! AppDelegate
         let context = delegate.persistentContainer.viewContext
         
@@ -22,11 +24,14 @@ class DiaryModel {
         let newDiary = Diary(entity: entity!, insertInto: context)
         newDiary.startTime = diaryDataObject.startTime
         newDiary.endTime = diaryDataObject.endTime
-        newDiary.score = calculateDiaryScore(diaryDataObject)
+        newDiary.score = diaryDataObject.score!
         newDiary.patient_id = 111 // TODO: Figure This out
-        newDiary.morningActivities = convertToManagedObjects(diaryDataObject.morningActivities) as NSArray
-        newDiary.afternoonActivities = convertToManagedObjects(diaryDataObject.afternoonActivities) as NSArray
-        newDiary.eveningActivities = convertToManagedObjects(diaryDataObject.eveningActivities) as NSArray
+        
+        newDiary.morningActivityList = convertToManagedObjects(diaryDataObject.morningActivities)
+        newDiary.afternoonActivityList = convertToManagedObjects(diaryDataObject.afternoonActivities)
+        newDiary.eveningActivityList = convertToManagedObjects(diaryDataObject.eveningActivities)
+        
+        diaries.append(diaryDataObject)
         
         delegate.saveContext()
     }
@@ -49,7 +54,7 @@ class DiaryModel {
         return result
     }
     
-    private func convertToManagedObjects(_ entries: [DiaryEntryDataObject]) -> [DiaryEntry] {
+    private func convertToManagedObjects(_ entries: [DiaryEntryDataObject]) -> NSSet {
         var managedEntries = [DiaryEntry]()
         let delegate = UIApplication.shared.delegate as! AppDelegate
         let context = delegate.persistentContainer.viewContext
@@ -66,32 +71,24 @@ class DiaryModel {
             newEntry.emoition_positive = entry.emotion_positive!
             managedEntries.append(newEntry)
         }
-        return managedEntries
+        return NSSet(array: managedEntries)
     }
     
     func loadDiaries() {
         let delegate = UIApplication.shared.delegate as! AppDelegate
         let context = delegate.persistentContainer.viewContext
-        
         do {
-            if let fetchedDiaries = try
-                context.fetch(Diary.fetchRequest()) as? [Diary] {
-                if (!fetchedDiaries.isEmpty) {
-                    for diary in fetchedDiaries {
-                        let newDiaryDataObject = DiaryDataObject(startTime: diary.startTime!, endTime: diary.endTime!, patientID: Int(diary.patient_id))
+            if let fetchedDiaries = try context.fetch(Diary.fetchRequest()) as? [Diary] {
+                if !fetchedDiaries.isEmpty {
+                    managedDiaries = fetchedDiaries
+                    for diary in managedDiaries {
+                        guard diary.startTime != nil && diary.endTime != nil else { return }
+                        let diaryDataObject = DiaryDataObject(startTime: diary.startTime!, endTime: diary.endTime!, patientID: 111)
                         
-                        if let morningActivities = convertToDataObjects(diary.morningActivities as! [DiaryEntry]) as? [DiaryEntryDataObject] {
-                            newDiaryDataObject.morningActivities = morningActivities
-                        }
-                        
-                        if let afternoonActivities = convertToDataObjects(diary.afternoonActivities as! [DiaryEntry]) as? [DiaryEntryDataObject]  {
-                            newDiaryDataObject.afternoonActivities = afternoonActivities
-                        }
-                        if let eveningActivities = convertToDataObjects(diary.eveningActivities as! [DiaryEntry]) as? [DiaryEntryDataObject] {
-                            newDiaryDataObject.eveningActivities = eveningActivities
-                        }
-                        
-                        diaries.append(newDiaryDataObject)
+                        diaryDataObject.morningActivities = diary.morningActivityList?.allObjects as! [DiaryEntryDataObject]
+                        diaryDataObject.afternoonActivities = diary.afternoonActivityList?.allObjects as! [DiaryEntryDataObject]
+                        diaryDataObject.eveningActivities = diary.eveningActivityList?.allObjects as! [DiaryEntryDataObject]
+                    
                     }
                 }
             }

@@ -16,6 +16,8 @@ class DiaryViewController: UIViewController, UICollectionViewDelegate, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         diaryModel.loadDiaries()
+        collectionView.dataSource = self
+        collectionView.delegate = self
         
     }
     
