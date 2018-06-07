@@ -85,10 +85,10 @@ class DiaryModel {
                         guard diary.startTime != nil && diary.endTime != nil else { return }
                         let diaryDataObject = DiaryDataObject(startTime: diary.startTime!, endTime: diary.endTime!, patientID: 111)
                         
-                        diaryDataObject.morningActivities = diary.morningActivityList?.allObjects as! [DiaryEntryDataObject]
-                        diaryDataObject.afternoonActivities = diary.afternoonActivityList?.allObjects as! [DiaryEntryDataObject]
-                        diaryDataObject.eveningActivities = diary.eveningActivityList?.allObjects as! [DiaryEntryDataObject]
-                    
+                        diaryDataObject.morningActivities = convertToDataObjects(diary.morningActivityList?.allObjects as! [DiaryEntry])
+                        diaryDataObject.afternoonActivities = convertToDataObjects(diary.afternoonActivityList?.allObjects as! [DiaryEntry])
+                        diaryDataObject.eveningActivities = convertToDataObjects(diary.eveningActivityList?.allObjects as! [DiaryEntry])
+                        diaries.append(diaryDataObject)
                     }
                 }
             }
@@ -101,7 +101,8 @@ class DiaryModel {
     private func convertToDataObjects(_ entries: [DiaryEntry]) -> [DiaryEntryDataObject] {
         var dataObjects = [DiaryEntryDataObject]()
         for entry in entries {
-            let dataObject = DiaryEntryDataObject(text: entry.text!, emotion_positive: entry.emoition_positive, emotion_fatigue: entry.emotion_fatigue, emotion_anger: entry.emotion_anger, emotion_worry: entry.emotion_worry, creationTime: entry.creationDate!)
+            let textString = entry.text == nil ? "" : entry.text!
+            let dataObject = DiaryEntryDataObject(text: textString, emotion_positive: entry.emoition_positive, emotion_fatigue: entry.emotion_fatigue, emotion_anger: entry.emotion_anger, emotion_worry: entry.emotion_worry, creationTime: Date())
             
             dataObjects.append(dataObject)
         }
