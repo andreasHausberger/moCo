@@ -10,4 +10,8 @@ target 'Therapy Helper' do
   # pod 'Alamofire', '~>4.7'
   pod 'FHIR',
     :git => 'https://github.com/smart-on-fhir/Swift-FHIR.git'
+    
+  pod 'SwiftyJSON', 
+    :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+    
 end

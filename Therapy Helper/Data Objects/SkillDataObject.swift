@@ -23,4 +23,5 @@ class SkillDataObject {
         self.timer = timer
     }
     
+    
 }

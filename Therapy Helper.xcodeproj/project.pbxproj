@@ -13,7 +13,9 @@
 		E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FA20985FF4007E3713 /* SkillModel.swift */; };
 		E13D61FE209862B4007E3713 /* SkillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FD209862B4007E3713 /* SkillCell.swift */; };
 		E14B4BC320B2B283002322A0 /* MoodReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14B4BC220B2B283002322A0 /* MoodReviewViewController.swift */; };
+		E153097520D105CC00B09778 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E153097420D105CC00B09778 /* APIManager.swift */; };
 		E16E4DA920CAFA4D00A1F2C1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E4DA820CAFA4D00A1F2C1 /* EmergencyViewController.swift */; };
+		E16E4DCA20D03D4F00A1F2C1 /* ExtendedActivityDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E4DC920D03D4F00A1F2C1 /* ExtendedActivityDefinition.swift */; };
 		E175E3FB20A4D44A00F4FF0B /* MoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175E3FA20A4D44A00F4FF0B /* MoodModel.swift */; };
 		E175E3FD20A591A300F4FF0B /* MoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175E3FC20A591A300F4FF0B /* MoodDetailViewController.swift */; };
 		E17BBE0220B2DE0200195171 /* SkillDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17BBE0120B2DE0200195171 /* SkillDataObject.swift */; };
@@ -50,7 +52,9 @@
 		E13D61FA20985FF4007E3713 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
 		E13D61FD209862B4007E3713 /* SkillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCell.swift; sourceTree = "<group>"; };
 		E14B4BC220B2B283002322A0 /* MoodReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodReviewViewController.swift; sourceTree = "<group>"; };
+		E153097420D105CC00B09778 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		E16E4DA820CAFA4D00A1F2C1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
+		E16E4DC920D03D4F00A1F2C1 /* ExtendedActivityDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedActivityDefinition.swift; sourceTree = "<group>"; };
 		E175E3FA20A4D44A00F4FF0B /* MoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodModel.swift; sourceTree = "<group>"; };
 		E175E3FC20A591A300F4FF0B /* MoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailViewController.swift; sourceTree = "<group>"; };
 		E17BBE0120B2DE0200195171 /* SkillDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillDataObject.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 				E175E3FA20A4D44A00F4FF0B /* MoodModel.swift */,
 				E1AC197220BC45BB009575C4 /* DiaryModel.swift */,
 				E1AF348F20C9B5AF0028A1AF /* ChallengeModel.swift */,
+				E153097420D105CC00B09778 /* APIManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,6 +161,14 @@
 				E1AF349120C9B5BC0028A1AF /* ChallengeCell.swift */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E16E4DC820D03D3700A1F2C1 /* FHIRObjects */ = {
+			isa = PBXGroup;
+			children = (
+				E16E4DC920D03D4F00A1F2C1 /* ExtendedActivityDefinition.swift */,
+			);
+			path = FHIRObjects;
 			sourceTree = "<group>";
 		};
 		E1A7DD6A208D176C00E1BFEB = {
@@ -180,6 +193,7 @@
 		E1A7DD75208D176C00E1BFEB /* Therapy Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E16E4DC820D03D3700A1F2C1 /* FHIRObjects */,
 				E124581520A71496004768B4 /* Data Objects */,
 				E1BC969D209F7EF400087405 /* DetailViewController */,
 				E1BC9677209DE51300087405 /* Model.xcdatamodeld */,
@@ -312,10 +326,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FHIR/FHIR.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FHIR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,6 +365,7 @@
 				E124581720A71565004768B4 /* MoodDataObject.swift in Sources */,
 				E14B4BC320B2B283002322A0 /* MoodReviewViewController.swift in Sources */,
 				E1AC197920BEA302009575C4 /* DiaryFormViewController.swift in Sources */,
+				E16E4DCA20D03D4F00A1F2C1 /* ExtendedActivityDefinition.swift in Sources */,
 				E1AC197320BC45BB009575C4 /* DiaryModel.swift in Sources */,
 				E1AF349420C9B5CE0028A1AF /* ChallengeDataObject.swift in Sources */,
 				E1AC197B20C2BB5A009575C4 /* DiaryFormCollectionViewController.swift in Sources */,
@@ -357,6 +374,7 @@
 				E18EC6D720A6DF27006095CA /* MoodFormViewController.swift in Sources */,
 				E175E3FD20A591A300F4FF0B /* MoodDetailViewController.swift in Sources */,
 				E124581920A76C17004768B4 /* MoodCell.swift in Sources */,
+				E153097520D105CC00B09778 /* APIManager.swift in Sources */,
 				E1BC9679209DE51300087405 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

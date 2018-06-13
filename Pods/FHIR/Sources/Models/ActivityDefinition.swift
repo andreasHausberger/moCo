@@ -235,6 +235,10 @@ open class ActivityDefinition: DomainResource {
 	}
 }
 
+extension ActivityDefinition {
+    
+}
+
 
 /**
 Dynamic aspects of the definition.
