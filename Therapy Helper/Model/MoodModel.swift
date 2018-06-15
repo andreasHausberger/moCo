@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import CoreData
+import SwiftyJSON
 
 class MoodModel {
     private var moods: [Mood] = [Mood]()
@@ -38,6 +39,24 @@ class MoodModel {
     
     func getMoods() -> [MoodDataObject] {
         return moodDataObjects
+    }
+    
+    func loadMoodsFromServer(id: Int) {
+        let moodText: String = ""
+        let moodPhysical: Double = 0
+        let moodMental: Double = 0
+        let moodOptimism: Double = 0
+        let creationDate: Date = Date()
+        
+        let manager = APIManager.sharedInstance
+        // manager.setUpConnection(URL: "urli", endpoint: "pointy")
+        
+        manager.getPostWithId(postId: id, onSuccess: { (json: JSON) in
+            
+            
+        }) { (error: Error) in
+            
+        }
     }
     
     func loadMoods() {

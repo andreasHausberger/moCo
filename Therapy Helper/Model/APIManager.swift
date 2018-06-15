@@ -12,12 +12,12 @@ import FHIR
 
 class APIManager: NSObject {
     
-    let baseURL = "https://jsonplaceholder.typicode.com"
+    static var baseURL = "https://jsonplaceholder.typicode.com"
     static let sharedInstance = APIManager()
-    static let getPostsEndpoint = "/posts/"
+    static var postsEndPoint = "/posts/"
 
     func getPostWithId(postId: Int, onSuccess: @escaping(JSON) -> Void, onFailure: @escaping(Error) -> Void) {
-        let url: String = baseURL + APIManager.getPostsEndpoint + String(postId)
+        let url: String = APIManager.baseURL + APIManager.postsEndPoint + String(postId)
         let request: NSMutableURLRequest = NSMutableURLRequest(url: NSURL(string: url)! as URL)
         request.httpMethod = "GET"
         let session = URLSession.shared
@@ -31,6 +31,16 @@ class APIManager: NSObject {
             }
         }
         task.resume()
+    }
+    
+    
+    
+    func setUpConnection(URL: String, endpoint: String) -> String {
+        APIManager.baseURL = URL
+        APIManager.postsEndPoint = endpoint
+                
+        return APIManager.baseURL + APIManager.postsEndPoint
+        
     }
     
 

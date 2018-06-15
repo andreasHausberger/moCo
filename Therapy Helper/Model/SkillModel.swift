@@ -38,28 +38,7 @@ class SkillModel {
         return skillDataObjects
     }
     
-    /*
-     ActivityDefinition - “Skill”
-     {
-     "resourceType" : "ActivityDefinition",
-     // from Resource: id, meta, implicitRules, and language
-     // from DomainResource: text, contained, extension, and modifierExtension
-     "title" : "<string>", // Name for this activity definition (human friendly)
-     "status" : "<code>", // R!  draft | active | retired | unknown
-     "experimental" : <boolean>, // For recommendations, not experiments
-     "date" : "<dateTime>", // Date this was last changed
-     
-     "description" : "<markdown>", // Natural language description of the activity definition
-     extension: “timer_minutes”: {Integer} //For setting up a timer in minutes, 0 for untimed
-     extension: “skill_points”: {Integer} //
-     extension: “icon”: {Base64}
-     extension: “patient_id”: {Integer} //foreign Key from Patient
-     extension: “before_mood”: {Integer} //mood before activity
-     extension: “after_mood”: {List<String>} //moods after activity
-     extension: “moods”: {List<String>} //moods suitable for that skill
-     }
-
-     */
+    
     func loadSkillsFromServer(id: Int) {
         let manager = APIManager.sharedInstance
         
@@ -68,6 +47,7 @@ class SkillModel {
             var skillDate: Date = Date()
             var skillText: String = ""
             var skillTimer: Int = 0
+            var skillCategory: Int = 0
             
             
             let dict = json.dictionary! as [String: Any]
@@ -87,7 +67,12 @@ class SkillModel {
             if let jsonTimer = dict["timer_minutes"] as? Int {
                 skillTimer = jsonTimer
             }
-            let newSkillDataObject = SkillDataObject(name: skillName, text: skillText, category: 0, creationDate: skillDate, timer: skillTimer)
+            
+            if let jsonCategory = dict["category"] as? Int {
+                skillCategory = jsonCategory
+            }
+            
+            let newSkillDataObject = SkillDataObject(name: skillName, text: skillText, category: skillCategory, creationDate: skillDate, timer: skillTimer)
             
             self.addSkill(newSkillDataObject)
             
