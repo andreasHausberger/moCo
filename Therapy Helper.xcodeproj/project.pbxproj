@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1F4D5754FBFBE0F1E1CCAE18 /* Pods_Therapy_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A597A4E5D9BA653C70E03E00 /* Pods_Therapy_Helper.framework */; };
+		D2D8680E20D81EAA00AF6FDE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8680D20D81EAA00AF6FDE /* libsqlite3.dylib */; };
+		D2D8BE8420D822D800BC9B76 /* XXXProbeIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8BE8320D822D800BC9B76 /* XXXProbeIOS.framework */; };
+		D2D8BE8620D827BC00BC9B76 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8BE8520D827BC00BC9B76 /* CoreData.framework */; };
+		D2D8BE8820D827D300BC9B76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8BE8720D827D300BC9B76 /* CoreGraphics.framework */; };
 		E124581720A71565004768B4 /* MoodDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124581620A71565004768B4 /* MoodDataObject.swift */; };
 		E124581920A76C17004768B4 /* MoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124581820A76C17004768B4 /* MoodCell.swift */; };
 		E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FA20985FF4007E3713 /* SkillModel.swift */; };
@@ -48,6 +52,10 @@
 /* Begin PBXFileReference section */
 		0853C7A3B1063F3793AD23AD /* Pods-Therapy Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Therapy Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper.release.xcconfig"; sourceTree = "<group>"; };
 		A597A4E5D9BA653C70E03E00 /* Pods_Therapy_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Therapy_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D8680D20D81EAA00AF6FDE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		D2D8BE8320D822D800BC9B76 /* XXXProbeIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XXXProbeIOS.framework; path = ../../Downloads/ProbeFramework/XXXProbeIOS.framework; sourceTree = "<group>"; };
+		D2D8BE8520D827BC00BC9B76 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D2D8BE8720D827D300BC9B76 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E124581620A71565004768B4 /* MoodDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDataObject.swift; sourceTree = "<group>"; };
 		E124581820A76C17004768B4 /* MoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCell.swift; sourceTree = "<group>"; };
 		E13D61FA20985FF4007E3713 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
@@ -93,6 +101,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D8680E20D81EAA00AF6FDE /* libsqlite3.dylib in Frameworks */,
+				D2D8BE8420D822D800BC9B76 /* XXXProbeIOS.framework in Frameworks */,
+				D2D8BE8620D827BC00BC9B76 /* CoreData.framework in Frameworks */,
+				D2D8BE8820D827D300BC9B76 /* CoreGraphics.framework in Frameworks */,
 				1F4D5754FBFBE0F1E1CCAE18 /* Pods_Therapy_Helper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +124,10 @@
 		0ED5EAC66525E5E18EDABDF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2D8BE8720D827D300BC9B76 /* CoreGraphics.framework */,
+				D2D8BE8520D827BC00BC9B76 /* CoreData.framework */,
+				D2D8BE8320D822D800BC9B76 /* XXXProbeIOS.framework */,
+				D2D8680D20D81EAA00AF6FDE /* libsqlite3.dylib */,
 				A597A4E5D9BA653C70E03E00 /* Pods_Therapy_Helper.framework */,
 			);
 			name = Frameworks;
@@ -528,10 +544,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZR2MYEGU5H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
 				INFOPLIST_FILE = "Therapy Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"FHIR\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "moco.Therapy-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,10 +575,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZR2MYEGU5H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
 				INFOPLIST_FILE = "Therapy Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"FHIR\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "moco.Therapy-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";

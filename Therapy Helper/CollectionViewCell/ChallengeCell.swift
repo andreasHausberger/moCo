@@ -1,5 +1,5 @@
 //
-//  SkillCellCollectionViewCell.swift
+//  ChallengeCell.swift
 //  Therapy Helper
 //
 //  Created by Andreas on 01.05.18.
@@ -13,7 +13,6 @@ class ChallengeCell: UICollectionViewCell {
     
     var challenge: ChallengeDataObject?
     
-    
     @IBOutlet weak var title: UILabel!
     
     @IBOutlet weak var text: UILabel!
@@ -24,7 +23,6 @@ class ChallengeCell: UICollectionViewCell {
     
     @IBOutlet weak var counterTotal: UILabel!
     
-    
     func configureContent(from challenge: ChallengeDataObject) {
         self.challenge = challenge
         title.text = challenge.title
@@ -34,7 +32,5 @@ class ChallengeCell: UICollectionViewCell {
         counterTotal.text = challenge.counterTotal.description
         
         return
-        
-        
     }
 }

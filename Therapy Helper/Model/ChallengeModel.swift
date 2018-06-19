@@ -94,7 +94,7 @@ class ChallengeModel {
                     for challenge in challenges {
                         let trueText = challenge.text == nil ? "" : challenge.text!
                         
-                        let challengeDataObject = ChallengeDataObject(title: challenge.title!, text: trueText, counterTotal: challenge.counterCurrent, counterCurrent: challenge.counterCurrent, creationDate: challenge.creationDate!)
+                        let challengeDataObject = ChallengeDataObject(title: challenge.title!, text: trueText, counterTotal: challenge.counterTotal, counterCurrent: challenge.counterCurrent, creationDate: challenge.creationDate!)
                         
                         challengeDataObjects.append(challengeDataObject)
                     }
@@ -104,6 +104,24 @@ class ChallengeModel {
         catch {
             print("Fetch failed")
         }
+    }
+    
+    func updateChallenge(_ ChallengeDataObject: ChallengeDataObject) {
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        //let context = delegate.persistentContainer.viewContext
+        
+        print("here")
+        
+        for challenge in challenges {
+            print(challenge.counterCurrent.description)
+            if (challenge.title == ChallengeDataObject.title) {
+                challenge.counterCurrent = ChallengeDataObject.counterCurrent
+                print(challenge.counterCurrent.description)
+            }
+        }
+        
+        delegate.saveContext()
+        
     }
     
 }

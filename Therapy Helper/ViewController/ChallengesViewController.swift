@@ -13,18 +13,29 @@ import FHIR
 
 class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    @IBOutlet weak var collectionView: UICollectionView!
-    
     let challengeModel = ChallengeModel()
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        challengeModel.loadChallenges();
         collectionView.dataSource = self
         collectionView.delegate = self
-        addTestChallenge();
-        challengeModel.loadChallenges();
+        //addTestChallenge();
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Do any additional setup after loading the view.
+        //challengeModel.loadChallenges();
+        
+        collectionView.reloadData()
+        
+        
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return challengeModel.getChallenges().count
@@ -46,10 +57,16 @@ class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     
-    
-    
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? ChallengeCell {
+            if let challenge = cell.challenge {
+                if let destinationVC = segue.destination as? ChallengeDetailViewController {
+                    destinationVC.setUp(challenge: challenge)
+                    destinationVC.challengeModel = self.challengeModel
+                }
+            }
+        }
+    }
     
     
     func addTestChallenge() {
