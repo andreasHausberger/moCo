@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DiaryEntryViewController: DiaryFormViewController {
+class DiaryEntryViewController: DiaryFormViewController, UITextFieldDelegate {
     
     private var entry: DiaryEntryDataObject?
     
@@ -32,6 +32,9 @@ class DiaryEntryViewController: DiaryFormViewController {
         entry?.emotion_fatigue = 5.0
         entry?.emotion_worry = 5.0
         entry?.emotion_positive = 5.0
+        
+        text.returnKeyType = .done
+        text.delegate = self
         
     }
     
@@ -66,6 +69,13 @@ class DiaryEntryViewController: DiaryFormViewController {
         label.text = String(currentValue)
         return currentValue
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    
     
     
     @IBAction func sendDiaryEntry(_ sender: Any) {

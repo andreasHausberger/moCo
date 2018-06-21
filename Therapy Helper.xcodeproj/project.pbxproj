@@ -13,12 +13,14 @@
 		D2D8BE8420D822D800BC9B76 /* XXXProbeIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8BE8320D822D800BC9B76 /* XXXProbeIOS.framework */; };
 		D2D8BE8620D827BC00BC9B76 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8BE8520D827BC00BC9B76 /* CoreData.framework */; };
 		D2D8BE8820D827D300BC9B76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8BE8720D827D300BC9B76 /* CoreGraphics.framework */; };
+		E105290220DA9096004D73FF /* FHIRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E105290120DA9096004D73FF /* FHIRManager.swift */; };
 		E124581720A71565004768B4 /* MoodDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124581620A71565004768B4 /* MoodDataObject.swift */; };
 		E124581920A76C17004768B4 /* MoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124581820A76C17004768B4 /* MoodCell.swift */; };
 		E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FA20985FF4007E3713 /* SkillModel.swift */; };
 		E13D61FE209862B4007E3713 /* SkillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13D61FD209862B4007E3713 /* SkillCell.swift */; };
 		E14B4BC320B2B283002322A0 /* MoodReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14B4BC220B2B283002322A0 /* MoodReviewViewController.swift */; };
 		E153097520D105CC00B09778 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E153097420D105CC00B09778 /* APIManager.swift */; };
+		E15F517620DBCF350071A62E /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15F517520DBCF350071A62E /* SetupViewController.swift */; };
 		E1647EED20D3E5710046023C /* ChallengeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1647EEC20D3E5710046023C /* ChallengeDetailViewController.swift */; };
 		E16E4DA920CAFA4D00A1F2C1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E4DA820CAFA4D00A1F2C1 /* EmergencyViewController.swift */; };
 		E16E4DCA20D03D4F00A1F2C1 /* ExtendedActivityDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E4DC920D03D4F00A1F2C1 /* ExtendedActivityDefinition.swift */; };
@@ -58,12 +60,15 @@
 		D2D8BE8320D822D800BC9B76 /* XXXProbeIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XXXProbeIOS.framework; path = ../../Downloads/ProbeFramework/XXXProbeIOS.framework; sourceTree = "<group>"; };
 		D2D8BE8520D827BC00BC9B76 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D2D8BE8720D827D300BC9B76 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E105290120DA9096004D73FF /* FHIRManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FHIRManager.swift; sourceTree = "<group>"; };
+		E105291620DA942B004D73FF /* SMART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SMART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E124581620A71565004768B4 /* MoodDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDataObject.swift; sourceTree = "<group>"; };
 		E124581820A76C17004768B4 /* MoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCell.swift; sourceTree = "<group>"; };
 		E13D61FA20985FF4007E3713 /* SkillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
 		E13D61FD209862B4007E3713 /* SkillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCell.swift; sourceTree = "<group>"; };
 		E14B4BC220B2B283002322A0 /* MoodReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodReviewViewController.swift; sourceTree = "<group>"; };
 		E153097420D105CC00B09778 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		E15F517520DBCF350071A62E /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		E1647EEC20D3E5710046023C /* ChallengeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailViewController.swift; sourceTree = "<group>"; };
 		E16E4DA820CAFA4D00A1F2C1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		E16E4DC920D03D4F00A1F2C1 /* ExtendedActivityDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedActivityDefinition.swift; sourceTree = "<group>"; };
@@ -103,8 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D8680E20D81EAA00AF6FDE /* libsqlite3.dylib in Frameworks */,
-				D2D8BE8420D822D800BC9B76 /* XXXProbeIOS.framework in Frameworks */,
 				D2D8BE8620D827BC00BC9B76 /* CoreData.framework in Frameworks */,
 				D2D8BE8820D827D300BC9B76 /* CoreGraphics.framework in Frameworks */,
 				1F4D5754FBFBE0F1E1CCAE18 /* Pods_Therapy_Helper.framework in Frameworks */,
@@ -126,6 +129,7 @@
 		0ED5EAC66525E5E18EDABDF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E105291620DA942B004D73FF /* SMART.framework */,
 				D2D8BE8720D827D300BC9B76 /* CoreGraphics.framework */,
 				D2D8BE8520D827BC00BC9B76 /* CoreData.framework */,
 				D2D8BE8320D822D800BC9B76 /* XXXProbeIOS.framework */,
@@ -155,6 +159,7 @@
 				E1F862E52094F76500B39668 /* MoodsViewController.swift */,
 				E1F862E72094F77400B39668 /* ChallengesViewController.swift */,
 				E16E4DA820CAFA4D00A1F2C1 /* EmergencyViewController.swift */,
+				E15F517520DBCF350071A62E /* SetupViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 				E1AC197220BC45BB009575C4 /* DiaryModel.swift */,
 				E1AF348F20C9B5AF0028A1AF /* ChallengeModel.swift */,
 				E153097420D105CC00B09778 /* APIManager.swift */,
+				E105290120DA9096004D73FF /* FHIRManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,11 +354,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FHIR/FHIR.framework",
+				"${BUILT_PRODUCTS_DIR}/SMART/SMART.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FHIR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SMART.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +385,8 @@
 				E13D61FE209862B4007E3713 /* SkillCell.swift in Sources */,
 				E1A7DD77208D176C00E1BFEB /* AppDelegate.swift in Sources */,
 				E1AF349020C9B5AF0028A1AF /* ChallengeModel.swift in Sources */,
+				E105290220DA9096004D73FF /* FHIRManager.swift in Sources */,
+				E15F517620DBCF350071A62E /* SetupViewController.swift in Sources */,
 				E13D61FB20985FF4007E3713 /* SkillModel.swift in Sources */,
 				E1BC969F209F7F1600087405 /* SkillDetailViewController.swift in Sources */,
 				E1647EED20D3E5710046023C /* ChallengeDetailViewController.swift in Sources */,
@@ -553,6 +563,7 @@
 					"$(PROJECT_DIR)/Pods",
 				);
 				INFOPLIST_FILE = "Therapy Helper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,6 +595,7 @@
 					"$(PROJECT_DIR)/Pods",
 				);
 				INFOPLIST_FILE = "Therapy Helper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
