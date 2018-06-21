@@ -14,4 +14,6 @@ target 'Therapy Helper' do
   pod 'SwiftyJSON', 
     :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
     
+  pod 'SMART'
+    
 end

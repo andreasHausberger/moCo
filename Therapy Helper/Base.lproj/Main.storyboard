@@ -174,10 +174,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5G-Bc-G4D">
-                                <rect key="frame" x="16" y="88" width="343" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5G-Bc-G4D">
+                                <rect key="frame" x="30" y="88" width="318" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -223,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lJx-gw-lWn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2425" y="-412"/>
+            <point key="canvasLocation" x="2424.8000000000002" y="-412.44377811094455"/>
         </scene>
         <!--Diary View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -810,10 +810,9 @@
                                     <navigationItem title="Moods" id="6o7-DI-pCj"/>
                                 </items>
                             </navigationBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SQg-ag-9wI">
-                                <rect key="frame" x="0.0" y="74" width="375" height="544"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SQg-ag-9wI">
+                                <rect key="frame" x="0.0" y="79" width="375" height="539"/>
+                                <color key="backgroundColor" red="0.99794151024086075" green="1" blue="0.8946054357133072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rdn-3S-2mp">
                                     <size key="itemSize" width="355" height="70"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -823,7 +822,7 @@
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoodCell" id="cUo-xB-8b3" customClass="MoodCell" customModule="Therapy_Helper" customModuleProvider="target">
                                         <rect key="frame" x="10" y="0.0" width="355" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="355" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
@@ -859,6 +858,8 @@
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.72912850495929726" green="1" blue="0.65522448112239318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <viewLayoutGuide key="safeArea" id="2RO-8P-xTU"/>
+                                        <size key="customSize" width="355" height="70"/>
                                         <connections>
                                             <outlet property="date" destination="xgo-JN-ZcK" id="RXd-h7-ATF"/>
                                             <outlet property="score" destination="eCv-lG-ZY2" id="3ne-Bt-l7c"/>
@@ -884,7 +885,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="SQg-ag-9wI" firstAttribute="leading" secondItem="qYj-1O-k90" secondAttribute="leading" id="8x5-6S-lpN"/>
+                            <constraint firstItem="qYj-1O-k90" firstAttribute="trailing" secondItem="SQg-ag-9wI" secondAttribute="trailing" id="C55-Ok-uDz"/>
                             <constraint firstItem="qYj-1O-k90" firstAttribute="trailing" secondItem="b8f-Xh-Mkl" secondAttribute="trailing" constant="15" id="V7A-ac-5Zh"/>
+                            <constraint firstItem="qYj-1O-k90" firstAttribute="bottom" secondItem="SQg-ag-9wI" secondAttribute="bottom" id="jgX-Zx-7eo"/>
+                            <constraint firstItem="SQg-ag-9wI" firstAttribute="top" secondItem="qYj-1O-k90" secondAttribute="top" constant="15" id="knS-qI-yv3"/>
                             <constraint firstItem="qYj-1O-k90" firstAttribute="bottom" secondItem="b8f-Xh-Mkl" secondAttribute="bottom" constant="15" id="y5G-II-lPk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qYj-1O-k90"/>
@@ -905,7 +910,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4h-zl-42r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="1391"/>
+            <point key="canvasLocation" x="1525.5999999999999" y="1390.2548725637182"/>
         </scene>
         <!--Mood Review View Controller-->
         <scene sceneID="zy6-xq-mzC">
@@ -1275,9 +1280,8 @@
                                             <action selector="setMentalSlider:" destination="ang-Zi-9OX" eventType="valueChanged" id="gGK-mB-GEb"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="optimism_slider" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="PHZ-IK-Av3">
-                                        <rect key="frame" x="10" y="494" width="327" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="optimism_slider" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="PHZ-IK-Av3">
+                                        <rect key="frame" x="13" y="510" width="330" height="31"/>
                                         <connections>
                                             <action selector="setOptimismSlider:" destination="ang-Zi-9OX" eventType="valueChanged" id="NJU-nt-pwX"/>
                                         </connections>
@@ -1303,13 +1307,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="optimism_label" text="5.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ask-pH-vuE">
-                                        <rect key="frame" x="154" y="445" width="50" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="physical_label" text="5.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRX-P2-rZB">
                                         <rect key="frame" x="144" y="147" width="59" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1317,16 +1314,30 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" restorationIdentifier="optimism_label" text="5.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ask-pH-vuE">
+                                        <rect key="frame" x="154" y="463" width="50" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.80119922192004167" green="1" blue="0.98876629267943339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="PHZ-IK-Av3" firstAttribute="top" secondItem="Ask-pH-vuE" secondAttribute="bottom" constant="15" id="5Sv-Fo-ykb"/>
+                                    <constraint firstAttribute="bottom" secondItem="PHZ-IK-Av3" secondAttribute="bottom" constant="40" id="Hqe-vF-9bU"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="klO-YL-Cy5" firstAttribute="trailing" secondItem="6pJ-a8-lOo" secondAttribute="trailing" constant="8" id="3Ai-VN-Zho"/>
                             <constraint firstItem="6pJ-a8-lOo" firstAttribute="top" secondItem="8LY-eF-tXs" secondAttribute="top" constant="60" id="8IL-eH-ytE"/>
+                            <constraint firstItem="6pJ-a8-lOo" firstAttribute="leading" secondItem="klO-YL-Cy5" secondAttribute="leading" constant="8" id="ESS-43-LRe"/>
                             <constraint firstItem="6pJ-a8-lOo" firstAttribute="leading" secondItem="klO-YL-Cy5" secondAttribute="leading" constant="8" id="Ebd-Vx-Q8x"/>
                             <constraint firstItem="klO-YL-Cy5" firstAttribute="trailing" secondItem="6pJ-a8-lOo" secondAttribute="trailing" constant="8" id="SVC-GF-ybj"/>
                             <constraint firstItem="klO-YL-Cy5" firstAttribute="bottom" secondItem="6pJ-a8-lOo" secondAttribute="bottom" constant="27" id="aGc-Wk-Pjz"/>
+                            <constraint firstItem="klO-YL-Cy5" firstAttribute="trailing" secondItem="PHZ-IK-Av3" secondAttribute="trailing" constant="26" id="qez-WY-ucu"/>
+                            <constraint firstItem="PHZ-IK-Av3" firstAttribute="leading" secondItem="klO-YL-Cy5" secondAttribute="leading" constant="23" id="xMh-VP-e8r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="klO-YL-Cy5"/>
                     </view>
@@ -1339,7 +1350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNd-t0-Tc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2425" y="2446"/>
+            <point key="canvasLocation" x="2424.8000000000002" y="2445.4272863568217"/>
         </scene>
         <!--Mood Form View Controller-->
         <scene sceneID="Fru-Xx-vrK">
@@ -1439,9 +1450,9 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emergency Message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCZ-vY-pkJ">
-                                <rect key="frame" x="16" y="79" width="209" height="39"/>
+                                <rect key="frame" x="16" y="79" width="314" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

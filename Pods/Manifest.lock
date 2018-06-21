@@ -1,10 +1,16 @@
 PODS:
   - FHIR (3.0.0)
+  - SMART (3.0.1)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
   - FHIR (from `https://github.com/smart-on-fhir/Swift-FHIR.git`)
+  - SMART
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SMART
 
 EXTERNAL SOURCES:
   FHIR:
@@ -22,8 +28,9 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   FHIR: 62ef849618a11e4b8d219fbbcde33b9d39b7a257
+  SMART: b03e20e324d75b9c84c4867b49f1f210a5552092
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 97c534b5bf8ffabf23bb5d09c20c1fed0ea68f46
+PODFILE CHECKSUM: 38660d0cfd361df9e0be1c6cc4e6a6bbfb9a7cd2
 
 COCOAPODS: 1.5.2
