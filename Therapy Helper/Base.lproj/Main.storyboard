@@ -1558,11 +1558,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="CONNECT"/>
+                                <connections>
+                                    <action selector="tryConnection:" destination="prJ-Y1-aIe" eventType="touchUpInside" id="obE-t9-QlK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="knq-I2-5jg"/>
                     </view>
+                    <connections>
+                        <outlet property="urlField" destination="lQ3-vh-BCW" id="DQI-Vs-yCQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gek-Pf-XoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
