@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F4D5754FBFBE0F1E1CCAE18 /* Pods_Therapy_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A597A4E5D9BA653C70E03E00 /* Pods_Therapy_Helper.framework */; };
+		D2B4C90620DBCD39006FFB03 /* DiaryReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B4C90520DBCD39006FFB03 /* DiaryReviewController.swift */; };
 		D2D8680E20D81EAA00AF6FDE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8680D20D81EAA00AF6FDE /* libsqlite3.dylib */; };
 		D2D8BE8420D822D800BC9B76 /* XXXProbeIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8BE8320D822D800BC9B76 /* XXXProbeIOS.framework */; };
 		D2D8BE8620D827BC00BC9B76 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8BE8520D827BC00BC9B76 /* CoreData.framework */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		0853C7A3B1063F3793AD23AD /* Pods-Therapy Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Therapy Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Therapy Helper/Pods-Therapy Helper.release.xcconfig"; sourceTree = "<group>"; };
 		A597A4E5D9BA653C70E03E00 /* Pods_Therapy_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Therapy_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B4C90520DBCD39006FFB03 /* DiaryReviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryReviewController.swift; sourceTree = "<group>"; };
 		D2D8680D20D81EAA00AF6FDE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		D2D8BE8320D822D800BC9B76 /* XXXProbeIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XXXProbeIOS.framework; path = ../../Downloads/ProbeFramework/XXXProbeIOS.framework; sourceTree = "<group>"; };
 		D2D8BE8520D827BC00BC9B76 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -229,6 +231,7 @@
 		E1AC198020C2DD57009575C4 /* Diary */ = {
 			isa = PBXGroup;
 			children = (
+				D2B4C90520DBCD39006FFB03 /* DiaryReviewController.swift */,
 				E1AC197620BEA0F9009575C4 /* DiaryDetailViewController.swift */,
 				E1AC197820BEA302009575C4 /* DiaryFormViewController.swift */,
 				E1AC197A20C2BB5A009575C4 /* DiaryFormCollectionViewController.swift */,
@@ -365,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17BBE0220B2DE0200195171 /* SkillDataObject.swift in Sources */,
+				D2B4C90620DBCD39006FFB03 /* DiaryReviewController.swift in Sources */,
 				E175E3FB20A4D44A00F4FF0B /* MoodModel.swift in Sources */,
 				E1AC197D20C2BDFF009575C4 /* DiaryEntryCell.swift in Sources */,
 				E1A7DD7B208D176D00E1BFEB /* DiaryViewController.swift in Sources */,

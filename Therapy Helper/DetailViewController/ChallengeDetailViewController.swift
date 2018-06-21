@@ -32,8 +32,10 @@ class ChallengeDetailViewController: UIViewController {
     }
     
     @IBAction func addToCounter(_ sender: Any) {
-        challenge!.counterCurrent = challenge!.counterCurrent + 1
-        counterLabel.text = (challenge?.counterCurrent.description)! + " / " + (challenge?.counterTotal.description)!
+        if (challenge!.counterCurrent < 99) {
+            challenge!.counterCurrent = challenge!.counterCurrent + 1
+            counterLabel.text = (challenge?.counterCurrent.description)! + " / " + (challenge?.counterTotal.description)!
+        }
     }
     
     
