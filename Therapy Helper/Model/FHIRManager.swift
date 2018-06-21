@@ -9,7 +9,9 @@
 import Foundation
 import SMART
 
-class FHIRManager {
+class FHIRManager: NSObject {
+    
+    static var sharedInstance = FHIRManager()
     
     func tryGetConnection(urlString: String) {
         
