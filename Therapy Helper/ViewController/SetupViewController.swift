@@ -9,8 +9,6 @@
 import UIKit
 
 class SetupViewController: UIViewController {
-
-    
     
     @IBOutlet weak var urlField: UITextField!
     
@@ -23,7 +21,13 @@ class SetupViewController: UIViewController {
     }
     
     @IBAction func tryConnection(_ sender: Any) {
+        let fhirManager = FHIRManager.sharedInstance
         
+        if urlField.text! != "" {
+            fhirManager.tryGetConnection(urlString: urlField.text!)
+        }
+        
+    
     }
     
     

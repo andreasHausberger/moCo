@@ -306,7 +306,7 @@
                                             <outlet property="scoreLabel" destination="2UP-J2-OzB" id="rhM-my-B8m"/>
                                             <outlet property="textLabel" destination="dS9-Ik-Ffy" id="SOA-pd-37U"/>
                                             <outlet property="weekdayLabel" destination="8J7-h4-lNf" id="816-Nv-qdh"/>
-                                            <segue destination="IDC-5l-9wL" kind="showDetail" id="EHn-mw-tcU"/>
+                                            <segue destination="IDC-5l-9wL" kind="show" id="zri-un-ZTG"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -911,7 +911,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4h-zl-42r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1525.5999999999999" y="1390.2548725637182"/>
+            <point key="canvasLocation" x="817" y="1728"/>
         </scene>
         <!--Mood Review View Controller-->
         <scene sceneID="zy6-xq-mzC">
@@ -1076,7 +1076,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5T-3l-21M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2425" y="1068"/>
+            <point key="canvasLocation" x="2217" y="1825"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ruw-XP-na4">
@@ -1091,7 +1091,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Le7-do-aKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3362" y="1112"/>
+            <point key="canvasLocation" x="1478" y="1165"/>
         </scene>
         <!--test-->
         <scene sceneID="CnK-4G-R5N">
@@ -1242,7 +1242,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Lts-nA-Oip" customClass="MoodDetailViewController" customModule="Therapy_Helper" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HbB-Dy-ZQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2425" y="1788"/>
+            <point key="canvasLocation" x="1753" y="2506"/>
         </scene>
         <!--Mood Form View Controller-->
         <scene sceneID="GWb-Dv-aSd">
@@ -1366,7 +1366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNd-t0-Tc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2424.8000000000002" y="2445.4272863568217"/>
+            <point key="canvasLocation" x="2425" y="2506"/>
         </scene>
         <!--Mood Form View Controller-->
         <scene sceneID="Fru-Xx-vrK">
@@ -1442,7 +1442,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmV-8L-QO8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3106" y="2447"/>
+            <point key="canvasLocation" x="3106" y="2506"/>
         </scene>
         <!--Emergency View Controller-->
         <scene sceneID="JfK-DH-Eyu">
@@ -1646,7 +1646,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQS-ih-4Ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540" y="1392"/>
+            <point key="canvasLocation" x="89" y="1728"/>
         </scene>
         <!--Diary-->
         <scene sceneID="mK7-Pm-mSc">
