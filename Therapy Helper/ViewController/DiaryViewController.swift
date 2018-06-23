@@ -21,11 +21,7 @@ class DiaryViewController: UIViewController, UICollectionViewDelegate, UICollect
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destinationVC = segue.destination as? DiaryDetailViewController {
-            destinationVC.rootVC = self
-        }
-    }
+   
     
     func saveDiary(_ diary: DiaryDataObject) {
         diaryModel.saveDiary(diary)
@@ -42,5 +38,58 @@ class DiaryViewController: UIViewController, UICollectionViewDelegate, UICollect
         cell.setUp(diaryDataObject)
         return cell
     }
+    
+    
+    
+    
+    
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? DiaryDetailViewController {
+            destinationVC.rootVC = self
+        }
+        
+        if let destinationVC = segue.destination as? DiaryReviewController {
+            if let cell = sender as? DiaryCell {
+                if let diaryDataObject = cell.diaryDataObject {
+                    
+                    
+                    
+                    
+        
+                    destinationVC.setUp(diaryDataObject: diaryDataObject)
+                        destinationVC.diaryModel = self.diaryModel
+                    }
+        
+            }
+            
+            
+            
+            
+            
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 

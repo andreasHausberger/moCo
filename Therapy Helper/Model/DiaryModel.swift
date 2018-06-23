@@ -70,6 +70,7 @@ class DiaryModel {
             newEntry.emotion_worry = entry.emotion_worry!
             newEntry.emoition_positive = entry.emotion_positive!
             newEntry.text = entry.text!
+            
             managedEntries.append(newEntry)
         }
         return NSSet(array: managedEntries)

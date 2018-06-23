@@ -306,7 +306,7 @@
                                             <outlet property="scoreLabel" destination="2UP-J2-OzB" id="rhM-my-B8m"/>
                                             <outlet property="textLabel" destination="dS9-Ik-Ffy" id="SOA-pd-37U"/>
                                             <outlet property="weekdayLabel" destination="8J7-h4-lNf" id="816-Nv-qdh"/>
-                                            <segue destination="IDC-5l-9wL" kind="showDetail" id="EHn-mw-tcU"/>
+                                            <segue destination="IDC-5l-9wL" kind="show" id="EHn-mw-tcU"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1076,22 +1076,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5T-3l-21M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2425" y="1068"/>
+            <point key="canvasLocation" x="2441" y="1091"/>
         </scene>
-        <!--View Controller-->
+        <!--Diary Review Controller-->
         <scene sceneID="Ruw-XP-na4">
             <objects>
-                <viewController id="IDC-5l-9wL" sceneMemberID="viewController">
+                <viewController id="IDC-5l-9wL" customClass="DiaryReviewController" customModule="Therapy_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X8I-pB-uiZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDG-iH-2g3" userLabel="Title Label">
+                                <rect key="frame" x="16" y="87" width="197" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T4A-93-Hm1">
+                                <rect key="frame" x="0.0" y="144" width="375" height="474"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DiaryCell" id="b23-gS-F4O">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b23-gS-F4O" id="SFk-gh-I5L">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.50237420530300114" green="1" blue="0.93648876880177878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="IDC-5l-9wL" id="SNN-VR-S6M"/>
+                                    <outlet property="delegate" destination="IDC-5l-9wL" id="zbV-pJ-eSn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="D0L-IF-TgV"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="NDG-iH-2g3" id="ehs-rr-5Td"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Le7-do-aKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3362" y="1112"/>
+            <point key="canvasLocation" x="3360.8000000000002" y="1111.3943028485758"/>
         </scene>
         <!--test-->
         <scene sceneID="CnK-4G-R5N">
@@ -2080,7 +2112,7 @@
         <image name="star" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IVB-BO-j49"/>
-        <segue reference="AbL-5E-IpB"/>
+        <segue reference="77O-YL-7ww"/>
+        <segue reference="enn-B2-myT"/>
     </inferredMetricsTieBreakers>
 </document>

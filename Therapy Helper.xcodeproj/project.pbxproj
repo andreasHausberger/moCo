@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1F4D5754FBFBE0F1E1CCAE18 /* Pods_Therapy_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A597A4E5D9BA653C70E03E00 /* Pods_Therapy_Helper.framework */; };
 		D2B4C90620DBCD39006FFB03 /* DiaryReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B4C90520DBCD39006FFB03 /* DiaryReviewController.swift */; };
-		D2D8680E20D81EAA00AF6FDE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8680D20D81EAA00AF6FDE /* libsqlite3.dylib */; };
-		D2D8BE8420D822D800BC9B76 /* XXXProbeIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8BE8320D822D800BC9B76 /* XXXProbeIOS.framework */; };
 		D2D8BE8620D827BC00BC9B76 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8BE8520D827BC00BC9B76 /* CoreData.framework */; };
 		D2D8BE8820D827D300BC9B76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D8BE8720D827D300BC9B76 /* CoreGraphics.framework */; };
 		E105290220DA9096004D73FF /* FHIRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E105290120DA9096004D73FF /* FHIRManager.swift */; };
