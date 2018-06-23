@@ -44,11 +44,16 @@ class DiaryReviewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "DiaryCell")
         
-        let text = list[indexPath.row].text
+        let text1 = list[indexPath.row].text
+        let text2 = " " + list[indexPath.row].emotion_anger!.description + "-"
+        let text3 = (list[indexPath.row].emotion_fatigue?.description)! + "-"
+        let text4 = (list[indexPath.row].emotion_anger?.description)! + "-"
+        let text5 = list[indexPath.row].emotion_worry?.description
         
-        cell.textLabel?.text =  text! + list[indexPath.row].emotion_anger!.description
-        
+        let text = text1! + text2 + text3 + text4 + text5!
 
+        cell.textLabel?.text =  text
+        
         switch list[indexPath.row].timeFrame {
         case 0:
             cell.backgroundColor = UIColor(displayP3Red: 0.98, green: 0.78, blue: 0, alpha: 0.75)

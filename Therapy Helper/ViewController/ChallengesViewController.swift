@@ -13,9 +13,13 @@ import FHIR
 
 class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    let challengeModel = ChallengeModel()
-    
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    
+    
+    
+    let challengeModel = ChallengeModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +27,7 @@ class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICo
         challengeModel.loadChallenges();
         collectionView.dataSource = self
         collectionView.delegate = self
-        //addTestChallenge();
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,9 +36,18 @@ class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICo
         //challengeModel.loadChallenges();
         
         collectionView.reloadData()
-        
-        
+
     }
+    
+    func addChallengeFromCreationSheet(challenge: ChallengeDataObject) {
+        self.challengeModel.addChallenge(challenge)
+        collectionView.reloadData()
+    }
+
+    
+    
+    
+    
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -66,7 +79,11 @@ class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICo
                 }
             }
         }
+        else if let destinationVC = segue.destination as? ChallengeCreationViewController {
+            destinationVC.parentVC = self
+        }
     }
+    
     
     
     func addTestChallenge() {
@@ -82,14 +99,20 @@ class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICo
         self.collectionView.reloadData()
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
 }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+

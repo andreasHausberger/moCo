@@ -434,7 +434,7 @@
                                             <outlet property="scoreLabel" destination="2UP-J2-OzB" id="rhM-my-B8m"/>
                                             <outlet property="textLabel" destination="dS9-Ik-Ffy" id="SOA-pd-37U"/>
                                             <outlet property="weekdayLabel" destination="8J7-h4-lNf" id="816-Nv-qdh"/>
-                                            <segue destination="IDC-5l-9wL" kind="show" id="EHn-mw-tcU"/>
+                                            <segue destination="IDC-5l-9wL" kind="show" id="zri-un-ZTG"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -933,7 +933,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="createSkill:" destination="Mje-w4-UkH" eventType="touchUpInside" id="ZPe-cT-fyl"/>
+                                    <action selector="createChallenge:" destination="rx5-i1-LWP" eventType="touchUpInside" id="XgX-r4-ZLJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create a Challenge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbD-Gd-YBu">
@@ -959,6 +959,7 @@
                         <viewLayoutGuide key="safeArea" id="J3C-9f-chg"/>
                     </view>
                     <connections>
+                        <outlet property="createButton" destination="Pj8-XP-74q" id="lug-bm-cY1"/>
                         <outlet property="descriptionTextField" destination="bZG-K1-3bc" id="4y2-SJ-C2S"/>
                         <outlet property="goalDisplayLabel" destination="AQM-Tq-bt8" id="LVl-Ne-k63"/>
                         <outlet property="nameTextField" destination="Yrl-vp-Sx8" id="phw-Sq-PSE"/>
@@ -1322,7 +1323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5T-3l-21M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2441" y="1091"/>
+            <point key="canvasLocation" x="2217" y="1825"/>
         </scene>
         <!--Diary Review Controller-->
         <scene sceneID="Ruw-XP-na4">
@@ -1369,7 +1370,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Le7-do-aKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3360.8000000000002" y="1111.3943028485758"/>
+            <point key="canvasLocation" x="1478" y="1165"/>
         </scene>
         <!--test-->
         <scene sceneID="CnK-4G-R5N">
@@ -2389,7 +2390,7 @@
         <image name="star" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="77O-YL-7ww"/>
-        <segue reference="enn-B2-myT"/>
+        <segue reference="dgc-SZ-Nrv"/>
+        <segue reference="AbL-5E-IpB"/>
     </inferredMetricsTieBreakers>
 </document>
