@@ -15,11 +15,16 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
+    @IBOutlet weak var addButton: UIButton!
+    
     let skillModel = SkillModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.addButton.layer.cornerRadius = 25
         skillModel.loadSkills();
         
     }

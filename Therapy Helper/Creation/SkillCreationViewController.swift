@@ -21,6 +21,9 @@ class SkillCreationViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var timerPicker: UIDatePicker!
     
+    @IBOutlet weak var createButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +32,8 @@ class SkillCreationViewController: UIViewController, UITextFieldDelegate {
         
         descriptionTextField.returnKeyType = .done
         descriptionTextField.delegate = self
+        
+        self.createButton.layer.cornerRadius = 10
         
     }
     

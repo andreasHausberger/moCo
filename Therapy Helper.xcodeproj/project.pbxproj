@@ -21,6 +21,7 @@
 		E15F517620DBCF350071A62E /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15F517520DBCF350071A62E /* SetupViewController.swift */; };
 		E1647EED20D3E5710046023C /* ChallengeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1647EEC20D3E5710046023C /* ChallengeDetailViewController.swift */; };
 		E16D294F20DE4C06009DF4FF /* SkillCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16D294E20DE4C06009DF4FF /* SkillCreationViewController.swift */; };
+		E16D295120DE5B98009DF4FF /* ChallengeCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16D295020DE5B98009DF4FF /* ChallengeCreationViewController.swift */; };
 		E16E4DA920CAFA4D00A1F2C1 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E4DA820CAFA4D00A1F2C1 /* EmergencyViewController.swift */; };
 		E16E4DCA20D03D4F00A1F2C1 /* ExtendedActivityDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E4DC920D03D4F00A1F2C1 /* ExtendedActivityDefinition.swift */; };
 		E175E3FB20A4D44A00F4FF0B /* MoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175E3FA20A4D44A00F4FF0B /* MoodModel.swift */; };
@@ -70,6 +71,7 @@
 		E15F517520DBCF350071A62E /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		E1647EEC20D3E5710046023C /* ChallengeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailViewController.swift; sourceTree = "<group>"; };
 		E16D294E20DE4C06009DF4FF /* SkillCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCreationViewController.swift; sourceTree = "<group>"; };
+		E16D295020DE5B98009DF4FF /* ChallengeCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCreationViewController.swift; sourceTree = "<group>"; };
 		E16E4DA820CAFA4D00A1F2C1 /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		E16E4DC920D03D4F00A1F2C1 /* ExtendedActivityDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedActivityDefinition.swift; sourceTree = "<group>"; };
 		E175E3FA20A4D44A00F4FF0B /* MoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodModel.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				E16D294E20DE4C06009DF4FF /* SkillCreationViewController.swift */,
+				E16D295020DE5B98009DF4FF /* ChallengeCreationViewController.swift */,
 			);
 			path = Creation;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				E124581920A76C17004768B4 /* MoodCell.swift in Sources */,
 				E153097520D105CC00B09778 /* APIManager.swift in Sources */,
 				E1BC9679209DE51300087405 /* Model.xcdatamodeld in Sources */,
+				E16D295120DE5B98009DF4FF /* ChallengeCreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
