@@ -15,9 +15,7 @@ class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICo
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
-    
-    
+    @IBOutlet weak var addButton: UIButton!
     
     let challengeModel = ChallengeModel()
     
@@ -27,6 +25,8 @@ class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICo
         challengeModel.loadChallenges();
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        addButton.layer.cornerRadius = 25
        
     }
     
@@ -43,12 +43,6 @@ class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICo
         self.challengeModel.addChallenge(challenge)
         collectionView.reloadData()
     }
-
-    
-    
-    
-    
-    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return challengeModel.getChallenges().count

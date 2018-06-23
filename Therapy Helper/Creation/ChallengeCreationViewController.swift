@@ -44,41 +44,29 @@ class ChallengeCreationViewController: UIViewController, UITextFieldDelegate {
     @IBAction func createChallenge(_ sender: Any) {
         guard nameTextField.text != "" else { showErrorMessage(); return }
         guard descriptionTextField.text != "" else { showErrorMessage(); return }
+        guard currentGoal > 0 else { showErrorMessage(); return}
         
-        let newChallenge = ChallengeDataObject(title: self.nameTextField.text!, text: self.descriptionTextField.text!, counterTotal: Int64((self.goalDisplayLabel.text! as NSString).integerValue), counterCurrent: 0, creationDate: Date())
+        let newChallenge = ChallengeDataObject(title: self.nameTextField.text!, text: self.descriptionTextField.text!, counterTotal: Int64(currentGoal), counterCurrent: 0, creationDate: Date())
         
       
             self.parentVC!.addChallengeFromCreationSheet(challenge: newChallenge)
             self.dismiss(animated: true, completion: nil)
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      
-        
-        
-        
-       
-        
-        
     }
 
     @IBAction func changeGoal(_ sender: UIStepper) {
-        self.goalDisplayLabel.text = Int(sender.value).description
+        currentGoal = Int(sender.value)
+        self.goalDisplayLabel.text = currentGoal.description
+        
+    }
+    
+    private func showErrorMessage() {
+        let alert = UIAlertController(title: "Error", message: "Please enter a valid name and description for the Challenge, and set the goal to a minimum of 1!", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+        
     }
     
 }
@@ -90,15 +78,7 @@ class ChallengeCreationViewController: UIViewController, UITextFieldDelegate {
 
 
 
-private func showErrorMessage() {
-    let alert = UIAlertController(title: "Error", message: "Please enter a valid name and description for the Challenge!", preferredStyle: .alert)
-    
-    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-    
-   
-    
-    
-}
+
 
 
 
