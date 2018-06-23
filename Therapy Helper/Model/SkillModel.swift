@@ -28,6 +28,7 @@ class SkillModel {
         newSkill.category = Int64(skillDataObject.category)
         newSkill.creationDate = skillDataObject.creationDate
         newSkill.timer = Int64(skillDataObject.timer)
+        skillDataObjects.append(skillDataObject)
         skills.append(newSkill)
 
         delegate.saveContext()

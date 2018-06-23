@@ -12,8 +12,11 @@ import SMART
 class FHIRManager: NSObject {
     
     static var sharedInstance = FHIRManager()
+    static var isOffline: Bool? // toggles offline mode
     
-    func tryGetConnection(urlString: String) {
+    //returns true if connection is established and data can be loaded.
+    func tryGetConnection(urlString: String) -> Bool {
+        var returnBool: Bool = false
         var variableURL = urlString
         if variableURL.last != "/" { variableURL.append("/") }
         
@@ -25,18 +28,23 @@ class FHIRManager: NSObject {
         client.authorize { (patient, error) in
             if patient == nil || error != nil {
                 print("failure: " + error!.localizedDescription)
+                FHIRManager.isOffline = true
             }
             else {
                 if patient != nil {
                     print(patient.debugDescription)
+                    FHIRManager.isOffline = true
+                    returnBool = true
                 }
             }
+           
         }
         
         client.getJSON(at: "Patient/") { (response) in
             print(response.debugDescription)
+            returnBool = true
         }
-        
+         return returnBool
     }
     
 }

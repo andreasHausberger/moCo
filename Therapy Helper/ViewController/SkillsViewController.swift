@@ -24,6 +24,11 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
         
     }
     
+    func addSkillFromCreationSheet(skill: SkillDataObject) {
+        self.skillModel.addSkill(skill)
+        collectionView.reloadData()
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return skillModel.getSkills().count
@@ -50,6 +55,9 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
                     destinationVC.setUp(skill: skill)
                 }
             }
+        }
+        else if let destinationVC = segue.destination as? SkillCreationViewController {
+            destinationVC.parentVC = self
         }
     }
 
