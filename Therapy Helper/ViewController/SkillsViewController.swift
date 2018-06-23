@@ -15,13 +15,23 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
+    @IBOutlet weak var addButton: UIButton!
+    
     let skillModel = SkillModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.addButton.layer.cornerRadius = 25
         skillModel.loadSkills();
         
+    }
+    
+    func addSkillFromCreationSheet(skill: SkillDataObject) {
+        self.skillModel.addSkill(skill)
+        collectionView.reloadData()
     }
     
     
@@ -50,6 +60,9 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
                     destinationVC.setUp(skill: skill)
                 }
             }
+        }
+        else if let destinationVC = segue.destination as? SkillCreationViewController {
+            destinationVC.parentVC = self
         }
     }
 
