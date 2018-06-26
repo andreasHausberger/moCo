@@ -14,8 +14,16 @@ class DiaryFormViewController: UIViewController {
     
     @IBOutlet weak var endTimePicker: UIDatePicker?
     
+    
+    @IBOutlet weak var backgroundView: UIView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if backgroundView != nil {
+            backgroundView!.layer.cornerRadius = 10
+        }
+       
         
     }
     

@@ -27,6 +27,11 @@ class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView.delegate = self
         
         addButton.layer.cornerRadius = 25
+        
+        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            let width = self.view.bounds.width - 10
+            flowLayout.estimatedItemSize = CGSize (width: width, height: 80)
+        }
        
     }
     
@@ -57,6 +62,8 @@ class ChallengesViewController: UIViewController, UICollectionViewDelegate, UICo
             
             cell.layer.cornerRadius = 10
             cell.backgroundColor = UIColor.lightGray
+            
+          
             
             
         }

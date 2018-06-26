@@ -10,7 +10,8 @@
 import Foundation
 import UIKit
 import CoreData
-import SwiftyJSON
+// import SwiftyJSON
+import SMART
 
 class ChallengeModel {
     private var challenges: [Challenge] = [Challenge]()
@@ -40,47 +41,36 @@ class ChallengeModel {
         return challengeDataObjects
     }
     
-    func loadChallengesFromServer(id: Int) {
-        let manager = APIManager.sharedInstance
-     //   manager.setUpConnection(URL: "urli url", endpoint: "endy pointy")
+    func loadChallengesFromServer(json: FHIRJSON) {
+        var challengeName: String = ""
+        var challengeText: String = ""
+        var challengeCounterTotal: Int = 0
+        var challengeCounterCurrent: Int = 0
+        var creationDate: Date = Date()
         
-        manager.getPostWithId(postId: id, onSuccess: { (json: JSON) in
-            
-            var challengeName: String = ""
-            var challengeText: String = ""
-            var challengeCounterTotal: Int = 0
-            var challengeCounterCurrent: Int = 0
-            var creationDate: Date = Date()
-            
-            let dict = json.dictionary! as [String : Any]
-            
-            if let jsonName = dict["title"] as? String {
-                challengeName = jsonName
-            }
-            
-            if let jsonText = dict["fhir_description"] as? String {
-                challengeText = jsonText
-            }
-            
-            if let jsonCounterTotal = dict["total"] as? Int {
-                challengeCounterTotal = jsonCounterTotal
-            }
-            
-            if let jsonCounterCurrent = dict["current"] as? Int {
-                challengeCounterCurrent = jsonCounterCurrent
-            }
-            
-            if let jsonDate = dict["date"] as? Date {
-                creationDate = jsonDate
-            }
-            
-            let newChallengeDataObject = ChallengeDataObject(title: challengeName, text: challengeText, counterTotal: Int64(challengeCounterTotal), counterCurrent: Int64(challengeCounterCurrent), creationDate: creationDate)
-            
-            self.addChallenge(newChallengeDataObject)
-            
-        }) { (error: Error) in
-            print("Fetching a Challenge from the server failed!")
+        if let jsonName = json["name"] as? String {
+            challengeName = jsonName
         }
+        
+        if let jsonText = json["fhir_description"] as? String {
+            challengeText = jsonText
+        }
+        
+        if let jsonCounterTotal = json["goal"] as? Int {
+            challengeCounterTotal = jsonCounterTotal
+        }
+        
+        if let jsonCounterCurrent = json["fhir_description"] as? Int {
+            challengeCounterCurrent = jsonCounterCurrent
+        }
+        
+        if let jsonDate = json["date"] as? DateTime {
+            creationDate = jsonDate.nsDate
+        }
+        
+        let newChallengeDataObject = ChallengeDataObject(title: challengeName, text: challengeText, counterTotal: Int64(challengeCounterTotal), counterCurrent: Int64(challengeCounterCurrent), creationDate: creationDate)
+        
+        self.addChallenge(newChallengeDataObject)
         
     }
     

@@ -32,9 +32,11 @@ class FHIRManager: NSObject {
             }
             else {
                 if patient != nil {
+                    
                     print(patient.debugDescription)
                     FHIRManager.isOffline = true
                     returnBool = true
+                    
                 }
             }
            
@@ -44,7 +46,17 @@ class FHIRManager: NSObject {
             print(response.debugDescription)
             returnBool = true
         }
+        
+        
          return returnBool
+    }
+    
+    func tryGetContent(client: Client, id: FHIRString, at endpoint: String) {
+        client.getJSON(at: endpoint) { (response) in
+            
+        }
+        
+        
     }
     
 }

@@ -11,12 +11,24 @@ import UIKit
 class DiaryFormCollectionViewController: DiaryFormViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var entries: [DiaryEntryDataObject] = [DiaryEntryDataObject]()
-     @IBOutlet weak var collectionView: UICollectionView!
+    
+
+    @IBOutlet var cvBackgroundView: [UIView]!
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        for view in cvBackgroundView {
+            if view != nil {
+                view.layer.cornerRadius = 10
+            }
+        }
+        
     }
 
     

@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 import CoreData
-import SwiftyJSON
+// import SwiftyJSON
+import SMART
 
 class SkillModel {
     private var skills: [Skill] = [Skill]()
@@ -40,46 +41,37 @@ class SkillModel {
     }
     
     
-    func loadSkillsFromServer(id: Int) {
-        let manager = APIManager.sharedInstance
+    func loadSkillsFromServer(json: FHIRJSON) {
         
-        manager.getPostWithId(postId: id, onSuccess: { (json: JSON) in
             var skillName: String = ""
             var skillDate: Date = Date()
             var skillText: String = ""
             var skillTimer: Int = 0
             var skillCategory: Int = 0
             
-            
-            let dict = json.dictionary! as [String: Any]
-            
-            if let jsonName = dict["title"] as? String {
+            if let jsonName = json["title"] as? String {
                 skillName = jsonName
             }
             
-            if let jsonDate = dict["date"] as? Date {
+            if let jsonDate = json["date"] as? Date {
                 skillDate = jsonDate
             }
             
-            if let jsonDescription = dict["fhir_description"] as? String {
+            if let jsonDescription = json["fhir_description"] as? String {
                 skillText = jsonDescription
             }
             
-            if let jsonTimer = dict["timer_minutes"] as? Int {
+            if let jsonTimer = json["timer_minutes"] as? Int {
                 skillTimer = jsonTimer
             }
             
-            if let jsonCategory = dict["category"] as? Int {
+            if let jsonCategory = json["category"] as? Int {
                 skillCategory = jsonCategory
             }
             
             let newSkillDataObject = SkillDataObject(name: skillName, text: skillText, category: skillCategory, creationDate: skillDate, timer: skillTimer)
             
             self.addSkill(newSkillDataObject)
-            
-        }) { (error: Error) in
-            print("Fetching a Skill from Server failed. Error code: " + error.localizedDescription)
-        }
        
     }
     

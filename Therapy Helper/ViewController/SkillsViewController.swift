@@ -27,15 +27,12 @@ class SkillsViewController: UIViewController, UICollectionViewDelegate, UICollec
         self.addButton.layer.cornerRadius = 25
         skillModel.loadSkills();
         
+        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            let width = self.view.bounds.width - 10
+            flowLayout.estimatedItemSize = CGSize (width: width, height: 80)
+        }
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     func addSkillFromCreationSheet(skill: SkillDataObject) {
         self.skillModel.addSkill(skill)

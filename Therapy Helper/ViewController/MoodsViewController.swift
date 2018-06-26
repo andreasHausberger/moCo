@@ -24,6 +24,11 @@ class MoodsViewController: UIViewController, UICollectionViewDelegate, UICollect
         collectionView.dataSource = self
         collectionView.delegate = self
         addButton.layer.cornerRadius = 25
+        
+        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            let width = self.view.bounds.width - 10
+            flowLayout.estimatedItemSize = CGSize (width: width, height: 80)
+        }
     }
     
     func saveMood(_ moodDataObject: MoodDataObject) {

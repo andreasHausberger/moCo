@@ -19,6 +19,10 @@ class DiaryViewController: UIViewController, UICollectionViewDelegate, UICollect
         collectionView.dataSource = self
         collectionView.delegate = self
         
+        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            let width = self.view.bounds.width - 10
+            flowLayout.estimatedItemSize = CGSize (width: width, height: 80)
+        }
     }
     
    
@@ -36,6 +40,7 @@ class DiaryViewController: UIViewController, UICollectionViewDelegate, UICollect
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DiaryCell", for: indexPath) as! DiaryCell
         let diaryDataObject = diaryModel.getDiaries()[indexPath.item]
         cell.setUp(diaryDataObject)
+        cell.layer.cornerRadius = 10
         return cell
     }
     

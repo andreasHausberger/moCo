@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 import CoreData
-import SwiftyJSON
+// import SwiftyJSON
+import SMART
 
 class MoodModel {
     private var moods: [Mood] = [Mood]()
@@ -41,22 +42,27 @@ class MoodModel {
         return moodDataObjects
     }
     
-    func loadMoodsFromServer(id: Int) {
-        let moodText: String = ""
-        let moodPhysical: Double = 0
-        let moodMental: Double = 0
-        let moodOptimism: Double = 0
-        let creationDate: Date = Date()
+    func loadMoodsFromServer(json: FHIRJSON) {
+        var moodText: String = ""
+        var moodPhysical: Double = 0
+        var moodMental: Double = 0
+        var moodOptimism: Double = 0
+        var creationDate: Date = Date()
         
-        let manager = APIManager.sharedInstance
-        // manager.setUpConnection(URL: "urli", endpoint: "pointy")
-        
-        manager.getPostWithId(postId: id, onSuccess: { (json: JSON) in
-            
-            
-        }) { (error: Error) in
-            
+        if let jsonText = json["text"] as? String {
+            moodText = jsonText
         }
+        
+        if let moods = json["item"] as? SMART.Bundle {
+            print(moods.description)
+            //wtf do we do here?
+        }
+        
+        if let date = json["authored"] as? DateTime {
+            creationDate = date.nsDate
+        }
+        
+        addMood(MoodDataObject(mental_wellbeing: moodMental, physical_wellbeing: moodPhysical, optimism: moodOptimism, text: moodText, creationDate: creationDate))
     }
     
     func loadMoods() {
