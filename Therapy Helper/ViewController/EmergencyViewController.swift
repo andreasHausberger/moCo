@@ -19,16 +19,19 @@ class EmergencyViewController: UIViewController {
     }
     
     @IBAction func addFirstMessage(_ sender: UIButton) {
-        message += "Lorem Ipsum Dolor Sit Amet \n"
+        sender.isEnabled = false
+        message += "I feel depressed & hopeless! \n"
         
         }
     
     @IBAction func addSecondMessage(_ sender: UIButton) {
-        message += "Sponte sua sine lege fidem rectumque \n"
+        sender.isEnabled = false
+        message += "I feel the urge to self-harm! \n"
     }
     
     @IBAction func addThirdMessage(_ sender: UIButton) {
-        message += "Donde esta la biblioteca? \n"
+        sender.isEnabled = false
+        message += "I think I have suicidal thoughts! \n"
     }
     
     

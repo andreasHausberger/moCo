@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetupViewController: UIViewController {
+class SetupViewController: UIViewController, UITextFieldDelegate {
     
     
     
@@ -24,6 +24,8 @@ class SetupViewController: UIViewController {
 
         connectButton.layer.cornerRadius = 10
         offlineButton.layer.cornerRadius = 10
+        
+        urlField.delegate = self
     }
     
     @IBAction func tryConnection(_ sender: Any) {
@@ -53,6 +55,11 @@ class SetupViewController: UIViewController {
     
     @IBAction func useOfflineMode(_ sender: Any) {
         FHIRManager.isOffline = true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
     
     
