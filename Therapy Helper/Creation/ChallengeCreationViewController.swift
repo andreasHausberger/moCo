@@ -41,10 +41,6 @@ class ChallengeCreationViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    
-    
-    
-    
     @IBAction func createChallenge(_ sender: Any) {
         guard nameTextField.text != "" else { showErrorMessage(); return }
         guard descriptionTextField.text != "" else { showErrorMessage(); return }
@@ -52,7 +48,6 @@ class ChallengeCreationViewController: UIViewController, UITextFieldDelegate {
         
         let newChallenge = ChallengeDataObject(title: self.nameTextField.text!, text: self.descriptionTextField.text!, counterTotal: Int64(currentGoal), counterCurrent: 0, creationDate: Date())
         
-      
             self.parentVC!.addChallengeFromCreationSheet(challenge: newChallenge)
             self.dismiss(animated: true, completion: nil)
         
