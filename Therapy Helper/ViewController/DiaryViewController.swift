@@ -10,6 +10,8 @@ import UIKit
 
 class DiaryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    @IBOutlet weak var addButton: UIButton!
+    
     var diaryModel: DiaryModel = DiaryModel()
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -18,6 +20,7 @@ class DiaryViewController: UIViewController, UICollectionViewDelegate, UICollect
         diaryModel.loadDiaries()
         collectionView.dataSource = self
         collectionView.delegate = self
+        addButton.layer.cornerRadius = 25
         
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             let width = self.view.bounds.width - 10
