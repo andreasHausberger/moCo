@@ -29,6 +29,13 @@ class DiaryFormCollectionViewController: DiaryFormViewController, UICollectionVi
             }
         }
         
+        /*if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            let width = self.view.bounds.width - 20
+            flowLayout.estimatedItemSize = CGSize(width: width, height: 60)
+            
+        } */
+        
+        
     }
 
     
