@@ -34,7 +34,11 @@ class ChallengeCreationViewController: UIViewController, UITextFieldDelegate {
         descriptionTextField.delegate = self
         
         self.createButton.layer.cornerRadius = 10
-        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
     
     

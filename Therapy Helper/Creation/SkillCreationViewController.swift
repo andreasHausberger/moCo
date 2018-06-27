@@ -41,8 +41,6 @@ class SkillCreationViewController: UIViewController, UITextFieldDelegate {
     @IBAction func createSkill(_ sender: Any) {
         guard nameTextField.text != "" else { showErrorMessage(); return }
         guard descriptionTextField.text != "" else { showErrorMessage(); return }
-        
-        
 
         let action = UIAlertController(title: "Category", message: "Select a category for the Skill", preferredStyle: .actionSheet)
         
